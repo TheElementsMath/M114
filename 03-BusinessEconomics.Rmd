@@ -1,0 +1,212 @@
+#  Business Economics
+
+
+##  3.1  Introduction to Calculus {-}
+
+Find the derivative of each of the following functions.  
+
+*  $y = x^5 + x^4 + x^3 + x^2 + x + 1$  
+    *  $y^{\prime} = = 5x^4 + 4x^3 + 3x^2 + 2x + 1$
+<p>&nbsp;</p>
+
+
+*  $y = 3x^2 + 10x - 5$
+    *  $y^{\prime} = 6x + 10$
+<p>&nbsp;</p>
+
+
+*  $y = 20x^5 - 10 x^3 + 6x - 15$
+    *  $y^{\prime} = 100x^4 - 30x^2 + 6$
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  $y = 15x - 25x^2 + 1000$
+    *  $y^{\prime} = 15  - 50x$
+<p>&nbsp;</p>
+
+
+*  $y = 75x - 20x^2 + 10000$
+    *  $y^{\prime} = 75 - 40x$
+<p>&nbsp;</p>
+
+
+##  3.2  Merchandizing {-}
+
+*  The distributor of Lazyboy chairs is offering a trade discount of 32% to stores. What will be the stores’ cost to purchase a chair listed at $379?
+    *  $257.72
+<p>&nbsp;</p>
+
+
+*  A 33.5% trade discount on a refrigerator represents a discount of $423.90 from the suggested retail price. What is the net price to the buyer?
+    *  $840.28
+<p>&nbsp;</p>
+
+
+*  A vintage bookstore buys books for 65% off the retail price of new
+books. What will someone receive for a book currently selling at $158.55 new?
+    *  $55.49
+<p>&nbsp;</p>
+
+
+*  A manufacturer of ATVs sells through distributors in some regions of the country, through wholesalers in other regions, and directly to retailers in its home province. The manufacturer gives a 20% trade discount to retailers, an additional 8% discount to wholesalers, and a further 6.25% discount to distributors. What net price does the manufacturer receive from each buying level on an ATV listed at $25000?
+    *  \$20000 from retailers, \$18400 from wholesalers, and \$17250 from distributors
+<p>&nbsp;</p>
+
+
+*  A wholesaler lists an item for \$189.44 less 23%. What additional “special promotion” percentage discount must be offered to retailers to get the net price down to \108.72?
+    *  25.48%
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+
+*  It costs \$33.60 to bake a cake.  The cake is then cut into 16 slices and sold at \$6.50 per slice. Calculate the rate of markup on cost and the rate of markup on selling price.
+    *  ROMU (rate of markup on cost) = 209.52%, GPM (rate of markup on selling price) = 67.69%
+<p>&nbsp;</p>
+
+
+*  Walmart buys sweaters at a suggested retail price of $42 less trade discounts of 30% and 10%. The manager intends to sell the sweaters at the suggested retail price.  Overhead expenses are 25% of the selling price of the sweaters.  What will be the operating profit on each sweater? What is the rate of markup on cost?  What is the rate of markup on selling price? 
+    *  Profit = \$5.04, Markup on cost = 19%, Markup on selling price = 12%
+<p>&nbsp;</p>
+
+
+*  If the rate of markup on selling price of apples in a grocery store is 75%, what is the rate of markup on cost?
+    *  300%
+<p>&nbsp;</p>
+
+
+*  OshKosh B'Gosh bought 300 pairs of boots at $19 per pair. The store marks the boots up 65% of cost. What is the operating profit per pair if overhead expenses are 15% of the selling price?
+    *  $6.97
+<p>&nbsp;</p>
+
+
+*  Tip-Top Taylor's regular prices provide a 35% rate of markup on selling price. Overhead expenses are 22% of cost. What is the operating profit on a suit that sells for $872?
+    *  $180.50
+<p>&nbsp;</p>
+
+
+
+
+
+*  An item was marked up from \$35 to $65 before it was marked down to \$35 and sold at cost. Determine the rate of markup on cost and the rate of markdown.
+    *  46.15%
+<p>&nbsp;</p>
+
+
+*  The Home Depot purchases lawnmowers for $321 and marks them up by 29% of selling price. At the end of the summer, the price is reduced to 10% above cost. What percentage price reduction should the price tag show?
+    *  23.75%
+<p>&nbsp;</p>
+
+
+*  Shaun White Snowboards (SWS) obtains snowboards at a cost of $421 and marks them up by 31% of the selling price. During a sale, SWS marks down prices by 26%. What is the sale price of the snowboards?
+    *  $423.09
+<p>&nbsp;</p>
+
+
+*  Office Depot goods at 40% of price for overhead and 60% of selling price for profit.  What rate of markdown on selling price can Office Depot offer so that they break even on the reduced price?
+    *  66.67%
+<p>&nbsp;</p>
+
+
+*  Pharmasave marks up sunglasses to provide for overhead expenses of 35% of cost and a profit of 75% of selling price. At the end of the summer, the sunglasses are marked down to sell at cost.  What was the rate of markdown?
+    *  81.48%
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+
+*  Chevey's sells hockey sticks for $203. Chevy’s wholesale cost is
+$123. For a spring clearance sale, the prices are marked down by 24%. If overhead expenses are 18% of the regular selling price, what is the unit operating profit at the sale price?
+    *  -$4.86
+<p>&nbsp;</p>
+
+
+*  A bedroom suite costs Empire Furniture $6000 less 37% and 21%. The normal rate of markup on cost is 85%. The suite is marked down 22% in a mid-summer sale. What is the sale price?
+    *  $3636.36
+<p>&nbsp;</p>
+
+
+*  Sea-Doo pays $4500 less 22% for a base model unit. Overhead expenses are 19% of the regular selling price, and the operating profit is 15% of the selling price.  What is the maximum rate of markdown the store can offer and still break even? What is the profit or loss per unit if Sea-Doo clears out its remaining stock at 20% off?
+    *  ROMD = 43.02%, Profit = $1684.80
+<p>&nbsp;</p>
+
+
+
+##  3.3 CVP Analysis {-}
+
+*  Office Depot is leasing a photocopier for use on a self-serve basis at \$0.10 per copy. The copier lease is \$300 per month plus \$0.0015 per copy.  Office Depot can purchase paper at \$4.50 per 500-sheet ream. Toner costs \$90 per bottle, which will last for 5500 pages. Office Depot is allowing for additional costs (including electricity) of \$0.005 per copy.  How many copies per month must be sold in order to break even?  What will be the increase in monthly profit for each 1000 copies sold above the breakeven point?
+    *  BE = 4379 copies,  profit = \$68.50 per 1000 copies
+<p>&nbsp;</p>
+
+
+*  Widgets-R-Us can produce up to 300 units per week of a product that it
+sells for \$22 per unit. The variable cost per unit is \$14, and the fixed costs per week are \$1350.  How many units must the firm sell per week to break even?
+What are the firm’s weekly profit or loss if it sells: 120 units per week or 250 units per week.  How much does the Widgets-R-Us need to sell to have a profit of  \$400 per week?
+    *  BE = 168.75, profit at 120 units = \$390, profit at 250 = \$650,  units sold for a \$400 profit = 207
+<p>&nbsp;</p>
+
+
+*  Ziplock makes a 6-pack of containers that sell for \$4.25 each. Its fixed costs for this product are \$2340 per month and the variable cost per unit is \$1.45.  What is the break-even point in units?  What is the break-even sales revenue?
+    *  Break even volume = 835.71, revenue = $3551.77
+<p>&nbsp;</p>
+
+
+*  Big Dog Software sells computers. Computer components cost \$1800 per system and sells for \$2700. Labour costs are \$250 per system. Overhead costs are \$10,500 per month. How many computers must be sold each month to break even?  What will be the profit or loss for a month in which 20 Home computers are sold?
+    *  BE = 16.15 computers, profit = \$12,500
+<p>&nbsp;</p>
+
+
+*  Voyager RV has total revenue of \$7,700,000 and a profit of \$350,000 on the sale of 135 units in the first half of its financial year. Sales declined to 120 units in the second half of the year, resulting in a profit of only \$200,000. Determine the selling price per unit, the total revenue in the second half,
+the unit variable costs, and the annual fixed costs.
+    *  Selling price per unit = \$57,407.41, Total revenue in second half = \$6,888,888.89,  Unit variable costs = \$32,407.41,  
+<p>&nbsp;</p>
+
+
+* Speeds Pub had a net income last year of \$42,000 after fixed costs of \$140,000 and total variable costs of \$82,000.  What was the pub’s break-even point in sales dollars? If fixed costs in the current year rise to \$145,000 and variable costs remain at the same percentage of sales as for last year, what will be the break-even point?  What sales in the current year will result in a profit of \$50,000?
+    *  BE = \$368,421.05, sales = \$450,750
+<p>&nbsp;</p>
+
+
+*  In the most recent month, Nix's Bikes produced 550 trikes at a total cost of \$26,250. In the previous month, it produced 375 trikes at a total cost of \$19,350. What are the fixed costs per month and the unit variable
+costs? 
+    *  FC = \$3000, VC = \$45
+<p>&nbsp;</p>
+
+
+
+
+##  3.4  Monopoly {-}
+
+*  The demand curve for a product in a monopoly is $P = 140 - 2Q$.  What is the total revenue function?  What output level will maximize total revenue?
+    *  $TR = 140Q - 2Q^2$, Output = 35 units
+<p>&nbsp;</p>
+
+
+*  The demand curve for a product in a monopoly is $P = 9000 - 45Q$.  What is the total revenue function?  What output level will maximize total revenue?
+    *  $TR = 9000Q - 45Q^2$,  Output = 100 units
+<p>&nbsp;</p>
+
+
+*  The demand curve for a product in a monopoly is $P = 12,000 - 52Q$.  Costs are \$23 per unit and fixed costs are \$10,000 per month.  What output level will maximize profit?
+    *  Q = 115.5 units
+<p>&nbsp;</p>
+
+
+*  The demand curve for a product in a monopoly is $P = 1,250,500 - 750Q$.  Costs are \$975 per unit and fixed costs are \$10,000,000 per month.  What output level will maximize profit?
+    *  Q = 498.67 units
+<p>&nbsp;</p>
+
+

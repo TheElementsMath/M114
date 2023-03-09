@@ -1,0 +1,149 @@
+#  (PART) Simple and Compound Interest {-}
+
+
+#  Simple Interest
+
+
+##  4.2 Simple Interest {-}
+
+*  What was the term of a \$5900 loan at 4.25% if the interest due at the end was \$165?
+    *  0.79 years
+<p>&nbsp;</p>
+
+
+*  What annual rate of interest was earned if a \$15,000 investment for 6 months earned \$575 in interest?
+    *  7.67%
+<p>&nbsp;</p>
+
+
+*  How much must be placed in a five-month term deposit earning 4.75% simple interest in order to earn $750 interest?
+    *  $31,578.95
+<p>&nbsp;</p>
+
+*  What was the principal amount of a loan at 9.5% if $75 of interest accrued from October 21, 2014, to May 14, 2015?
+    *  \$1418.38
+<p>&nbsp;</p>
+
+
+*  Jenny put $12,500 in a three-month term deposit, earning a simple interest rate of 3.25%. After the three months, she invested the entire amount of the principal
+and interest from the first term deposit in a new three-month term deposit earning the same rate of interest. How much interest did she earn on each term deposit?
+    *  \$101.56 and \$102.81
+<p>&nbsp;</p>
+
+
+*  Jason has \$7500 to invest for six months. The rates offered on three-month and six-month term deposits at his bank are 5.25% and 5.4%, respectively. He is trying to choose between the six-month term deposit and two consecutive three-month term deposits. What would the simple interest rate on three-month term deposits have to be, three months from now, for Jason to end up in the same financial position with either alternative? Assume that he would place both the principal and the interest from the first three-month term deposit in the second three-month term deposit.
+    *  5.48%
+<p>&nbsp;</p>
+
+
+
+##  4.4  Present and Future Value {-}
+
+*  The maturity value of an investment earning 6.5% per annum for a 300-day term was $2600. What amount was originally invested?
+    *  $48,596.76
+<p>&nbsp;</p>
+
+*  The simple interest rate being charged on a $7500 loan is 1% per month. If the principal and interest are to be paid in nine months, how much interest will be charged?
+    *
+<p>&nbsp;</p>
+
+
+
+*  Stephanie received the proceeds from an inheritance. She wants to set aside enough on March 15 so that she will have \$15,000 available on September 28 to purchase a car when the new models are introduced. If the current interest rate on 181- to 270-day term deposits is 3.75%, what amount should she place in the term deposit?
+    *  \$738,461.54
+<p>&nbsp;</p>
+
+
+
+
+*  Angela borrowed $2500 at 5% simple interest for 9 months. At the end of 9 months, she could not repay the loan and decided to refinance the loan plus the accumulated interest for another 6 months at 6.5% simple interest. How much total interest was she charged?
+    *  \$178.17
+<p>&nbsp;</p>
+
+
+*  Sunlife Financial advanced three loans to Gillian — \$3000 on June 20, \$1500 on August 15, and \$2000 on October 10. Simple interest at 5.25% was charged on all three loans, and all were repaid on December 31 when some bonds that she owned matured. What total amount was required to pay off the loans?
+    *  \$6635.27
+<p>&nbsp;</p>
+
+
+
+
+##  4.5 Rate of Interest and Term of Investments {-}
+
+
+*  A \$3750 investment grew to \$4000 after seven months. What annual rate of simple interest did it earn?
+    *  11.5%
+<p>&nbsp;</p>
+
+
+*  On what date did a corporation borrow \$300,000 at 6.5% from its bank if the debt was settled by a payment of \$306,050 on February 28?
+    *  November 5
+<p>&nbsp;</p>
+
+
+*  The amount required to settle a \$1200 debt after 300 days was \$1530. What rate of interest was charged on the debt?
+    *  28.25%
+<p>&nbsp;</p>
+
+
+*  There is an annual \$4200 membership fee Tower Ranch golf course is due at the beginning of the year. Instead of a single “lump sum” payment, a member can pay \$2000 at the start of the year and defer the \$2200 balance for five months by paying a \$20 surcharge at the time of the second payment. Effectively, what annual rate of simple interest is Oak Meadows charging on the \$2000 deferred payment?
+    *  2.18%
+<p>&nbsp;</p>
+
+
+*  On what date did a Magicorp borrow \$450,000 at 6.75% from its bank if the debt was settled by a payment of \$466,000 on February 28?
+    *  September 5
+<p>&nbsp;</p>
+
+
+##  4.6  Equivalent Payments {-}
+
+*  What payment 214 days from now is equivalent to \$5750 paid today? Assume that money is worth 6.25% simple interest per annum.
+    *  \$5960.70
+<p>&nbsp;</p>
+
+
+*  Mal owes United Furniture \$2300, which is scheduled to be paid on August 15. Mal has surplus funds on June 15 and will settle the debt early if United Furniture will make an adjustment reflecting the current short-term interest rate of 6.25%. What amount should be acceptable to both parties?
+    *  \$2306.07
+<p>&nbsp;</p>
+
+
+*  If money can be invested at 5% simple interest, which has the greater economic value: \$6500 today or \$6750 in five months? At what rate would the two amounts be economically equivalent?
+    *  Greater value = $6750, rate = 7.8%
+<p>&nbsp;</p>
+
+
+*  Peter recently purchased a one-year membership at Steve Nash Fitness. He can add a second year to the membership for a payment of \$1500 today, or wait 11 months and pay the regular single-year price of \$1600. Which is the better economic alternative if money is worth 7.5% simple interest? At what discount rate would the alternatives be equivalent?
+    *  \$1500 is better, 7.27\% SI makes the 2 options equivalent.
+<p>&nbsp;</p>
+
+
+*  If money earns 3.5%, calculate and compare the economic value today of the following payment streams: Stream 1: Payments of \$1100 due in 150 days and \$1700 due in 80 days.
+Stream 2: Payments of \$900 due in 30 days, \$800 due in 75 days, and \$1000 due in 125 days.  Use today as the focal date.
+    *  Stream 1 has the higher value
+<p>&nbsp;</p>
+
+
+*  A \$10,000 debt today is to be repaid with equal payments made in 4, 6 and 9 months from now.  If the rate of interest is 5% simple interest, how large are the payments? Use today as the focal date.
+    * \$387.40
+<p>&nbsp;</p>
+
+
+##  4.8  Changing Interest Rates {-}
+
+*  An investment of \$10,000 earns 5% simple interest for the first 60 days, 6% simple interest for the next 180 days and 8% for the remainder of the year.  How much interest was earned over the year?
+    *  \$650.68
+<p>&nbsp;</p>
+
+
+*  \$15,000 is invested March 1 and earns 3.75% simple interest.  The rate changes to 6% simple interest on Sept 15 and 5.25% simple interest for the remainder of the year.  How much interest was earned over the year?
+    *  \$697.05
+<p>&nbsp;</p>
+
+
+*  \$5000 is invested January 1 at 3% simple interest.  The interest rate rises 1% per month.  How much is in the account after 1 year?
+    *  \$5165.45
+<p>&nbsp;</p>
+
+
+

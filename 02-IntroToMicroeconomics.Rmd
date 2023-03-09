@@ -1,0 +1,61 @@
+#  (PART) ECONOMICS {-}
+
+#  Introduction to Microeconomics
+
+##  2.2  Supply and Demand Economics {-}
+
+*  Consider the supply curve for sedans in an imaginary market. For simplicity, assume that all sedans are identical and sell for the same price. Two factors that affect the supply of sedans are the level of technical knowledge – in this case, the speed with which manufacturing robots can fasten bolts, or robot speed – and the wage rate that auto manufacturers must pay their employees. If there is a decrease in the speed of the robots, how does this impact the equilibrium price and quantity for sedans?
+    *  Price up, quantity down
+<p>&nbsp;</p>
+
+
+*  Consider the market for cereal in San Francisco, where there are over a thousand stores that sell cereal at any given moment. Suppose the Surgeon General issues a public statement saying that consuming cereal is bad for your health.  How will the equilibrium price and quantity for cereal change?
+    *  Price down, quantity down
+<p>&nbsp;</p>
+
+
+*  Consider the market for hamburgers. Suppose an innovation in meat processing technology makes it possible to produce more hamburgers at a lower cost than ever before.  How will that impact the equilibrium price and quantity for hamburgers?
+    *  Price down, quantity up
+<p>&nbsp;</p>
+
+
+*  How would a decrease in the price of wine impact the market for cheese?
+    *  Price down, quantity up
+<p>&nbsp;</p>
+
+
+*   Electric car enthusiasts want to buy more electric cars at a lower price. All of the following
+events would have this effect except
+    A) technological advancement in the production of electric car batteries.
+    B) an increase in the number of manufacturers of electric cars.
+    C) a decrease in the price of lithium, which is used in the electric car batteries.
+    D) an increase in the price of gasoline.
+        *  D
+<p>&nbsp;</p>
+
+
+*  A decrease in the demand for eggs due to changes in consumer tastes, accompanied by a decrease in the supply of eggs as a result of an outbreak of Avian flu, will result in what overall change to the equilibrium?
+    *  Quantity down, price unknown
+<p>&nbsp;</p>
+
+##  2.3  Linear Programming {-}
+
+*  A company makes two products (X and Y) using two machines (A and B). Each unit of X that is produced requires 50 minutes processing time on machine A and 30 minutes processing time on machine B. Each unit of Y that is produced requires 24 minutes processing time on machine A and 33 minutes processing time on machine B.  At the start of the current week there are 30 units of X and 90 units of Y in stock. Available processing time on machine A is forecast to be 40 hours and on machine B is forecast to be 35 hours.  The demand for X in the current week is forecast to be 75 units and for Y is forecast to be 95 units. Company policy is to maximize the combined sum of the units of X and the units of Y in stock at the end of the week.  Formulate the problem of deciding how much of each product to make in the current week as a linear program.
+    *  x=45 and y=6.25
+<p>&nbsp;</p>
+
+
+*  A transport company has two types of trucks, Type A and Type B. Type A has a refrigerated capacity of 20 $m^3$ and a non-refrigerated capacity of 40 $m^3$ while Type B has the same overall volume with equal sections for refrigerated and non-refrigerated stock. A grocer needs to hire trucks for the transport of 3,000 $m^3$ of refrigerated stock and 4,000 $m^3$ of non-refrigerated stock. The cost per kilometer of a Type A is 30, and 40 for Type B. How many trucks of each type should the grocer rent to achieve the minimum total cost?
+    *  Type A:  75, Type B:  50 (total cost of $4500)
+<p>&nbsp;</p>
+
+
+*  A school is preparing a trip for 400 students. The company who is providing the transportation has 10 buses of 50 seats each and 8 buses of 40 seats, but only has 9 drivers available. The rental cost for a large bus is 800 and600 for the small bus. Calculate how many buses of each type should be used for the trip for the least possible cost.
+    *  Large:  6, Small:  3  (total cost $6600)
+<p>&nbsp;</p>
+
+
+*  A store wants to liquidate 200 of its shirts and 100 pairs of pants from last season. They have decided to put together two offers, A and B. Offer A is a package of one shirt and a pair of pants which will sell for 30. Offer B is a package of three shirts and a pair of pants, which will sell for50. The store does not want to sell less than 20 packages of Offer A and less than 10 of Offer B. How many packages of each do they have to sell to maximize the money generated from the promotion?
+    *  Offer A:  50, Offer B:  50
+<p>&nbsp;</p>
+

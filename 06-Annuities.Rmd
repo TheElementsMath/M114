@@ -1,0 +1,162 @@
+# (PART) Annuities {-}
+
+#  Annuity Basics
+
+##  6.1  Effective and Equivalent Interest Rates {-}
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+##  6.2  Annuities {-}
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+##  6.3  Calculating the Periodic Payment and Number of Payments {-}
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+##  6.4  Ordinary General Annuities {-}
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+##  6.5  Using the TI BAII plus Calculator for Annuities {-}
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+

@@ -1,0 +1,193 @@
+
+#  Compound Interest
+
+##  5.2 Present and Future Values {-}
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+##  5.3  Calculating the Periodic Interest Rate and Number of Compounding Periods {-}
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+##  5.4  Equivalent Payments and Payment Streams {-}
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+##  5.5  Using the TI BAII plus Calculator for Compound Interest Problems {-}
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+##  5.6  Changing Interest Rates {-}
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+##  5.7  Continuously Compounded Interest {-}
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
+
+*  
+    *
+<p>&nbsp;</p>
+
