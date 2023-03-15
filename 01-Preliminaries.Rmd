@@ -4,30 +4,30 @@
 
 ##  1.2  Order of Operations {-}
 
-Simplify:
 
-*  $\$250 ( 1 + 0.065 × 172/365)$
-    *  $257.645
+
+*  Simplify  $\$250 ( 1 + 0.065 × 172/365)$
+    *  $257.66  [Click here for full solution](https://www.youtube.com/watch?v=bpgDtSvmLt0&list=PLhMAuJ_imnt6A_N3MEIxSXKEwY4RChEWX&index=1)
 <p>&nbsp;</p>
     
-*  $\$1775 ( 1 + 0.6/2)^3( 1 + 7.84/4)^2$
-    *  $34,116.16
-<p>&nbsp;</p>
+*  Simplify  $\$1775 ( 1 + 0.6/2)^3( 1 + 7.84/4)^2$
+    *  $34,167.39  [Click here for full solution](https://www.youtube.com/watch?v=dPtWFsmhBI0&list=PLhMAuJ_imnt6A_N3MEIxSXKEwY4RChEWX&index=2)
+<p>&nbsp;</p>  
     
-*  $\$1500/(1+ 0.08/12)^4$
-    *  $1385.06
-<p>&nbsp;</p>
+*  Simplify  $\$1500/(1+ 0.08/12)^4$
+    *  $1460.66  [Click here for full solution](https://www.youtube.com/watch?v=nAlCJJ7F3nQ&list=PLhMAuJ_imnt6A_N3MEIxSXKEwY4RChEWX&index=3)
+<p>&nbsp;</p>  
 
 *  A hockey team says that its season ticket sales represent 72% of
 the stadium seating capacity of 18,500 seats. Rounded to the nearest 100,
 how many seats were not sold to season ticket holders?
-    *  5,200
+    *  5,200  [Click here for full solution](https://www.youtube.com/watch?v=r-YA7n_3RWY&list=PLhMAuJ_imnt6A_N3MEIxSXKEwY4RChEWX&index=4)
 <p>&nbsp;</p>
     
 *  Billy is a Realtor. He receives 44% of the 7% commission that the real estate
 agency charges on sales. If his sales for the past year were $14,500,000, what was the dollar
 value of his commission?
-    *  446,600
+    *  \$446,600  [Click here for full solution](https://www.youtube.com/watch?v=qoo0mt3FgQ8&list=PLhMAuJ_imnt6A_N3MEIxSXKEwY4RChEWX&index=5)
 <p>&nbsp;</p>
 
 
