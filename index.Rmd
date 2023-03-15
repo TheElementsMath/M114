@@ -13,6 +13,8 @@ github-repo: rstudio/bookdown-demo
 
 #   {-}
 
+
+
 The purpose of this e-book is to assist you in studying for MATH 114 at Okanagan College.  Questions in this book will be similar to those in the course.  While answers are provided, solution videos are available by clicking the accompanying link.  We make no guarantee that all topics are covered here.  Nor do we guarantee that all topics covered here will show up on your midterm/ final exam.  However, by mastering this material, you will be in a strong position to be successful in the course.
 
 Best of luck!
