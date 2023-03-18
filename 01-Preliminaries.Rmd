@@ -37,27 +37,27 @@ value of his commission?
 Simplify the following:
 
 *  $3/4 - x/4 - 2x^2 - 0.5 x^2 − 10/4x + 3/2$
-    *  $-2.5x^2 - (5/4)x + 7/4$
+    *  $-2.5x^2 - (5/4)x + 7/4$  [Click here for full solution](https://www.youtube.com/watch?v=tIk7EkumoAw&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk)
 <p>&nbsp;</p>
 
 
 *  $y(1 − 0.08 * 200/365) + 2y/(1 + 0.08 \times 60/365)$
-    *  $2.9292y$
+    *  $2.9292y$  [Click here for full solution](https://www.youtube.com/watch?v=u3EWjZLyUvU&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=2)
 <p>&nbsp;</p>
 
 
 *  $x/(1 + 0.04/2)^2 − 3x (1 + 0.04/2)^3$
-    *  $-2.070224x$
+    *  $-2.070224x$  [Click here for full solution](https://www.youtube.com/watch?v=aev4KtTo99c&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=3)
 <p>&nbsp;</p>
 
 
 *  $500((1 + 0.04/2)^25 - 1)/(0.04/2)$
-    * $13,775$
+    * $13,775$  [Click here for full solution](https://www.youtube.com/watch?v=uTtT9hn4rmA&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=5)
 <p>&nbsp;</p>
 
 
 *  $500/(0.06/4) + 500$
-    *  $33,833.33$
+    *  $33,833.33$  [Click here for full solution](https://www.youtube.com/watch?v=FLYaSFsqH5A&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=5)
 <p>&nbsp;</p>
 
 ##  1.4  Expanding and Factoring {-}
@@ -65,23 +65,23 @@ Simplify the following:
 Simplify the following:  
 
 *  $12x^2y + (−5x^2y) − (−7x^2y)$
-    *  $14x^2y$
-<p>&nbsp;</p>
+    *  $14x^2y$   [Click here for full solution](https://www.youtube.com/watch?v=PMlvcOMKILc)
+<p>&nbsp;</p> 
     
 *  $(8m^3 − 3m − 4m^2 + 14) − (2m^3 − 6 + 8m − 14m^2)$
-    *  $6m^3 + 10m^2 - 11m + 20$
-<p>&nbsp;</p>
+    *  $6m^3 + 10m^2 - 11m + 20$  [Click here for full solution](https://www.youtube.com/watch?v=poKHlgg34pU&list=PLhMAuJ_imnt7b2MKNxawcVvV2EiNB2VxQ&index=2)
+<p>&nbsp;</p>  
     
 *  $10x− [8 − 4(3x − 4)]$
-    *  $22x - 24$ 
+    *  $22x - 24$   [Click here for full solution](https://www.youtube.com/watch?v=LOTdpEzEVrk&list=PLhMAuJ_imnt7b2MKNxawcVvV2EiNB2VxQ&index=3)
 <p>&nbsp;</p>
     
 *  $−2xy(6x^2 − 2xy − 5y^2)$
-    *  $-12x^3y + 4x^2y^2 + 10xy^3$
+    *  $-12x^3y + 4x^2y^2 + 10xy^3$  [Click here for full solution](https://www.youtube.com/watch?v=QCpCmtvZrr8&list=PLhMAuJ_imnt7b2MKNxawcVvV2EiNB2VxQ&index=4)
 <p>&nbsp;</p>
     
 *  $(4a^2b^7 - 8a^5b^3)/(2a^2b^2)$
-    *  $2b^5 - 4a^3b$
+    *  $2b^5 - 4a^3b$  [Click here for full solution](https://www.youtube.com/watch?v=Zb8b77JlH_o&list=PLhMAuJ_imnt7b2MKNxawcVvV2EiNB2VxQ&index=5)
 <p>&nbsp;</p>
     
 
