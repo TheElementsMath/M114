@@ -1,6 +1,7 @@
-#  (PART) ECONOMICS {-}
+#  (PART)  Economics {-}
 
 #  Introduction to Microeconomics
+
 
 ##  2.2  Supply and Demand Economics {-}
 
