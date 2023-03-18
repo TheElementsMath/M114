@@ -2,6 +2,8 @@
 
 #  Preliminaries
 
+
+
 ##  1.2  Order of Operations {-}
 
 
@@ -36,23 +38,23 @@ value of his commission?
 
 Simplify the following:
 
-*  $3/4 - x/4 - 2x^2 - 0.5 x^2 − 10/4x + 3/2$
-    *  $-2.5x^2 - (5/4)x + 7/4$  [Click here for full solution](https://www.youtube.com/watch?v=tIk7EkumoAw&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk)
+*  $3/4 - x/4 - 2x^2 - 0.5 x^2 − 10/(4x) + 3/2$
+    *  $-2.5x^2 - x/4 - 10/(4x)+ 9/4$  [Click here for full solution](https://www.youtube.com/watch?v=tIk7EkumoAw&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk)
 <p>&nbsp;</p>
 
 
-*  $y(1 − 0.08 * 200/365) + 2y/(1 + 0.08 \times 60/365)$
-    *  $2.9292y$  [Click here for full solution](https://www.youtube.com/watch?v=u3EWjZLyUvU&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=2)
+*  $y(1 − 0.08 \times 200/365) + 2y/(1 + 0.08 \times 60/365)$
+    *  $2.9302y$  [Click here for full solution](https://www.youtube.com/watch?v=u3EWjZLyUvU&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=2)
 <p>&nbsp;</p>
 
 
 *  $x/(1 + 0.04/2)^2 − 3x (1 + 0.04/2)^3$
-    *  $-2.070224x$  [Click here for full solution](https://www.youtube.com/watch?v=aev4KtTo99c&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=3)
+    *  $-2.2225x$  [Click here for full solution](https://www.youtube.com/watch?v=aev4KtTo99c&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=3)
 <p>&nbsp;</p>
 
 
 *  $500((1 + 0.04/2)^25 - 1)/(0.04/2)$
-    * $13,775$  [Click here for full solution](https://www.youtube.com/watch?v=uTtT9hn4rmA&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=5)
+    * $105,050$  [Click here for full solution](https://www.youtube.com/watch?v=uTtT9hn4rmA&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=5)
 <p>&nbsp;</p>
 
 
@@ -100,7 +102,7 @@ Solve the following systems of equations by any method:
 <p>&nbsp;</p>
 
 
-*  $x - y = 20$ and $4/3x + 5/2y = 0$
+*  $x - y = 20$ and $(4/3)x + (5/2)y = 0$
     *  $x = -9.443, y = -29.443$
 <p>&nbsp;</p>
 

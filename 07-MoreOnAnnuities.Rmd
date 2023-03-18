@@ -4,158 +4,158 @@
 ##  7.1  Annuities Due {-}
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *
+*  A loan of \$35,000 is paid down to \$12,750 over the span of three years by making payments at the beginning of every month.  If the current interest rate is 2.6^ compounded annually, determine what the payment size should be.
+    *   \$668.71  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *
+*  Sharon takes outa a loan of \$45,000 and agrees to make payments of \$570 at the beginning of every other week.  If the agreed upon rate is 2.5% compounded bi-weekly, how long will it take her to pay the loan down to \$12,000?
+    *   N = 61, t = 2.34 years  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 ##  7.2 Deferred Annuities {-}
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 ##  7.3  Perpetuities {-}
 
-*  
-    *
+*  Determine the present value of a perpetuity that pays $350 at the beginning of each month.  Assume interest is 3.5% compounded monthly.
+    *   $120,350  [Click here for full solution]()
+<p>&nbsp;</p>
+
+
+*  If a perpetuity pays $200 at the end of each week, and the current rate of interest is 2.75% compounded monthly, what is the fair market value today of the perpetuity?
+    *   $378,515.46  [Click here for full solution]()
+<p>&nbsp;</p>
+
+
+*  A lottery has a grand prize of end-of-month payments of $150 for the rest of time.  If the current interest rate is 5% compounded monthly, what is the fair market value today of winning this grand prize?
+    *   $36,000  [Click here for full solution]()
+<p>&nbsp;</p>
+
+
+*  Okanagan College would like to open a bank account that will pay one lucky student a $1500 bursary at the beginning of every year.  If the current interest rate is 2% compounded biweekly, how much would the college have to deposit today into the bank account to ensure this perpetuity?
+    *   $75,781.34  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
-<p>&nbsp;</p>
-
-
-*  
-    *
-<p>&nbsp;</p>
-
-
-*  
-    *
-<p>&nbsp;</p>
-
-
-*  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 ##  7.4  Constant Growth Annuities {-}
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 ##  7.5  Special Case Annuities {-}
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 

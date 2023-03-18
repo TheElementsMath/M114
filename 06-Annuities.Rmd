@@ -4,159 +4,167 @@
 
 ##  6.1  Effective and Equivalent Interest Rates {-}
 
-*  
-    *
+*  What is the effective interest rate corresponding to a nominal annual rate of:
+
+    a. 8% compounded semiannually?
+    b. 8% compounded quarterly?
+    c. 8% compounded monthly?
+
+    *   8.16% compounded annually, 8.33% compounded annually and 8.34% compounded annually  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *
+*  Which of the following nominal interest rates has the highest effective rate: 11% compounded annually, 10.9% compounded semiannually, 10.8% compounded quarterly, or 10.7% compounded monthly?
+    *  10.7% compounded monthly   [Click here for full solution]()     
 <p>&nbsp;</p>
 
 
-*  
-    *
+*  What semiannually compounded rate is equivalent to 8.5% compounded quarterly?
+    *   8.59% compounded semiannually  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *
+*  A bank offers a rate of 3.0% compounded semiannually a GIC. What monthly
+compounded rate should the bank offer to make people indifferent between the alternatives?
+    *   2.98% compounded monthly  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *
+*  After completing your tax return, you discover that you owe income tax. You can either pay the late payment penalty at 4% compounded daily for one year or borrow the money you need to pay your taxes. Below what semiannually compounded rate will the loan cost you less in interest than the penalty?
+    *  4.04% compounded monthly   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *
+
+
+*  A bank pays 2.5% compounded semiannually on a GIC. For you to prefer an annually compounded GIC of the same maturity, what value must its nominal
+interest rate exceed?
+    *   2.516% compounded annually  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 ##  6.2  Annuities {-}
 
-*  
-    *
+*  Ken plans on contributing $8,000 every year to his TFSA. What is the future value after 20 years if the funds earn 4.25% compounded annually?
+    *   \$371,061.18  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *
+*  Inga plans to invest $190 every month into a fund. If the fund generates an overall rate of return of 6% compounded monthly, what will Inga's investment be worth after 8.5 years?
+    *   $64,341.12  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *
+*  Your client plans to invest $3000 at the end of each year. The rate of return on the investment is 8.5% compounded annually. What will be the value of the investment at the end of the 10 years?
+    *  $509,955.29   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *
+*  Janet intends to save for holidays by contributing $400 at the end
+of each month to an investment plan. At the end of every three years, she will withdraw $12,000 for a trip abroad. If the plan earns 6% compounded monthly, what will be the plan’s balance after seven years?
+    *  $16,599.60   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *
+*  Clint has made contributions of \$2500 to his RRSP at the end of every six months for the past 10 years. The plan has earned 9.25% compounded semiannually. He has just moved the funds to another plan that earns 8.5% compounded quarterly. He will now contribute \$1500 at the end of every three months. What total amount will Herb have in the plan seven years
+from now?
+    *  $240,894.88    [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *
-<p>&nbsp;</p>
 
 
 ##  6.3  Calculating the Periodic Payment and Number of Payments {-}
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 ##  6.4  Ordinary General Annuities {-}
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *
+*  An investment pays you \$350 at the end of every quarter for three years, plus a lump-sum payment of \$4500 at the end of the last period.  If the current interest rate is 1.75% compounded monthly, determine the fair market value today of the investment.
+    *  $8352.80   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 ##  6.5  Using the TI BAII plus Calculator for Annuities {-}
 
-*  
-    *
+*  You open a bank account by making an initial deposit of \$5000.  You then add to the account by making month-end payments of \$250.  If the account earns at a rate of 4.5% compounded weekly, determine the future value of the account after five years.
+    *  $23,050.16   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  
-    *
+    *     [Click here for full solution]()
 <p>&nbsp;</p>
 
