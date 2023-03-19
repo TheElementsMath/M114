@@ -55,15 +55,7 @@ interest rate exceed?
 <p>&nbsp;</p>
 
 
-*  Your client plans to invest $3000 at the end of each year. The rate of return on the investment is 8.5% compounded annually. What will be the value of the investment at the end of the 10 years?
-    *  $509,955.29   [Click here for full solution]()
-<p>&nbsp;</p>
 
-
-*  Janet intends to save for holidays by contributing $400 at the end
-of each month to an investment plan. At the end of every three years, she will withdraw $12,000 for a trip abroad. If the plan earns 6% compounded monthly, what will be the plan’s balance after seven years?
-    *  $16,599.60   [Click here for full solution]()
-<p>&nbsp;</p>
 
 
 *  Clint has made contributions of \$2500 to his RRSP at the end of every six months for the past 10 years. The plan has earned 9.25% compounded semiannually. He has just moved the funds to another plan that earns 8.5% compounded quarterly. He will now contribute \$1500 at the end of every three months. What total amount will Herb have in the plan seven years
@@ -72,69 +64,80 @@ from now?
 <p>&nbsp;</p>
 
 
+*  An ordinary annuity consists of quarterly payments of $250 for 6 years. What is the annuity’s present value, discounting at 8% compounded quarterly?
+    *  \$4,728.48   [Click here for full solution]()
+<p>&nbsp;</p>
+
+
+*  How much will it cost to purchase an ordinary annuity delivering semiannual payments of $5000 for 13.5 years if the money used to purchase the annuity can earn 7.5% compounded semiannually?
+    *  \$83,986.43   [Click here for full solution]()
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+
+*  A Government of Canada bond will pay \$150 at the end of every six months for the next 15 years, and an additional \$2000 lump payment at the end of the 15 years. What is the appropriate price to pay if you require a rate of return of 5.25% compounded semiannually?
+    *   $4,007.10  [Click here for full solution]()
+<p>&nbsp;</p>
+
 
 
 ##  6.3  Calculating the Periodic Payment and Number of Payments {-}
 
-*  
-    *     [Click here for full solution]()
+*  The interest rate on a \$200,000 loan is 6.5% compounded monthly. What must be the monthly payment for the loan to be repaid in: a. 5 years? b. 10 years?
+    *  $4,055.28   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+*  Grant financed the $3500 purchase price of his new fridge and freezer with monthly payments at 3.4% compounded monthly made over two years. What will be the amount of each payment?
+    *  $102.40   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+
+*  For \$400,000, James purchased an annuity that delivers end-of-quarter payments of \$6500.  If the funds earn 4.5% compounded quarterly, what is the term of the annuity?
+    *  N = 106, Term = 26.5 years   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+*  For how long has Kevin been making end-of-quarter contributions of \$1300 to his RRSP if the RRSP has earned 4.35% compounded annually and is currently worth \$85,000?
+    *   N = 114, Term = 28.5 years  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
-<p>&nbsp;</p>
 
-
-*  
-    *     [Click here for full solution]()
-<p>&nbsp;</p>
 
 ##  6.4  Ordinary General Annuities {-}
 
-*  
-    *     [Click here for full solution]()
+*  An annuity consists of end-of-month payments of $250 continuing for 6.5 years. Based on a nominal rate of 8% compounded quarterly, calculate the annuity’s: a. Present value. b. Future value.
+    *   PV = \$15,190.94, FV = \$25,420.79  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+*  An annuity consists of semiannual payments of $1500 for a term of 8.5 years. Using a nominal rate of 7% compounded quarterly, calculate the ordinary annuity’s: a. Present value. b. Future value.
+    *  PV = \$18,931.14, FV = \$34,146.55   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+*  Kelli is trying to decide if she should make regular month-end \$200 deposits to her TFSA or deposit \$650 at the end of every three months instead. How much larger is the option with the higher future value after 20 years if both investments earn 4.25% compounded annually?
+    *  $650 payments (by about \$5,000)   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+*  Year-end contributions of $1200 will be made to a TFSA for 25 years. What will be the future value of the account if it earns 7% compounded monthly for the first 10 years and 8% compounded semiannually thereafter?
+    *  $90,183.45   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+*  Fiona has just made her ninth annual \$2000 contribution to her RRSP. She now plans to make semiannual contributions of \$2000. The first contribution will be made six months from now. How much will she have in her RRSP 15 years from now if the plan has earned and will continue to earn 8% compounded quarterly?
+    *  \$195,703.17   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  An investment pays you \$350 at the end of every quarter for three years, plus a lump-sum payment of \$4500 at the end of the last period.  If the current interest rate is 1.75% compounded monthly, determine the fair market value today of the investment.
-    *  $8352.80   [Click here for full solution]()
-<p>&nbsp;</p>
 
 
 ##  6.5  Using the TI BAII plus Calculator for Annuities {-}
@@ -144,27 +147,32 @@ from now?
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+
+*  An investment pays you \$350 at the end of every quarter for three years, plus a lump-sum payment of \$4500 at the end of the last period.  If the current interest rate is 1.75% compounded monthly, determine the fair market value today of the investment.
+    *  $8352.80   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+*  Greg sold his car to Jenny for \$3000 down and monthly payments of \$350 for 3.5 years, including interest at 6.5% compounded monthly. What was the selling price of the car?
+    *  $16,116.17   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+
+*  Your client plans to invest $3000 at the end of each year. The rate of return on the investment is 8.5% compounded annually. What will be the value of the investment at the end of the 10 years?
+    *  $509,955.29   [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+*  Julia’s monthly payments of $525 will pay off her mortgage loan in 8 years and 5 months. The interest rate on her mortgage is 5.6% compounded monthly. What is the current balance on the loan?
+    *   $42,203.90  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+
+
+*  Janet intends to save for holidays by contributing $400 at the end
+of each month to an investment plan. At the end of every three years, she will withdraw $12,000 for a trip abroad. If the plan earns 6% compounded monthly, what will be the plan’s balance after seven years?
+    *  $16,599.60   [Click here for full solution]()
 <p>&nbsp;</p>
 

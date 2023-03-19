@@ -28,20 +28,21 @@
 <p>&nbsp;</p>
 
 
-*  Sharon takes outa a loan of \$45,000 and agrees to make payments of \$570 at the beginning of every other week.  If the agreed upon rate is 2.5% compounded bi-weekly, how long will it take her to pay the loan down to \$12,000?
+*  Sharon takes out a loan of \$45,000 and agrees to make payments of \$570 at the beginning of every other week.  If the agreed upon rate is 2.5% compounded bi-weekly, how long will it take her to pay the loan down to \$12,000?
     *   N = 61, t = 2.34 years  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 ##  7.2 Deferred Annuities {-}
 
-*  
-    *     [Click here for full solution]()
+*  Liza has been able to transfer \$25,000 into an RRSP. She plans to
+let the RRSP accumulate earnings at the rate of 4.5% compounded annually for 10 years, and then purchase a 15-year annuity making payments at the end of each quarter. What size of payment can she expect if the funds in the annuity earn 5.25% compounded quarterly?
+    *   $938.98  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
-*  
-    *     [Click here for full solution]()
+*  Twelve years ago, Frank rolled a \$21,000 retiring allowance into an RRSP that subsequently earned 11% compounded semiannually. Three years ago he transferred the funds to an RRIF. Since then, he has been withdrawing \$1000 at the end of each quarter. If the RRIF earns 7.5% compounded quarterly, how much longer can the withdrawals continue?
+    *   12 more years  [Click here for full solution]()
 <p>&nbsp;</p>
 
 
