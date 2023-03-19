@@ -118,7 +118,7 @@ Solve the following systems of equations by any method:
 
 
 *  A company pays monthly salaries of \$5500 to each production worker and \$4600 to each assembly worker. At the beginning of COVID, the firm decides to reduce its total monthly manufacturing payroll from \$400,000 to \$347,600 by laying off 20% of its production workers and 12% of its assembly workers. How many layoffs will there be from each of the assembly and production divisions?
-    *  50 production and 23 assembly  [Click here for full solution]()
+    *  2 production and 9 assembly  [Click here for full solution]( https://youtu.be/X-FTiqnkV0E)
 <p>&nbsp;</p>
 
 ##  1.6  Ratios, Proportions and Percentages {-}
