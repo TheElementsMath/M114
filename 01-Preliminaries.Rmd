@@ -93,32 +93,32 @@ Simplify the following:
 Solve the following systems of equations by any method:
 
 *  $9x-6y = 18$ and $2y = 2x - 2$
-    *  $x = 4, y = 3$
+    *  $x = 4, y = 3$  [Click here for full solution](https://www.youtube.com/watch?v=OOgqVeiXDZQ&list=PLhMAuJ_imnt5FeFSzuSnGDqA2UCYUzGfw)
 <p>&nbsp;</p>
 
 
 *  $2x - 2y = 2$ and $6x + 8y = 40$
-    *  $x = 24/7, y = 17/7$
+    *  $x = 24/7, y = 17/7$  [Click here for full solution](https://www.youtube.com/watch?v=FXnmALrqdoE&list=PLhMAuJ_imnt5FeFSzuSnGDqA2UCYUzGfw&index=2)
 <p>&nbsp;</p>
 
 
 *  $x - y = 20$ and $(4/3)x + (5/2)y = 0$
-    *  $x = -9.443, y = -29.443$
+    *  $x = 13.04, y = -6.96$  [Click here for full solution](https://www.youtube.com/watch?v=Rrcd9LUWSk0&list=PLhMAuJ_imnt5FeFSzuSnGDqA2UCYUzGfw&index=3)
 <p>&nbsp;</p>
 
 
 *  A car rental company charges an hourly rate plus a per kilometre charge. Jack paid \$60 for a two-hour rental during which he drove 50 km. Jules paid \$145 for five hours and 100 km driven. What rate is charged per hour and per kilometre?
-    *  \$25 per hour and \$0.20 per kilometre
+    *  \$25 per hour and \$0.20 per kilometre  [Click here for full solution](https://www.youtube.com/watch?v=cGv30YaK8-Y&list=PLhMAuJ_imnt5FeFSzuSnGDqA2UCYUzGfw&index=4)
 <p>&nbsp;</p>
 
 
 *  Hank bought 8 steaks and 30 potatoes for \$75. Kevin purchased 11 steaks and 20 potatoes for \$75. What were the prices of the steak and potatoes.
-    *  Steak:  \$4.41 and potatoes: \$0.53
-<p>&nbsp;</p>
+    *  Steak:  \$4.41 and potatoes: \$1.32   [Click here for full solution](https://www.youtube.com/watch?v=tw-oi36K4os&list=PLhMAuJ_imnt5FeFSzuSnGDqA2UCYUzGfw&index=5)
+<p>&nbsp;</p> 
 
 
-*  A company pays monthly salaries of \$5500 to each production worker and \$4600 to each assembly worker. At the beginning of COVID, the firm decides to reduce its total monthly manufacturing payroll from \$390,000 to \$300,000 by laying off 18% of its production workers and 22% of its assembly workers. How many layoffs will there be from each of the assembly and production divisions?
-    *  50 production and 23 assembly
+*  A company pays monthly salaries of \$5500 to each production worker and \$4600 to each assembly worker. At the beginning of COVID, the firm decides to reduce its total monthly manufacturing payroll from \$400,000 to \$347,600 by laying off 20% of its production workers and 12% of its assembly workers. How many layoffs will there be from each of the assembly and production divisions?
+    *  50 production and 23 assembly  [Click here for full solution]()
 <p>&nbsp;</p>
 
 ##  1.6  Ratios, Proportions and Percentages {-}
@@ -127,59 +127,52 @@ Solve the following systems of equations by any method:
 
 
 *  Solve the ratio $165 : 245 = 65 : x$
-    *  $x = 96.33$
-<p>&nbsp;</p>
+    *  $x = 96.52$  [Click here for full solution](https://www.youtube.com/watch?v=-iqsQtiylrM&list=PLhMAuJ_imnt45PK6_DmcztZKZrtwNg8R7)
+<p>&nbsp;</p>  
 
 
 *  Solve the ratio $1500: 2500 : 750 = x : 750 : y$
-    *  $x = 450$ and $y = 1250$
+    *  $x = 450$ and $y = 225$  [Click here for full solution](https://www.youtube.com/watch?v=rAFOVVD1fYw&list=PLhMAuJ_imnt45PK6_DmcztZKZrtwNg8R7&index=2)
 <p>&nbsp;</p>
 
 
 *  Jim, Karen, and Sean started their partnership with a total investment of
-\$245,000 contributed in the ratio of 4 : 6 : 3. If each partner contributes another \$30,000, what will be the ratio of their total contributions?
-    *  Approximately $1.26 : 1.69 : 1.00$
+\$245,000 contributed in the ratio of 4 : 6 : 3. If each partner contributes another \$30,000, what will be the ratio of their total contributions?  Leave your answer with the smallest term equal to 1.
+    *  Approximately $1.22 : 1.65 : 1.00$  [Click here for full solution](https://www.youtube.com/watch?v=OLJEk7oBbO0&list=PLhMAuJ_imnt45PK6_DmcztZKZrtwNg8R7&index=3)
 <p>&nbsp;</p>
 
 
-*  The CPI was at 120 when the union signed their contract 5 years ago, the members of a union were earning $45.55 per hour. Now the current CPI at 135 and they want a new hourly
-rate that will restore their former purchasing power. What hourly rate are they seeking?
-    *  $51.42 
+*  The CPI was at 120 when the union signed their contract 5 years ago, the members of a union were earning $45.55 per hour. Now the current CPI at 135 and they want a new hourly rate that will restore their former purchasing power. What hourly rate are they seeking?
+    *  $51.42   [Click here for full solution](https://www.youtube.com/watch?v=Pn6NUm0Falo&list=PLhMAuJ_imnt45PK6_DmcztZKZrtwNg8R7&index=4)
 <p>&nbsp;</p>
 
 
 *  I live in a 4-plex.  We need a new roof with costs totaling $35,000 and these costs must be divided between owners A, B, C, and D based on their square-footage 1300, 1400, 1750 and 2100 square feet, respectively.  How much does each owner pay?
-    *  Owner A: \$6,947.50, owner B: \$7,476.00, owner C: \$9,352.00, and owner D:  \$11,225.00.
+    *  Owner A: \$6,947.50, owner B: \$7,479.50, owner C: \$9,352.00, and owner D:  \$11,221.00.    [Click here for full solution](https://www.youtube.com/watch?v=2fgmPIiv-kk&list=PLhMAuJ_imnt45PK6_DmcztZKZrtwNg8R7&index=5)
 <p>&nbsp;</p>
 
 
 *  Jenny, Kathy, and Fred share the costs of their coffee fund in the ratio $3/2 : 5/4 : 4/3$. How
 will costs of $50 be allocated among them?
-    *  Jenny: \$11.72, Kathy: \$14.66, Fred: \$19.62.
+    *  Jenny: \$18.37, Kathy: \$15.31, Fred: \$16.33.    [Click here for full solution](https://www.youtube.com/watch?v=8rOt7sE9To8&list=PLhMAuJ_imnt45PK6_DmcztZKZrtwNg8R7&index=6)
 <p>&nbsp;</p>
 
 
-*  Lisa receives a monthly base salary of \$2500. On the first \$15,000 of sales above
-her monthly quota of \$25,000, she is paid a commission of 6%. On any additional sales, the
-commission rate is 10%. What were her total earnings for a month in which she had sales amounting to \$45,000?
-    *  \$3,900
+*  Lisa receives a monthly base salary of \$2500. On the first \$15,000 of sales above her monthly quota of \$25,000, she is paid a commission of 6%. On any additional sales, the commission rate is 10%. What were her total earnings for a month in which she had sales amounting to \$45,000?
+    *  \$3,900    [Click here for full solution](https://www.youtube.com/watch?v=Vcs2qqbIzn8&list=PLhMAuJ_imnt45PK6_DmcztZKZrtwNg8R7&index=7)
 <p>&nbsp;</p>
 
 
 *  The price tags in Mel’s Flower Shop include the 8.25% tax. How much tax will she report for a plant sold at \$49.55?
-    *  \$4.08
+    *  \$3.78    [Click here for full solution](https://www.youtube.com/watch?v=R27fdohO1A0&list=PLhMAuJ_imnt45PK6_DmcztZKZrtwNg8R7&index=8)
 <p>&nbsp;</p>
 
 
-*  Okanagan Food-Mart usually spends half as much on radio advertising as on newspaper
-advertising, and 70% as much on television advertising as on radio advertising. If next year’s
-total advertising budget is \$225,000, how much should be allocated to each form of advertising?
-    *  Newspaper advertising: \$121,622.16,  Radio advertising: \$60,811.08, Television advertising: \$42,467.76
-
+*  Okanagan Food-Mart usually spends half as much on radio advertising as on newspaper advertising, and 70% as much on television advertising as on radio advertising. If next year’s total advertising budget is \$225,000, how much should be allocated to each form of advertising? 
+    *  Newspaper advertising: \$121,621.62,  Radio advertising: \$60,810.81, Television advertising: \$45,567.57    [Click here for full solution](https://www.youtube.com/watch?v=aOCDt4cNzlY&list=PLhMAuJ_imnt45PK6_DmcztZKZrtwNg8R7&index=9)
 <p>&nbsp;</p>
 
 
-*  The government forecasts expenditure of $2.85 billion on education next year represents 21% of the provincial budget. Rounded to the nearest million dollars, what is the province’s total budget for the
-next year?
-    *  \$13,570,000,000
+*  The government forecasts expenditure of $2.85 billion on education next year represents 21% of the provincial budget. Rounded to the nearest million dollars, what is the province’s total budget for the next year?
+    *  \$13,571,000,000    [Click here for full solution](https://www.youtube.com/watch?v=OUcXu0UkvRQ&list=PLhMAuJ_imnt45PK6_DmcztZKZrtwNg8R7&index=10)
 <p>&nbsp;</p>
