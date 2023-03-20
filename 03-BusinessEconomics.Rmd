@@ -6,27 +6,27 @@
 Find the derivative of each of the following functions.  
 
 *  $y = x^5 + x^4 + x^3 + x^2 + x + 1$  
-    *  $y^{\prime} = 5x^4 + 4x^3 + 3x^2 + 2x + 1$     [Click here for full solution](https://www.youtube.com/watch?v=VI0I2pex3eQ&list=PLhMAuJ_imnt5GURwrVy1tTJCh1HEDVfXm)
+    *  $y^{\prime} = 5x^4 + 4x^3 + 3x^2 + 2x + 1$     [Click here for full solution](https://www.youtube.com/watch?v=VI0I2pex3eQ)
 <p>&nbsp;</p>
 
 
 *  $y = 3x^2 + 10x - 5$
-    *  $y^{\prime} = 6x + 10$     [Click here for full solution](https://www.youtube.com/watch?v=U-oG3KPfZjA&list=PLhMAuJ_imnt5GURwrVy1tTJCh1HEDVfXm&index=2)
+    *  $y^{\prime} = 6x + 10$     [Click here for full solution](https://www.youtube.com/watch?v=U-oG3KPfZjA)
 <p>&nbsp;</p>
 
 
 *  $y = 20x^5 - 10 x^3 + 6x - 15$
-    *  $y^{\prime} = 100x^4 - 30x^2 + 6$     [Click here for full solution](https://www.youtube.com/watch?v=CfxLQ6TJYGc&list=PLhMAuJ_imnt5GURwrVy1tTJCh1HEDVfXm&index=3)
+    *  $y^{\prime} = 100x^4 - 30x^2 + 6$     [Click here for full solution](https://www.youtube.com/watch?v=CfxLQ6TJYGc&t=6s)
 <p>&nbsp;</p>
 
 
 *  $y = 15x - 25x^2 + 1000$
-    *  $y^{\prime} = 15  - 50x$     [Click here for full solution](https://www.youtube.com/watch?v=-B063OEtzaQ&list=PLhMAuJ_imnt5GURwrVy1tTJCh1HEDVfXm&index=4)
+    *  $y^{\prime} = 15  - 50x$     [Click here for full solution](https://www.youtube.com/watch?v=-B063OEtzaQ)
 <p>&nbsp;</p>
 
 
 *  $y = 75x - 20x^2 + 10000$
-    *  $y^{\prime} = 75 - 40x$     [Click here for full solution](https://www.youtube.com/watch?v=yBNqf-_4AnQ&list=PLhMAuJ_imnt5GURwrVy1tTJCh1HEDVfXm&index=5)
+    *  $y^{\prime} = 75 - 40x$     [Click here for full solution](https://www.youtube.com/watch?v=yBNqf-_4AnQ)
 <p>&nbsp;</p>
 
 
