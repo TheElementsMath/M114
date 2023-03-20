@@ -33,27 +33,27 @@ Find the derivative of each of the following functions.
 ##  3.2  Merchandizing {-}
 
 *  The distributor of Lazyboy chairs is offering a trade discount of 32% to stores. What will be the stores’ cost to purchase a chair listed at $379?
-    *  $257.72     [Click here for full solution]()
+    *  $257.72     [Click here for full solution](https://youtu.be/4Hw1xhZvwaU)
 <p>&nbsp;</p>
 
 
 *  A 33.5% trade discount on a refrigerator represents a discount of $423.90 from the suggested retail price. What is the net price to the buyer?
-    *  $840.28     [Click here for full solution]()
+    *  $841.47     [Click here for full solution](https://youtu.be/4jrJneQkCN4)
 <p>&nbsp;</p>
 
 
 *  A vintage bookstore buys books for 65% off the retail price of new
 books. What will someone receive for a book currently selling at $158.55 new?
-    *  $55.49     [Click here for full solution]()
+    *  $55.49     [Click here for full solution](https://youtu.be/zwZLVMGJk1s)
 <p>&nbsp;</p>
 
 
 *  A manufacturer of ATVs sells through distributors in some regions of the country, through wholesalers in other regions, and directly to retailers in its home province. The manufacturer gives a 20% trade discount to retailers, an additional 8% discount to wholesalers, and a further 6.25% discount to distributors. What net price does the manufacturer receive from each buying level on an ATV listed at $25000?
-    *  \$20000 from retailers, \$18400 from wholesalers, and \$17250 from distributors     [Click here for full solution]()
+    *  \$20000 from retailers, \$18400 from wholesalers, and \$17250 from distributors     [Click here for full solution](https://youtu.be/t-jofpC25O8)
 <p>&nbsp;</p>
 
 
-*  A wholesaler lists an item for \$189.44 less 23%. What additional “special promotion” percentage discount must be offered to retailers to get the net price down to \108.72?
+*  A wholesaler lists an item for \$189.44 less 23%. What additional “special promotion” percentage discount must be offered to retailers to get the net price down to \$108.72?
     *  25.48%     [Click here for full solution]()
 <p>&nbsp;</p>
 
@@ -65,27 +65,27 @@ books. What will someone receive for a book currently selling at $158.55 new?
 
 
 *  It costs \$33.60 to bake a cake.  The cake is then cut into 16 slices and sold at \$6.50 per slice. Calculate the rate of markup on cost and the rate of markup on selling price.
-    *  ROMU (rate of markup on cost) = 209.52%, GPM (rate of markup on selling price) = 67.69%     [Click here for full solution]()
+    *  ROMU (rate of markup on cost) = 209.52%, GPM (rate of markup on selling price) = 67.69%     [Click here for full solution](https://youtu.be/l0XkFmMsLY4)
 <p>&nbsp;</p>
 
 
 *  Walmart buys sweaters at a suggested retail price of $42 less trade discounts of 30% and 10%. The manager intends to sell the sweaters at the suggested retail price.  Overhead expenses are 25% of the selling price of the sweaters.  What will be the operating profit on each sweater? What is the rate of markup on cost?  What is the rate of markup on selling price? 
-    *  Profit = \$5.04, Markup on cost = 19%, Markup on selling price = 12%     [Click here for full solution]()
+    *  Profit = \$5.04, Markup on cost = 58.73%, Markup on selling price = 37%     [Click here for full solution](https://youtu.be/5LnnWFAL590)
 <p>&nbsp;</p>
 
 
 *  If the rate of markup on selling price of apples in a grocery store is 75%, what is the rate of markup on cost?
-    *  300%     [Click here for full solution]()
+    *  300%     [Click here for full solution](https://youtu.be/uYtuHUNQBgA)
 <p>&nbsp;</p>
 
 
 *  OshKosh B'Gosh bought 300 pairs of boots at $19 per pair. The store marks the boots up 65% of cost. What is the operating profit per pair if overhead expenses are 15% of the selling price?
-    *  $6.97     [Click here for full solution]()
+    *  $7.65     [Click here for full solution](https://youtu.be/t2XN0osvdOI)
 <p>&nbsp;</p>
 
 
 *  Tip-Top Taylor's regular prices provide a 35% rate of markup on selling price. Overhead expenses are 22% of cost. What is the operating profit on a suit that sells for $872?
-    *  $180.50     [Click here for full solution]()
+    *  $180.50     [Click here for full solution](https://youtu.be/_kGnZpRBOiA)
 <p>&nbsp;</p>
 
 
@@ -93,27 +93,27 @@ books. What will someone receive for a book currently selling at $158.55 new?
 
 
 *  An item was marked up from \$35 to $65 before it was marked down to \$35 and sold at cost. Determine the rate of markup on cost and the rate of markdown.
-    *  46.15%     [Click here for full solution]()
+    *  ROMU = 85.17%, ROMD = 46.15%%     [Click here for full solution](https://youtu.be/9dyBIw55Nyc)
 <p>&nbsp;</p>
 
 
 *  The Home Depot purchases lawnmowers for $321 and marks them up by 29% of selling price. At the end of the summer, the price is reduced to 10% above cost. What percentage price reduction should the price tag show?
-    *  23.75%     [Click here for full solution]()
+    *  21.9%     [Click here for full solution](https://youtu.be/7KR00olpCuY)
 <p>&nbsp;</p>
 
 
 *  Shaun White Snowboards (SWS) obtains snowboards at a cost of $421 and marks them up by 31% of the selling price. During a sale, SWS marks down prices by 26%. What is the sale price of the snowboards?
-    *  $423.09     [Click here for full solution]()
+    *  $451.50     [Click here for full solution](https://youtu.be/xIgO65liUmo)
 <p>&nbsp;</p>
 
 
-*  Office Depot goods at 40% of price for overhead and 60% of selling price for profit.  What rate of markdown on selling price can Office Depot offer so that they break even on the reduced price?
+*  Office Depot marks up goods 40% of price for overhead and 60% of selling price for profit.  What rate of markdown on selling price can Office Depot offer so that they break even on the reduced price?
     *  66.67%     [Click here for full solution]()
 <p>&nbsp;</p>
 
 
 *  Pharmasave marks up sunglasses to provide for overhead expenses of 35% of cost and a profit of 75% of selling price. At the end of the summer, the sunglasses are marked down to sell at cost.  What was the rate of markdown?
-    *  81.48%     [Click here for full solution]()
+    *  81.48%     [Click here for full solution](https://youtu.be/Yz9fIF0nyG0)
 <p>&nbsp;</p>
 
 
@@ -130,12 +130,12 @@ $123. For a spring clearance sale, the prices are marked down by 24%. If overhea
 
 
 *  A bedroom suite costs Empire Furniture $6000 less 37% and 21%. The normal rate of markup on cost is 85%. The suite is marked down 22% in a mid-summer sale. What is the sale price?
-    *  $3636.36     [Click here for full solution]()
+    *  $4309.09     [Click here for full solution](https://youtu.be/EhPBc9jU01I)
 <p>&nbsp;</p>
 
 
 *  Sea-Doo pays $4500 less 22% for a base model unit. Overhead expenses are 19% of the regular selling price, and the operating profit is 15% of the selling price.  What is the maximum rate of markdown the store can offer and still break even? What is the profit or loss per unit if Sea-Doo clears out its remaining stock at 20% off?
-    *  ROMD = 43.02%, Profit = $1684.80     [Click here for full solution]()
+    *  ROMD = 15%, Profit = -$265.91     [Click here for full solution](https://www.youtube.com/watch?v=3ZhsayClY-w)
 <p>&nbsp;</p>
 
 

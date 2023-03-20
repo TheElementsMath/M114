@@ -9,27 +9,27 @@
 
 
 *  Simplify  $\$250 ( 1 + 0.065 × 172/365)$
-    *  $257.66  [Click here for full solution](https://www.youtube.com/watch?v=bpgDtSvmLt0&list=PLhMAuJ_imnt6A_N3MEIxSXKEwY4RChEWX&index=1)
+    *  $257.66  [Click here for full solution](https://www.youtube.com/watch?v=bpgDtSvmLt0)
 <p>&nbsp;</p>
     
 *  Simplify  $\$1775 ( 1 + 0.6/2)^3( 1 + 7.84/4)^2$
-    *  $34,167.39  [Click here for full solution](https://www.youtube.com/watch?v=dPtWFsmhBI0&list=PLhMAuJ_imnt6A_N3MEIxSXKEwY4RChEWX&index=2)
+    *  $34,167.39  [Click here for full solution](https://www.youtube.com/watch?v=dPtWFsmhBI0)
 <p>&nbsp;</p>  
     
 *  Simplify  $\$1500/(1+ 0.08/12)^4$
-    *  $1460.66  [Click here for full solution](https://www.youtube.com/watch?v=nAlCJJ7F3nQ&list=PLhMAuJ_imnt6A_N3MEIxSXKEwY4RChEWX&index=3)
+    *  $1460.66  [Click here for full solution](https://www.youtube.com/watch?v=nAlCJJ7F3nQ)
 <p>&nbsp;</p>  
 
 *  A hockey team says that its season ticket sales represent 72% of
 the stadium seating capacity of 18,500 seats. Rounded to the nearest 100,
 how many seats were not sold to season ticket holders?
-    *  5,200  [Click here for full solution](https://www.youtube.com/watch?v=r-YA7n_3RWY&list=PLhMAuJ_imnt6A_N3MEIxSXKEwY4RChEWX&index=4)
+    *  5,200  [Click here for full solution](https://www.youtube.com/watch?v=r-YA7n_3RWY)
 <p>&nbsp;</p>
     
 *  Billy is a Realtor. He receives 44% of the 7% commission that the real estate
 agency charges on sales. If his sales for the past year were $14,500,000, what was the dollar
 value of his commission?
-    *  \$446,600  [Click here for full solution](https://www.youtube.com/watch?v=qoo0mt3FgQ8&list=PLhMAuJ_imnt6A_N3MEIxSXKEwY4RChEWX&index=5)
+    *  \$446,600  [Click here for full solution](https://www.youtube.com/watch?v=qoo0mt3FgQ8)
 <p>&nbsp;</p>
 
 
@@ -39,27 +39,27 @@ value of his commission?
 Simplify the following:
 
 *  $3/4 - x/4 - 2x^2 - 0.5 x^2 − 10/(4x) + 3/2$
-    *  $-2.5x^2 - x/4 - 10/(4x)+ 9/4$  [Click here for full solution](https://www.youtube.com/watch?v=tIk7EkumoAw&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk)
+    *  $-2.5x^2 - x/4 - 10/(4x)+ 9/4$  [Click here for full solution](https://www.youtube.com/watch?v=tIk7EkumoAw)
 <p>&nbsp;</p>
 
 
 *  $y(1 − 0.08 \times 200/365) + 2y/(1 + 0.08 \times 60/365)$
-    *  $2.9302y$  [Click here for full solution](https://www.youtube.com/watch?v=u3EWjZLyUvU&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=2)
+    *  $2.9302y$  [Click here for full solution](https://www.youtube.com/watch?v=u3EWjZLyUvU&t=5s)
 <p>&nbsp;</p>
 
 
 *  $x/(1 + 0.04/2)^2 − 3x (1 + 0.04/2)^3$
-    *  $-2.2225x$  [Click here for full solution](https://www.youtube.com/watch?v=aev4KtTo99c&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=3)
+    *  $-2.2225x$  [Click here for full solution](https://www.youtube.com/watch?v=aev4KtTo99c)
 <p>&nbsp;</p>
 
 
 *  $500((1 + 0.04/2)^25 - 1)/(0.04/2)$
-    * $105,050$  [Click here for full solution](https://www.youtube.com/watch?v=uTtT9hn4rmA&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=5)
+    * $105,050$  [Click here for full solution](https://www.youtube.com/watch?v=uTtT9hn4rmA&t=2s)
 <p>&nbsp;</p>
 
 
 *  $500/(0.06/4) + 500$
-    *  $33,833.33$  [Click here for full solution](https://www.youtube.com/watch?v=FLYaSFsqH5A&list=PLhMAuJ_imnt6VyuU4Pf_T29UDSy3eJrzk&index=5)
+    *  $33,833.33$  [Click here for full solution](https://www.youtube.com/watch?v=FLYaSFsqH5A)
 <p>&nbsp;</p>
 
 ##  1.4  Expanding and Factoring {-}
@@ -71,19 +71,19 @@ Simplify the following:
 <p>&nbsp;</p> 
     
 *  $(8m^3 − 3m − 4m^2 + 14) − (2m^3 − 6 + 8m − 14m^2)$
-    *  $6m^3 + 10m^2 - 11m + 20$  [Click here for full solution](https://www.youtube.com/watch?v=poKHlgg34pU&list=PLhMAuJ_imnt7b2MKNxawcVvV2EiNB2VxQ&index=2)
+    *  $6m^3 + 10m^2 - 11m + 20$  [Click here for full solution](https://www.youtube.com/watch?v=poKHlgg34pU)
 <p>&nbsp;</p>  
     
 *  $10x− [8 − 4(3x − 4)]$
-    *  $22x - 24$   [Click here for full solution](https://www.youtube.com/watch?v=LOTdpEzEVrk&list=PLhMAuJ_imnt7b2MKNxawcVvV2EiNB2VxQ&index=3)
+    *  $22x - 24$   [Click here for full solution](https://www.youtube.com/watch?v=LOTdpEzEVrk)
 <p>&nbsp;</p>
     
 *  $−2xy(6x^2 − 2xy − 5y^2)$
-    *  $-12x^3y + 4x^2y^2 + 10xy^3$  [Click here for full solution](https://www.youtube.com/watch?v=QCpCmtvZrr8&list=PLhMAuJ_imnt7b2MKNxawcVvV2EiNB2VxQ&index=4)
+    *  $-12x^3y + 4x^2y^2 + 10xy^3$  [Click here for full solution](https://www.youtube.com/watch?v=QCpCmtvZrr8)
 <p>&nbsp;</p>
     
 *  $(4a^2b^7 - 8a^5b^3)/(2a^2b^2)$
-    *  $2b^5 - 4a^3b$  [Click here for full solution](https://www.youtube.com/watch?v=Zb8b77JlH_o&list=PLhMAuJ_imnt7b2MKNxawcVvV2EiNB2VxQ&index=5)
+    *  $2b^5 - 4a^3b$  [Click here for full solution](https://www.youtube.com/watch?v=Zb8b77JlH_o)
 <p>&nbsp;</p>
     
 
@@ -93,32 +93,32 @@ Simplify the following:
 Solve the following systems of equations by any method:
 
 *  $9x-6y = 18$ and $2y = 2x - 2$
-    *  $x = 4, y = 3$  [Click here for full solution](https://www.youtube.com/watch?v=OOgqVeiXDZQ&list=PLhMAuJ_imnt5FeFSzuSnGDqA2UCYUzGfw)
+    *  $x = 4, y = 3$  [Click here for full solution](https://www.youtube.com/watch?v=OOgqVeiXDZQ&t=11s)
 <p>&nbsp;</p>
 
 
 *  $2x - 2y = 2$ and $6x + 8y = 40$
-    *  $x = 24/7, y = 17/7$  [Click here for full solution](https://www.youtube.com/watch?v=FXnmALrqdoE&list=PLhMAuJ_imnt5FeFSzuSnGDqA2UCYUzGfw&index=2)
+    *  $x = 24/7, y = 17/7$  [Click here for full solution](https://www.youtube.com/watch?v=FXnmALrqdoE&t=6s)
 <p>&nbsp;</p>
 
 
 *  $x - y = 20$ and $(4/3)x + (5/2)y = 0$
-    *  $x = 13.04, y = -6.96$  [Click here for full solution](https://www.youtube.com/watch?v=Rrcd9LUWSk0&list=PLhMAuJ_imnt5FeFSzuSnGDqA2UCYUzGfw&index=3)
+    *  $x = 13.04, y = -6.96$  [Click here for full solution](https://www.youtube.com/watch?v=Rrcd9LUWSk0&t=44s)
 <p>&nbsp;</p>
 
 
 *  A car rental company charges an hourly rate plus a per kilometre charge. Jack paid \$60 for a two-hour rental during which he drove 50 km. Jules paid \$145 for five hours and 100 km driven. What rate is charged per hour and per kilometre?
-    *  \$25 per hour and \$0.20 per kilometre  [Click here for full solution](https://www.youtube.com/watch?v=cGv30YaK8-Y&list=PLhMAuJ_imnt5FeFSzuSnGDqA2UCYUzGfw&index=4)
+    *  \$25 per hour and \$0.20 per kilometre  [Click here for full solution](https://www.youtube.com/watch?v=cGv30YaK8-Y&t=15s)
 <p>&nbsp;</p>
 
 
 *  Hank bought 8 steaks and 30 potatoes for \$75. Kevin purchased 11 steaks and 20 potatoes for \$75. What were the prices of the steak and potatoes.
-    *  Steak:  \$4.41 and potatoes: \$1.32   [Click here for full solution](https://www.youtube.com/watch?v=tw-oi36K4os&list=PLhMAuJ_imnt5FeFSzuSnGDqA2UCYUzGfw&index=5)
+    *  Steak:  \$4.41 and potatoes: \$1.32   [Click here for full solution](https://www.youtube.com/watch?v=tw-oi36K4os)
 <p>&nbsp;</p> 
 
 
 *  A company pays monthly salaries of \$5500 to each production worker and \$4600 to each assembly worker. At the beginning of COVID, the firm decides to reduce its total monthly manufacturing payroll from \$400,000 to \$347,600 by laying off 20% of its production workers and 12% of its assembly workers. How many layoffs will there be from each of the assembly and production divisions?
-    *  2 production and 9 assembly  [Click here for full solution]( https://youtu.be/X-FTiqnkV0E)
+    *  2 production and 9 assembly  [Click here for full solution](https://www.youtube.com/watch?v=X-FTiqnkV0E)
 <p>&nbsp;</p>
 
 ##  1.6  Ratios, Proportions and Percentages {-}
@@ -127,7 +127,7 @@ Solve the following systems of equations by any method:
 
 
 *  Solve the ratio $165 : 245 = 65 : x$
-    *  $x = 96.52$  [Click here for full solution](https://www.youtube.com/watch?v=-iqsQtiylrM&list=PLhMAuJ_imnt45PK6_DmcztZKZrtwNg8R7)
+    *  $x = 96.52$  [Click here for full solution](https://www.youtube.com/watch?v=-iqsQtiylrM)
 <p>&nbsp;</p>  
 
 
