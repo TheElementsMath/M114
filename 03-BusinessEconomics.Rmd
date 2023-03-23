@@ -108,7 +108,7 @@ books. What will someone receive for a book currently selling at $158.55 new?
 
 
 *  Office Depot marks up goods 40% of selling price for overhead and 60% of selling price for profit.  What rate of markdown on selling price can Office Depot offer so that they break even on the reduced price?
-    *  66.67%     [Click here for full solution]()
+    *  60%     [Click here for full solution](https://youtu.be/6Klgfdd3niM)
 <p>&nbsp;</p>
 
 
