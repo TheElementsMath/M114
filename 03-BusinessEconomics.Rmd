@@ -54,7 +54,7 @@ books. What will someone receive for a book currently selling at $158.55 new?
 
 
 *  A wholesaler lists an item for \$189.44 less 23%. What additional “special promotion” percentage discount must be offered to retailers to get the net price down to \$108.72?
-    *  25.48%     [Click here for full solution]()
+    *  25.47%     [Click here for full solution](https://youtu.be/DFw186IBOM8)
 <p>&nbsp;</p>
 
 
@@ -107,7 +107,7 @@ books. What will someone receive for a book currently selling at $158.55 new?
 <p>&nbsp;</p>
 
 
-*  Office Depot marks up goods 40% of price for overhead and 60% of selling price for profit.  What rate of markdown on selling price can Office Depot offer so that they break even on the reduced price?
+*  Office Depot marks up goods 40% of selling price for overhead and 60% of selling price for profit.  What rate of markdown on selling price can Office Depot offer so that they break even on the reduced price?
     *  66.67%     [Click here for full solution]()
 <p>&nbsp;</p>
 
@@ -125,7 +125,7 @@ books. What will someone receive for a book currently selling at $158.55 new?
 
 *  Chevey's sells hockey sticks for $203. Chevy’s wholesale cost is
 $123. For a spring clearance sale, the prices are marked down by 24%. If overhead expenses are 18% of the regular selling price, what is the unit operating profit at the sale price?
-    *  -$4.86     [Click here for full solution]()
+    *  -$5.26     [Click here for full solution](https://youtu.be/ml8upqo-Ygc)
 <p>&nbsp;</p>
 
 
@@ -185,22 +185,22 @@ costs?
 ##  3.4  Monopoly {-}
 
 *  The demand curve for a product in a monopoly is $P = 140 - 2Q$.  What is the total revenue function?  What output level will maximize total revenue?
-    *  $TR = 140Q - 2Q^2$, Output = 35 units     [Click here for full solution]()
+    *  $TR = 140Q - 2Q^2$, Output = 35 units     [Click here for full solution](https://youtu.be/t2aTAzDm3_A)
 <p>&nbsp;</p>
 
 
 *  The demand curve for a product in a monopoly is $P = 9000 - 45Q$.  What is the total revenue function?  What output level will maximize total revenue?
-    *  $TR = 9000Q - 45Q^2$,  Output = 100 units     [Click here for full solution]()
+    *  $TR = 9000Q - 45Q^2$,  Output = 100 units     [Click here for full solution](https://youtu.be/j1ErM6tW9mA)
 <p>&nbsp;</p>
 
 
 *  The demand curve for a product in a monopoly is $P = 12,000 - 52Q$.  Costs are \$23 per unit and fixed costs are \$10,000 per month.  What output level will maximize profit?
-    *  Q = 115.5 units     [Click here for full solution]()
+    *  Q = 115.16 units     [Click here for full solution](https://youtu.be/1K-IsIR_GPc)
 <p>&nbsp;</p>
 
 
 *  The demand curve for a product in a monopoly is $P = 1,250,500 - 750Q$.  Costs are \$975 per unit and fixed costs are \$10,000,000 per month.  What output level will maximize profit?
-    *  Q = 498.67 units     [Click here for full solution]()
+    *  Q = 833.02 units     [Click here for full solution](https://youtu.be/ef5NhB0yBvs)
 <p>&nbsp;</p>
 
 
