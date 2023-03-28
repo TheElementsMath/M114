@@ -86,7 +86,7 @@ and interest from the first term deposit in a new three-month term deposit earni
 <p>&nbsp;</p>
 
 
-*  There is an annual \$4200 membership fee Tower Ranch golf course is due at the beginning of the year. Instead of a single “lump sum” payment, a member can pay \$2000 at the start of the year and defer the \$2200 balance for five months by paying a \$20 surcharge at the time of the second payment. Effectively, what annual rate of simple interest is Tower Ranch charging on the \$2000 deferred payment?
+*  There is an annual \$4200 membership fee Tower Ranch golf course is due at the beginning of the year. Instead of a single “lump sum” payment, a member can pay \$2000 at the start of the year and defer the \$2200 balance for five months by paying a \$20 surcharge at the time of the second payment. Effectively, what annual rate of simple interest is Tower Ranch charging on the \$2200 deferred payment?
     *  2.18%     [Click here for full solution]()
 <p>&nbsp;</p>
 
