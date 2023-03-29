@@ -99,33 +99,33 @@ and interest from the first term deposit in a new three-month term deposit earni
 ##  4.6  Equivalent Payments {-}
 
 *  What payment 214 days from now is equivalent to \$5750 paid today? Assume that money is worth 6.25% simple interest per annum.
-    *  \$5960.70     [Click here for full solution]()
+    *  \$5960.70     [Click here for full solution](https://youtu.be/XdC8OFq-BE0)
 <p>&nbsp;</p>
 
 
 *  Mal owes United Furniture \$2300, which is scheduled to be paid on August 15. Mal has surplus funds on June 15 and will settle the debt early if United Furniture will make an adjustment reflecting the current short-term interest rate of 6.25%. What amount should be acceptable to both parties?
-    *  \$2306.07     [Click here for full solution]()
+    *  \$2276.22     [Click here for full solution](https://youtu.be/9YLu48GfyPI)
 <p>&nbsp;</p>
 
 
 *  If money can be invested at 5% simple interest, which has the greater economic value: \$6500 today or \$6750 in five months? At what rate would the two amounts be economically equivalent?
-    *  Greater value = $6750, rate = 7.8%     [Click here for full solution]()
+    *  Greater value = $6750, rate = 9.23%     [Click here for full solution](https://youtu.be/N0v6PjmYuy4)
 <p>&nbsp;</p>
 
 
 *  Peter recently purchased a one-year membership at Steve Nash Fitness. He can add a second year to the membership for a payment of \$1500 today, or wait 11 months and pay the regular single-year price of \$1600. Which is the better economic alternative if money is worth 7.5% simple interest? At what discount rate would the alternatives be equivalent?
-    *  \$1500 is better, 7.27\% SI makes the 2 options equivalent.     [Click here for full solution]()
+    *  \$1600 is better, 7.27\% SI makes the 2 options equivalent.     [Click here for full solution](https://youtu.be/yMDHVU89BHA)
 <p>&nbsp;</p>
 
 
 *  If money earns 3.5%, calculate and compare the economic value today of the following payment streams: Stream 1: Payments of \$1100 due in 150 days and \$1700 due in 80 days.
 Stream 2: Payments of \$900 due in 30 days, \$800 due in 75 days, and \$1000 due in 125 days.  Use today as the focal date.
-    *  Stream 1 has the higher value     [Click here for full solution]()
+    *  Stream 1 has the higher value     [Click here for full solution](https://youtu.be/-L9XhPe9so4)
 <p>&nbsp;</p>
 
 
 *  A \$10,000 debt today is to be repaid with equal payments made in 4, 6 and 9 months from now.  If the rate of interest is 5% simple interest, how large are the payments? Use today as the focal date.
-    * \$387.40     [Click here for full solution]()
+    * \$3421.06     [Click here for full solution](https://youtu.be/DfxfepWFVTs)
 <p>&nbsp;</p>
 
 
