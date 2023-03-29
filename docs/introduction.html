@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Introduction | Telling Stories with Data</title>
+  <meta name="description" content="Chapter 1 Introduction | Telling Stories with Data" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Introduction | Telling Stories with Data" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/CoverArt.png" />
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Introduction | Telling Stories with Data" />
+  
+  
+  <meta name="twitter:image" content="/CoverArt.png" />
+
+<meta name="author" content="Joe Hobart" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="a-brief-history-of-data-visualization.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Visualization</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-read-this-book"><i class="fa fa-check"></i>Why read this book</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#growth-in-data"><i class="fa fa-check"></i><b>1.1</b> Growth in Data</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#the-data-story"><i class="fa fa-check"></i><b>1.2</b> The Data Story</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#why-data-visualization"><i class="fa fa-check"></i><b>1.3</b> Why Data Visualization?</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#planning-the-data-story"><i class="fa fa-check"></i><b>1.4</b> Planning the Data Story</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#enriching-the-story"><i class="fa fa-check"></i><b>1.5</b> Enriching The Story</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="introduction.html"><a href="introduction.html#use-of-units"><i class="fa fa-check"></i><b>1.5.1</b> Use of Units</a></li>
+<li class="chapter" data-level="1.5.2" data-path="introduction.html"><a href="introduction.html#use-familiar-comparisons"><i class="fa fa-check"></i><b>1.5.2</b> Use Familiar Comparisons</a></li>
+<li class="chapter" data-level="1.5.3" data-path="introduction.html"><a href="introduction.html#use-everyday-terms"><i class="fa fa-check"></i><b>1.5.3</b> Use Everyday Terms</a></li>
+<li class="chapter" data-level="1.5.4" data-path="introduction.html"><a href="introduction.html#use-the-moral-or-emotional-approach"><i class="fa fa-check"></i><b>1.5.4</b> Use the Moral or Emotional Approach</a></li>
+<li class="chapter" data-level="1.5.5" data-path="introduction.html"><a href="introduction.html#use-a-personal-approach"><i class="fa fa-check"></i><b>1.5.5</b> Use a Personal Approach</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="introduction.html"><a href="introduction.html#best-practices"><i class="fa fa-check"></i><b>1.6</b> Best Practices</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="introduction.html"><a href="introduction.html#select-your-audience"><i class="fa fa-check"></i><b>1.6.1</b> Select Your Audience</a></li>
+<li class="chapter" data-level="1.6.2" data-path="introduction.html"><a href="introduction.html#know-your-purpose"><i class="fa fa-check"></i><b>1.6.2</b> Know Your Purpose</a></li>
+<li class="chapter" data-level="1.6.3" data-path="introduction.html"><a href="introduction.html#select-the-right-visual"><i class="fa fa-check"></i><b>1.6.3</b> Select the Right Visual</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html"><i class="fa fa-check"></i><b>2</b> A Brief History of Data Visualization</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-i---pre-17th-century-early-maps-and-diagrams"><i class="fa fa-check"></i><b>2.1</b> Epoch I - Pre-17th Century: Early Maps and Diagrams</a></li>
+<li class="chapter" data-level="2.2" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-ii---1600---1699-measurement-and-theory"><i class="fa fa-check"></i><b>2.2</b> Epoch II - 1600 - 1699: Measurement and Theory</a></li>
+<li class="chapter" data-level="2.3" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-iii---1700---1799-new-graphical-forms"><i class="fa fa-check"></i><b>2.3</b> Epoch III - 1700 - 1799: New Graphical Forms</a></li>
+<li class="chapter" data-level="2.4" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-iv---1800---1850-beginnings-of-modern-graphics"><i class="fa fa-check"></i><b>2.4</b> Epoch IV - 1800 - 1850: Beginnings of Modern Graphics</a></li>
+<li class="chapter" data-level="2.5" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-v---1850---1900-the-golden-age-of-statistical-graphics"><i class="fa fa-check"></i><b>2.5</b> Epoch V - 1850 - 1900: The Golden Age of Statistical Graphics</a></li>
+<li class="chapter" data-level="2.6" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-vi-1900-1950-the-modern-dark-ages"><i class="fa fa-check"></i><b>2.6</b> Epoch VI: 1900-1950: The Modern Dark Ages</a></li>
+<li class="chapter" data-level="2.7" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-vii---1950---1975-the-re-birth-of-data-visualization"><i class="fa fa-check"></i><b>2.7</b> Epoch VII - 1950 - 1975: The Re-birth of Data Visualization</a></li>
+<li class="chapter" data-level="2.8" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-viii---1975---today-high-definition-and-dynamic-visualization"><i class="fa fa-check"></i><b>2.8</b> Epoch VIII - 1975 - Today: High Definition and Dynamic Visualization</a></li>
+<li class="chapter" data-level="2.9" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#todays-data-visualization-tools"><i class="fa fa-check"></i><b>2.9</b> Today’s Data Visualization Tools</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="think-data-ink.html"><a href="think-data-ink.html"><i class="fa fa-check"></i><b>3</b> Think Data Ink</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="think-data-ink.html"><a href="think-data-ink.html#data-ink"><i class="fa fa-check"></i><b>3.1</b> Data Ink</a></li>
+<li class="chapter" data-level="3.2" data-path="think-data-ink.html"><a href="think-data-ink.html#tables"><i class="fa fa-check"></i><b>3.2</b> Tables</a></li>
+<li class="chapter" data-level="3.3" data-path="think-data-ink.html"><a href="think-data-ink.html#graphics"><i class="fa fa-check"></i><b>3.3</b> Graphics</a></li>
+<li class="chapter" data-level="3.4" data-path="think-data-ink.html"><a href="think-data-ink.html#exercises"><i class="fa fa-check"></i><b>3.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html"><i class="fa fa-check"></i><b>4</b> Planning Your Visualization</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#when-a-visualization-hits-our-eyes"><i class="fa fa-check"></i><b>4.1</b> When a Visualization Hits our Eyes</a></li>
+<li class="chapter" data-level="4.2" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#two-questions-you-should-ask"><i class="fa fa-check"></i><b>4.2</b> Two Questions You Should Ask</a></li>
+<li class="chapter" data-level="4.3" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#planning"><i class="fa fa-check"></i><b>4.3</b> Planning</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#preparation"><i class="fa fa-check"></i><b>4.3.1</b> Preparation</a></li>
+<li class="chapter" data-level="4.3.2" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#talk-and-listen"><i class="fa fa-check"></i><b>4.3.2</b> Talk and Listen</a></li>
+<li class="chapter" data-level="4.3.3" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#sketch"><i class="fa fa-check"></i><b>4.3.3</b> Sketch</a></li>
+<li class="chapter" data-level="4.3.4" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#prototype"><i class="fa fa-check"></i><b>4.3.4</b> Prototype</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="types-of-graphs.html"><a href="types-of-graphs.html"><i class="fa fa-check"></i><b>5</b> Types of Graphs</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="types-of-graphs.html"><a href="types-of-graphs.html#simple-text"><i class="fa fa-check"></i><b>5.1</b> Simple Text</a></li>
+<li class="chapter" data-level="5.2" data-path="types-of-graphs.html"><a href="types-of-graphs.html#tables-1"><i class="fa fa-check"></i><b>5.2</b> Tables</a></li>
+<li class="chapter" data-level="5.3" data-path="types-of-graphs.html"><a href="types-of-graphs.html#heatmap"><i class="fa fa-check"></i><b>5.3</b> Heatmap</a></li>
+<li class="chapter" data-level="5.4" data-path="types-of-graphs.html"><a href="types-of-graphs.html#scatterplot"><i class="fa fa-check"></i><b>5.4</b> Scatterplot</a></li>
+<li class="chapter" data-level="5.5" data-path="types-of-graphs.html"><a href="types-of-graphs.html#line-graph"><i class="fa fa-check"></i><b>5.5</b> Line Graph</a></li>
+<li class="chapter" data-level="5.6" data-path="types-of-graphs.html"><a href="types-of-graphs.html#slopegraph"><i class="fa fa-check"></i><b>5.6</b> Slopegraph</a></li>
+<li class="chapter" data-level="5.7" data-path="types-of-graphs.html"><a href="types-of-graphs.html#vertical-and-horizontal-bar-graph"><i class="fa fa-check"></i><b>5.7</b> Vertical and Horizontal Bar Graph</a></li>
+<li class="chapter" data-level="5.8" data-path="types-of-graphs.html"><a href="types-of-graphs.html#stacked-bar-graph"><i class="fa fa-check"></i><b>5.8</b> Stacked Bar Graph</a></li>
+<li class="chapter" data-level="5.9" data-path="types-of-graphs.html"><a href="types-of-graphs.html#waterfall-graph"><i class="fa fa-check"></i><b>5.9</b> Waterfall Graph</a></li>
+<li class="chapter" data-level="5.10" data-path="types-of-graphs.html"><a href="types-of-graphs.html#square-area-graph"><i class="fa fa-check"></i><b>5.10</b> Square Area Graph</a></li>
+<li class="chapter" data-level="5.11" data-path="types-of-graphs.html"><a href="types-of-graphs.html#avoid-these-when-possible"><i class="fa fa-check"></i><b>5.11</b> Avoid These When Possible</a>
+<ul>
+<li class="chapter" data-level="5.11.1" data-path="types-of-graphs.html"><a href="types-of-graphs.html#pie-charts"><i class="fa fa-check"></i><b>5.11.1</b> Pie Charts</a></li>
+<li class="chapter" data-level="5.11.2" data-path="types-of-graphs.html"><a href="types-of-graphs.html#donut-chart"><i class="fa fa-check"></i><b>5.11.2</b> Donut Chart</a></li>
+<li class="chapter" data-level="5.11.3" data-path="types-of-graphs.html"><a href="types-of-graphs.html#d-charts"><i class="fa fa-check"></i><b>5.11.3</b> 3D Charts</a></li>
+<li class="chapter" data-level="5.11.4" data-path="types-of-graphs.html"><a href="types-of-graphs.html#secondary-axis"><i class="fa fa-check"></i><b>5.11.4</b> Secondary Axis</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="data-visualization-design.html"><a href="data-visualization-design.html"><i class="fa fa-check"></i><b>6</b> Data Visualization Design</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="data-visualization-design.html"><a href="data-visualization-design.html#connecting-with-visuals"><i class="fa fa-check"></i><b>6.1</b> Connecting with Visuals</a></li>
+<li class="chapter" data-level="6.2" data-path="data-visualization-design.html"><a href="data-visualization-design.html#what-is-a-good-visualization"><i class="fa fa-check"></i><b>6.2</b> What is a Good Visualization?</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="data-visualization-design.html"><a href="data-visualization-design.html#colour"><i class="fa fa-check"></i><b>6.2.1</b> Colour</a></li>
+<li class="chapter" data-level="6.2.2" data-path="data-visualization-design.html"><a href="data-visualization-design.html#form"><i class="fa fa-check"></i><b>6.2.2</b> Form</a></li>
+<li class="chapter" data-level="6.2.3" data-path="data-visualization-design.html"><a href="data-visualization-design.html#spacial-position"><i class="fa fa-check"></i><b>6.2.3</b> Spacial Position</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="data-visualization-design.html"><a href="data-visualization-design.html#gestalt-principles-of-visual-perception"><i class="fa fa-check"></i><b>6.3</b> Gestalt Principles of Visual Perception</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="data-visualization-design.html"><a href="data-visualization-design.html#gestalt-principles"><i class="fa fa-check"></i><b>6.3.1</b> Gestalt principles</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="data-visualization-design.html"><a href="data-visualization-design.html#readability"><i class="fa fa-check"></i><b>6.4</b> Readability</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html"><i class="fa fa-check"></i><b>7</b> Making Your Chart More Persuasive</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#clearly-articulating-your-point"><i class="fa fa-check"></i><b>7.1</b> Clearly Articulating Your Point</a></li>
+<li class="chapter" data-level="7.2" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#three-tips"><i class="fa fa-check"></i><b>7.2</b> Three Tips</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#hone-the-main-idea"><i class="fa fa-check"></i><b>7.2.1</b> Hone the Main Idea</a></li>
+<li class="chapter" data-level="7.2.2" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#make-it-stand-out"><i class="fa fa-check"></i><b>7.2.2</b> Make it Stand Out</a></li>
+<li class="chapter" data-level="7.2.3" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#adjust-what-is-around-it"><i class="fa fa-check"></i><b>7.2.3</b> Adjust What is Around It</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Telling Stories with Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introduction" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Introduction<a href="introduction.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Let’s face it, data is everywhere in our current reality. Have you noticed how much data has taken over our everyday lives? If you are a fan of sports, try watching a football, basketball or hockey game while covering the little box that tells you the score and time remaining in the period. It’s maddening. Even your favorite baseball game would not be nearly as good without Pitchtrax, and the box with the inning, score, and count.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Pitchtrax.jpg" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b>Image Credits - Sean Keeley (<span class="citation">Keeley (<a href="references.html#ref-Keeley_2018" role="doc-biblioref">2018</a>)</span>)</b></td>
+</tr>
+</tbody>
+</table>
+<p>Recently, I’ve found myself watching pre-season baseball. Major League Baseball has just introduced a new pitch-clock to try to speed up the game. As a way to figure out how much time is remaining before the pitcher needs to throw a pitch, I find myself counting down from 15. I’m sure by the time the regular season rolls around next month, FOX, ESPN and Sportsnet (some of the main TV broadcasters) will have found a way to relay that information to me. But the point is that there is a data-related aspect of the game that, if we added it to the data I already have, will enrich my viewing experience. More importantly, I will spend less time counting down the pitch timer and more time enjoying the game and listening to the announcer.</p>
+<p>Think about that last sentence for a second. I will spend less time counting down the timer and more time listening to the announcer. Now, apply that idea to you presenting an idea in a presentation. If people are spending time and effort on trying to understand your visual, they are spending less time listening to you. Your goal should always be to have people to listen to you as you present data.</p>
+<p>Major retailers like Walmart, Amazon and others use data they collect from millions of people who visit their websites and stores to recommend you products. Indeed, there is a famous story about a father who phoned the complaints department at Walmart because Walmart sent his 16 year old daughter targeted marketing material meant for someone who was about to have a baby. The material, which consisted of adds for strollers, cribs, cute baby shoes and other baby accessories, also had coupons for diapers and baby formula. The father, furious that Walmart would send advertisements that might encourage his teenage daughter to have sex and get pregnant, yelled at the operator on the other end of the phone and demanded an apology.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Amazon.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b>Image Credits - Arkadiusz Krysik, 2021</b></td>
+</tr>
+</tbody>
+</table>
+<p>As it turns out, the daughter had made some purchases that Walmart’s data team had flagged as strong indicators that the purchaser was pregnant. The store then automatically sent out the marketing material without considering the age of the girl. But, that’s not the entire story. It turns out that the girl was pregnant. And, that’s how Walmart knew a teenage girl was pregnant before her dad did.</p>
+<p>But, data goes far beyond these simple examples. When you go online, you see adds. These adds target you because of your online preferences, the sites you’ve visited and even parts of the website that you have hovered over. These adds don’t just happen to be for products and services you are interested in. Massive amounts of data were collected and people with similar internet history to you and they will see similar adds to you. Those whose internet history is different will likely see different adds. The data drives the marketing.</p>
+<p>We all have smartphones. These phones track our steps, take care of email and text messages, track where we are, give us directions and help us navigate social media. This data is all stored and can all be used by the service provider to give you better service. Think about it - when was the last time you had to use a paper map to get somewhere? Do gas stations still sell paper maps? Our smartphone providers have vast amounts of data on you and where you’ve been. By using the various apps on your phone, you have essentially given your phone provider an endless supply of data about you and your habits.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="CellPhone.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b>Image Credits - Trevor Wheelwright, 2022</b></td>
+</tr>
+</tbody>
+</table>
+<p>The point is that data is all around us and those who use data are in a better position than those who don’t. Daryl Morey is an NBA executive. He once said “Everyone in our business knows they need to visualize data but it’s easy to do it poorly. We invest in it. We’re excited if we can use it right while they use it wrong.” (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>). We hope that after reading this book, you will use it right.</p>
+<div id="growth-in-data" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Growth in Data<a href="introduction.html#growth-in-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We are currently living through the greatest expansion in data that the world has ever seen and as a result, it is becoming increasingly important that we understand the data and know how to correctly use it. Part of correctly using data is communication. Over 90% of the world’s data has been produced in the past 2 years (<span class="citation">Marr (<a href="references.html#ref-Marr" role="doc-biblioref">n.d.</a>)</span>). The graphic below is from 2015 data and depicts the daily amount of data created. All numbers are in billions.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="DataPic1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Kevin Hartman (<span class="citation">Hartman (<a href="references.html#ref-hartmankevin2022" role="doc-biblioref">2022</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>The graphic gives an illustration of the amount of data created each day around the world. The area of each box represents the relative area of the particular type of data being created each day. For example, there are 4.5 billion facebook likes every day (you don’t want to know how many dislikes there are). We also have 2.5 billion Instagram photos viewed. Knowing a little bit about people’s online habits helps those in marketing and those in sales know where their potential customers are spending their online time.</p>
+<p>The thing about data is that people often cannot appreciate large numbers. A billion is a number that is too large for us to really picture in our minds. So, you’ll notice a couple of boxes are not labeled. The large blue box represents the number of cups of coffee consumed each day worldwide. As we know, one can get a cup of coffee anywhere in the world. Certainly in North America, there seems to be a coffee shop on every major street corner in any busy city. The brown box on the right side represents the number of votes cast in the 2016 US presidential election and the box in the bottom right corner is the number of books read daily (which should be a little concerning).</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="DataPic2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Kevin Hartman (<span class="citation">Hartman (<a href="references.html#ref-hartmankevin2022" role="doc-biblioref">2022</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>The point here is that there is a lot of data created every day. The amount of online data created daily far exceeds the amount of daily data created at any other time in the history of the world.</p>
+<p>Another interesting way to consider the volume of data is to look at how quickly it is growing. Scott Brinker put together his infographic in 2011.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Landscape2011.jpg" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b>Image Credits - Scott Brinker (<span class="citation">Brinker (<a href="references.html#ref-Brinker_2011" role="doc-biblioref">2011</a>)</span>)</b></td>
+</tr>
+</tbody>
+</table>
+<p>The graphic consists of company logos in the marketing technology space. He categorized them and showed us the companies in the data space who are making sense of the data being generated. Due to the positive feedback he received, he continues to make these graphics every year. Here is the graphic from 2020.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Landscape2022.jpg" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b>Image Credits - Scott Brinker (<span class="citation">Brinker (<a href="references.html#ref-Brinker_2022" role="doc-biblioref">2022</a>)</span>)</b></td>
+</tr>
+</tbody>
+</table>
+<p>Over time, there were 150 companies in the space in 2011. That climbed to 350 in 2012 and continues to climb today where we currently sit around 9,932 companies. Again, there has never been more widely available data. There have never been more companies trying to make sense of the data. If you can’t make sense of data, you will be left behind in the data race.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="YearOverYearLandscape.jpg" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b>Image Credits - Scott Brinker (<span class="citation">Brinker (<a href="references.html#ref-Brinker_2022" role="doc-biblioref">2022</a>)</span>)</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="the-data-story" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> The Data Story<a href="introduction.html#the-data-story" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you want to communicate about your data, you need to tell a story. To tell a story, you need three things: setup, conflict, and resolution. Every story since the beginning of time follows that pattern. You may have heard this pattern in a different way (perhaps: say what you’re going to say, say it, say what you said). In any event, most effective writing falls into this pattern where things are divided into three sections. Call them what you like, the pattern of three is one of the most impactful ways of communicating.</p>
+<p>Consider your favorite Roadrunner cartoon. In the setup, Wile-e-Coyote constructs an elaborate trap for the Roadrunner at the side of a cliff. During the conflict, Roadrunner runs through the trap and, for some reason, the trap isn’t triggered. The conclusion is when Wile-e-Coyote checks the trap, the trap catches him and he falls off the cliff into a puff of smoke. “Meep meep!”</p>
+<p>So, what are these parts of the story? The setup is simply a state of affairs. It could be the present state, a past state or a fictitious or future state. It is the setting for the story. The conflict piece describes what changes in the reality. If there is no conflict, there is no story. This is a difficult thing for many people to understand. Authors need to give their audience a reason to care about what they are saying. The conflict portion of the story is how you get your audience to care. Finally, the resolution is what the reality changes into. You can think of it as the new reality.</p>
+<blockquote>
+<p>Example: Tell the story of the graph below:</p>
+</blockquote>
+<p><strong>Global Inflation Rate From 2000 to 2021, with Forecasts to 2027</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Inflation.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b>Image Credits - Statista (<span class="citation"> (<a href="references.html#ref-Global_inflation_rate" role="doc-biblioref">n.d.b</a>)</span>)</b></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>We can begin the story today in 2021. We see inflation is 4.7%. If we use this as the setup, we can then talk about 2 stories - pre 2021 and post 2021. In pre 2021, the conflict occurs in 2008 with a large spike followed by a quick decrease in 2009 and another spike in 2011. The spike in 2008, and the resulting dip and recovery, was due to the global financial crisis. Other than that, there was not much movement in inflation between 2000 and 2021. That’s the story pre 2021.</p>
+<p>Post 2021, there is projected to be a rather large spike in 2022/23. This is due to the rising tensions between Russia and Ukraine and subsequent war that resulted. This again is an example of the conflict and leads to the new reality that inflation rates will likely be higher for the next couple of years.</p>
+</blockquote>
+<p>As you can see from the previous example, the setup does not need to be the reality at the beginning of the data. It can be the reality at whatever point in the data the story is the most compelling. If we had started the story in 2008, the conflict would only have been in 2023 and we would have missed an opportunity to tell a story about the spike in 2008. So, be careful when you’re telling a story. It needs to be rooted in a setup reality that helps you deliver the best and most meaningful message to your audience.</p>
+<p>One way you can emphasize each of these parts of the story is to separate them on separate graphs. For example, if you want to talk about the war in Ukraine, you might begin by presenting a graph of the inflation changes from 2013 to 2020 as your setup. You can discuss that inflation was fairly steady and that not much changed over those years. You may wish to add in something about the average inflation and how all of those percentages are relatively close to the changing inflation rate. You could also remind people that a small amount of inflation is actually good for the economy and it’s not bad that the inflation rates were between 2.5% and 3.65%. Then, for the conflict, you can show 2021 through 2024 and discuss how the war in Ukraine has caused a spike in the inflation rate. What factors are causing the change? How can we resolve the inflation spike? Finally, this leads us into our new reality in 2025 and beyond. By breaking the story down into parts, you can truly emphasize each part of the story and focus your audience’s attention on the important aspects of the data.</p>
+<blockquote>
+<p>Example: Another example of storytelling comes from Andrew Moorfield - a banker who specialized on corproate finance for large banks in the United states. In 2000, Andrew decided to open up his own small business lending company and lanuched bfinance.co.uk. After some time had passed, Andrew had about 25 employees working for him. He found himself in a position in which he couldn’t make payroll. Rather than presenting his staff with all of the numbers in the form of a spreadsheet and telling them what he intended to do, he sat them in the boardroom and wrote 5 numbers on a whiteboard.</p>
+<p>He wrote down the balance in the bank account at the beginning of the month (X), the revenues the company projected for the month (Y), the costs associated with making those revenues (Z) and the balance in the account at the end of the month (T). This was the setup of Andrew’s story. <span class="math display">\[ \begin{align*} &amp;X\\+&amp;Y\\-&amp;Z\\ \hline &amp;T \end{align*} \]</span> He then wrote the total salaries of his employees to the right of the T. <span class="math display">\[ \begin{align*} &amp;X\\+&amp;Y\\-&amp;Z\\ \hline &amp;T \;\;\;\;\; S\end{align*} \]</span> Of course, <span class="math inline">\(S &gt; T\)</span>. He paused and let the reality of the situation sink in to his employees. This was the conflict. He then asked his staff what they wanted to do to resolve the conflict. They decided amongst themselves to give full salaries to a portion of the staff while deferring the salaries from other members of staff until a later date. They resolved the conflict. By presenting the data in a simple and suscinct way, the staff came up with a resolution to the problem based on a very simple explaination of the data .</p>
+</blockquote>
+<p>The moral of the previous example is that there was no reason to over-complicate the data. That is often true when you present data to people who are not intimately familiar with the data. The majority of Andrew’s staff would not have been familiar with the accounting data. Moreover, if Andrew had presented complicated financials, he probably would not have been able to convince his audience to find a simple and effective solution. Story telling matters and the example of bfinance.com.uk demonstrates exactly that.</p>
+</div>
+<div id="why-data-visualization" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Why Data Visualization?<a href="introduction.html#why-data-visualization" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As companies make better use of their data, explaining the data becomes increasingly important. Data visualization is a method by which we can communicate qualitative and quantitative data. When creating a visualization, keep in mind the following quotation from Edward Tufte: “Clutter and confusion are not attributes of data - they are shortcomings of design.”. That is to say, when we display data, it needs to be clear, visually appealing and never misleading.</p>
+<p>A question that one might ask is “why do we need to use data visualization anyway?”. We have all been taught that numbers don’t lie. Perhaps given a data set, all the information we need is stored in the numbers themselves. If this is the way you think about data, you’re half right. Consider the following example.</p>
+<blockquote>
+<p>Example:
+Consider the following 2 data sets:</p>
+<p><span class="math display">\[\begin{matrix}
+x_1:   &amp;4   &amp;6   &amp;4   &amp;4   &amp;4   &amp;3   &amp;4   &amp;8   &amp;8   &amp;4\\
+x_2:   &amp;2   &amp;10  &amp;2   &amp;6   &amp;0   &amp;2   &amp;2   &amp;2   &amp;4   &amp;6
+\end{matrix}\]</span></p>
+<p>What can we say about this data?</p>
+<ul>
+<li>mean(x1) = 4.9, mean(x2) = 3.6</li>
+<li>var(x1) = 3.211, var(x2) = 8.711</li>
+<li>corr(x1,x2) = 0.2017</li>
+</ul>
+<p>So, remembering back to first year statistics, we know now that the mean of <span class="math inline">\(x_1\)</span> is larger than the mean of <span class="math inline">\(x_2\)</span>. So, for each pair, the <span class="math inline">\(x_1\)</span> value tends to be larger. Since the standard deviation of <span class="math inline">\(x_2\)</span> is larger than <span class="math inline">\(x_1\)</span>, the values of <span class="math inline">\(x_2\)</span> are more spread out than the values of <span class="math inline">\(x_1\)</span>. The positive correlation coefficient indicates that there is a weak positive correlation between <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>, so if <span class="math inline">\(x_1\)</span> increases, <span class="math inline">\(x_2\)</span> is likely to also increase. We can also take a look at things like the mean and median to determine if there might be some skewness to the data (or better, determine the kurtosis).</p>
+</blockquote>
+<p>The previous example gives the impression that we know a fair bit about the data just from a few summary statistics. Indeed, one may find a good amount of information about the data just through those summary statistics. However, those don’t tell the entire story.</p>
+<blockquote>
+<p>Example:
+Consider the following 2 data sets in 2 variables:</p>
+<p><span class="math display">\[\begin{matrix}
+x_1:   &amp;10 &amp;8  &amp;13 &amp;9  &amp;11 &amp;14 &amp;6  &amp;4  &amp;12 &amp;7  &amp;5\\
+y_1:   &amp;8.04 &amp;6.95 &amp;7.58 &amp;8.81 &amp;8.33 &amp;9.96 &amp;7,24 &amp;4.26 &amp;10.84  &amp;4.82 &amp;5.68
+\end{matrix}\]</span>
+<span class="math display">\[\begin{matrix}
+x_2:   &amp;8 &amp;8 &amp;8 &amp;8 &amp;8 &amp;8 &amp;8 &amp;19&amp;8 &amp;8 &amp;8 \\
+y_2:   &amp;6.58  &amp;5.76 &amp;7.71 &amp;8.84 &amp;8.47 &amp;7.04 &amp;5.25 &amp;12.50  &amp;5.56 &amp;7.91 &amp;6.89
+\end{matrix}\]</span></p>
+<p>We compute the same summary statistics for this dataset?</p>
+<p>You will again find the following:</p>
+<ul>
+<li>mean(x1) = mean(x2) = 9</li>
+<li>mean(y1) = mean(y2) = 7.5</li>
+<li>var(x1) = var(x2) = 11</li>
+<li>var(y1) = var(y2) = 4.127</li>
+<li>cor(x1,y1) = cor(x2,y2) = 0.8164</li>
+</ul>
+<p>So, based on the summary statistics, the two data sets are basically the same. They have the same mean x, the same mean y, the same standard deviation for x and for y, and even the correlation between the variables is the same. However, the data sets could not be more different and a quick graph shows us exactly that.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="introduction.html#cb1-1" aria-hidden="true" tabindex="-1"></a>  x1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>,   <span class="dv">8</span>,    <span class="dv">13</span>,   <span class="dv">9</span>,    <span class="dv">11</span>,   <span class="dv">14</span>,   <span class="dv">6</span>,    <span class="dv">4</span>,    <span class="dv">12</span>,     <span class="dv">7</span>,    <span class="dv">5</span>)</span>
+<span id="cb1-2"><a href="introduction.html#cb1-2" aria-hidden="true" tabindex="-1"></a>  y1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">8.04</span>, <span class="fl">6.95</span>, <span class="fl">7.58</span>, <span class="fl">8.81</span>, <span class="fl">8.33</span>, <span class="fl">9.96</span>, <span class="fl">7.24</span>, <span class="fl">4.26</span>, <span class="fl">10.84</span> , <span class="fl">4.82</span>, <span class="fl">5.68</span>)</span>
+<span id="cb1-3"><a href="introduction.html#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(x1,y1, <span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">20</span>), <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">14</span>))</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="introduction.html#cb2-1" aria-hidden="true" tabindex="-1"></a>  x2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>,    <span class="dv">8</span>,    <span class="dv">8</span>,    <span class="dv">8</span>,    <span class="dv">8</span>,    <span class="dv">8</span>,    <span class="dv">8</span>,    <span class="dv">19</span>,    <span class="dv">8</span>,    <span class="dv">8</span>,    <span class="dv">8</span>)</span>
+<span id="cb2-2"><a href="introduction.html#cb2-2" aria-hidden="true" tabindex="-1"></a>  y2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">6.58</span>, <span class="fl">5.76</span>, <span class="fl">7.71</span>, <span class="fl">8.84</span>, <span class="fl">8.47</span>, <span class="fl">7.04</span>, <span class="fl">5.25</span>, <span class="fl">12.50</span>, <span class="fl">5.56</span>, <span class="fl">7.91</span>, <span class="fl">6.89</span>)</span>
+<span id="cb2-3"><a href="introduction.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(x2,y2, <span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">20</span>), <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">14</span>))</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</blockquote>
+<p>The point of the previous example (which is based on the ideas in Anscombe’s quartet (<span class="citation"> (<a href="references.html#ref-Anscombequartet_2023" role="doc-biblioref">2023</a>)</span>)) is that the numbers do not tell the entire story. Thus, we need to be very careful how we present data, either in tabular form or in graphical form, to our audience.</p>
+<p>In the sections that follow, we will present some ideas to help display data in a form that is the most meaningful and helps facilitate correct interpretations.</p>
+</div>
+<div id="planning-the-data-story" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Planning the Data Story<a href="introduction.html#planning-the-data-story" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now that we know that storytelling is an important part of communicating data, we turn our attention to we deliver the story. Barbara Minto, a former consultant for McKinsey, developed a concept referred to as the Minto Pyramid Principal.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Minto Pyramid Principal:</td>
+<td>Any statement that is made must be supported by facts; moreover, the statement must be a perfect summation of those facts.</td>
+</tr>
+</tbody>
+</table>
+<p>In order to achieve success with this principal, we use three of Minto’s rules. First, the most important statement that we make must be a good summarization of the elements (or facts) that we’re using below it to support that statement. Next, these facts should be all similar in some way. Finally, the order that we present these facts should be in an order that is not surprising to our audience. We want to make sure that they make sense to the audience. To that end, we could order them from largest to smallest or we could list them chronologically, or in some other sensible order. Together these facts should be mutually exclusive (having no overlap) and collectively exhaustive (fully supports the objective). If you are able to achieve this type of structure, you have a well organized point. You can combine multiple pyramids to create the full story for your audience.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Minto1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b>Image Credits - Barbara Minto (<span class="citation">Minto and Minto (<a href="references.html#ref-Minto_Minto_1996" role="doc-biblioref">1996</a>)</span>)</b></td>
+</tr>
+</tbody>
+</table>
+<p>This type of structure can also help when you construct research questions. What is the overarching objective? What key-questions must we answer in order to fully evaluate the objective? This will help guide what data we need and even where we might find it.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Minto2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b>Image Credits - Adam Amran (<span class="citation"> (<a href="references.html#ref-MintoPyramid" role="doc-biblioref">n.d.a</a>)</span>)</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="enriching-the-story" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> Enriching The Story<a href="introduction.html#enriching-the-story" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Data is hard and numbers are confusing to most people. There are some techniques that we can use to take some of the mystery out of explaining this data to people.</p>
+<p>As an example, consider that the US consumes 7,117,500,000 barrels of crude oil annually. That is a fact; however, it is difficult to visualize what that looks like. The context is missing. While the figure seems large, we do not have any emotional connection to it. The idea of millions or billions is lost on most people, so we need to reframe the context.</p>
+<p>John Kenney has developed five different ways to frame or position numbers to help the audience make a connection.</p>
+<div id="use-of-units" class="section level3 hasAnchor" number="1.5.1">
+<h3><span class="header-section-number">1.5.1</span> Use of Units<a href="introduction.html#use-of-units" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The use of units is important. Use units that people understand. For example, the idea of 7.1 billion barrels of crude oil is difficult to understand. However, it is enough oil to make 36 billion plastic water bottles every day.</p>
+<p>Even though we use billions here, we have tied that number to something our audience understands. Everyone knows what a water bottle looks like and it is difficult to imagine 36 billion of those each day.</p>
+</div>
+<div id="use-familiar-comparisons" class="section level3 hasAnchor" number="1.5.2">
+<h3><span class="header-section-number">1.5.2</span> Use Familiar Comparisons<a href="introduction.html#use-familiar-comparisons" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A familiar comparison can be an effective way to communicate difficult to understand concepts. Going back to the crude oil example, we can explain that 7.1 billion barrels of crude oil is enough for 39 trips to the sun and back each day. In our minds, we know the sun is a long ways away. While we do not think of it in kilometers, we know that making 39 round trips is enormous.</p>
+<p>Another comparison could be around time. Americans use about 225 barrels of oil each second. Here, while we may not know exactly what 225 barrels of oil looks like, we do understand the idea of 1 second. Using 225 barrels of anything in 1 second seems like a lot.</p>
+</div>
+<div id="use-everyday-terms" class="section level3 hasAnchor" number="1.5.3">
+<h3><span class="header-section-number">1.5.3</span> Use Everyday Terms<a href="introduction.html#use-everyday-terms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Comparing the number to something that we do daily is a great way to connect the audience to a large number. While we know that driving uses oil and that heating our homes uses oil, the processes associated with these is not necessarily obvious to most people. However, we know how much water we use. It turns out that Americans use 48 times more oil than water every day. Since we understand our use of water (to drink, water the lawn, wash the dishes or clothes), knowing that there is almost 50 times more oil being used than water being consumed is crazy.</p>
+</div>
+<div id="use-the-moral-or-emotional-approach" class="section level3 hasAnchor" number="1.5.4">
+<h3><span class="header-section-number">1.5.4</span> Use the Moral or Emotional Approach<a href="introduction.html#use-the-moral-or-emotional-approach" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A rather risky approach is to use something that elicits an emotional or moral reaction from the audience. For example, in less than four decades, the world’s finite supply of oil will be gone forever. Now, the issue here is that this can have a polarizing impact on your audience. Make sure you know your audience well enough to ensure that you don’t alianate any of them and risk them shutting down.</p>
+</div>
+<div id="use-a-personal-approach" class="section level3 hasAnchor" number="1.5.5">
+<h3><span class="header-section-number">1.5.5</span> Use a Personal Approach<a href="introduction.html#use-a-personal-approach" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Again, this approach takes the message back to each audience member. A typical American family uses 70 barrels of oil. While I don’t know what 70 barrels looks like, it does strike me as a rather large amount that my family would be using. In this example, 70 barrels for a household seems very high and possibly even gluttonous. So, if your point is to persuade people to reduce, this might be very impactful.</p>
+<p>These techniques will help establish an emotional connection with the audience and will help us either persuade them or connect with them. It helps bring meaning to our story. Graphics are often bad at conveying emotion. These comparisons will help bring in the necessary emotion.</p>
+</div>
+</div>
+<div id="best-practices" class="section level2 hasAnchor" number="1.6">
+<h2><span class="header-section-number">1.6</span> Best Practices<a href="introduction.html#best-practices" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Obviously, there are many opinions on what constitutes best practices. Use what follows as a guide.</p>
+<div id="select-your-audience" class="section level3 hasAnchor" number="1.6.1">
+<h3><span class="header-section-number">1.6.1</span> Select Your Audience<a href="introduction.html#select-your-audience" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When creating visualizations, consider the audience.</p>
+<ul>
+<li>Who is the audience?</li>
+<li>Who will be looking at this data?</li>
+<li>What are the challenges they face and what prevents them from overcoming those challenges?</li>
+</ul>
+<p>Do not create a visualization that meets everyone’s needs; but rather, consider the needs of a smaller group of stakeholders.</p>
+</div>
+<div id="know-your-purpose" class="section level3 hasAnchor" number="1.6.2">
+<h3><span class="header-section-number">1.6.2</span> Know Your Purpose<a href="introduction.html#know-your-purpose" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When selecting your graphic, consider why you are doing so.</p>
+<ul>
+<li>What conclusion do I want the audience to draw?</li>
+<li>Are there decisions (strategic, operational or tactical) that need to be made and how does my visualization help drive those decisions?</li>
+</ul>
+<p>Do not simply include a visualization without a goal in mind. Stakeholders need to be able to use your visualization to make decisions and in an appropriate time-frame to align with decision types. Once a visualization is clear, insights can be drawn and action can be taken.</p>
+<ul>
+<li>What actions do I want people to take with this insight?</li>
+</ul>
+<p>Consider how your visualization will drive action. If there are thresholds that need to be achieved or comparisons to be made, how will you include those in your visualizations?</p>
+</div>
+<div id="select-the-right-visual" class="section level3 hasAnchor" number="1.6.3">
+<h3><span class="header-section-number">1.6.3</span> Select the Right Visual<a href="introduction.html#select-the-right-visual" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Accountants like tables - everyone else likes visuals. However, selecting the correct chart type is not trivial. We will discuss different types of graphs in another chapter.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="a-brief-history-of-data-visualization.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-intro.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

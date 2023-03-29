@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Types of Graphs | Telling Stories with Data</title>
+  <meta name="description" content="Chapter 5 Types of Graphs | Telling Stories with Data" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Types of Graphs | Telling Stories with Data" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/CoverArt.png" />
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Types of Graphs | Telling Stories with Data" />
+  
+  
+  <meta name="twitter:image" content="/CoverArt.png" />
+
+<meta name="author" content="Joe Hobart" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="planning-your-visualization.html"/>
+<link rel="next" href="data-visualization-design.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Visualization</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-read-this-book"><i class="fa fa-check"></i>Why read this book</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#growth-in-data"><i class="fa fa-check"></i><b>1.1</b> Growth in Data</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#the-data-story"><i class="fa fa-check"></i><b>1.2</b> The Data Story</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#why-data-visualization"><i class="fa fa-check"></i><b>1.3</b> Why Data Visualization?</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#planning-the-data-story"><i class="fa fa-check"></i><b>1.4</b> Planning the Data Story</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#enriching-the-story"><i class="fa fa-check"></i><b>1.5</b> Enriching The Story</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="introduction.html"><a href="introduction.html#use-of-units"><i class="fa fa-check"></i><b>1.5.1</b> Use of Units</a></li>
+<li class="chapter" data-level="1.5.2" data-path="introduction.html"><a href="introduction.html#use-familiar-comparisons"><i class="fa fa-check"></i><b>1.5.2</b> Use Familiar Comparisons</a></li>
+<li class="chapter" data-level="1.5.3" data-path="introduction.html"><a href="introduction.html#use-everyday-terms"><i class="fa fa-check"></i><b>1.5.3</b> Use Everyday Terms</a></li>
+<li class="chapter" data-level="1.5.4" data-path="introduction.html"><a href="introduction.html#use-the-moral-or-emotional-approach"><i class="fa fa-check"></i><b>1.5.4</b> Use the Moral or Emotional Approach</a></li>
+<li class="chapter" data-level="1.5.5" data-path="introduction.html"><a href="introduction.html#use-a-personal-approach"><i class="fa fa-check"></i><b>1.5.5</b> Use a Personal Approach</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="introduction.html"><a href="introduction.html#best-practices"><i class="fa fa-check"></i><b>1.6</b> Best Practices</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="introduction.html"><a href="introduction.html#select-your-audience"><i class="fa fa-check"></i><b>1.6.1</b> Select Your Audience</a></li>
+<li class="chapter" data-level="1.6.2" data-path="introduction.html"><a href="introduction.html#know-your-purpose"><i class="fa fa-check"></i><b>1.6.2</b> Know Your Purpose</a></li>
+<li class="chapter" data-level="1.6.3" data-path="introduction.html"><a href="introduction.html#select-the-right-visual"><i class="fa fa-check"></i><b>1.6.3</b> Select the Right Visual</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html"><i class="fa fa-check"></i><b>2</b> A Brief History of Data Visualization</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-i---pre-17th-century-early-maps-and-diagrams"><i class="fa fa-check"></i><b>2.1</b> Epoch I - Pre-17th Century: Early Maps and Diagrams</a></li>
+<li class="chapter" data-level="2.2" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-ii---1600---1699-measurement-and-theory"><i class="fa fa-check"></i><b>2.2</b> Epoch II - 1600 - 1699: Measurement and Theory</a></li>
+<li class="chapter" data-level="2.3" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-iii---1700---1799-new-graphical-forms"><i class="fa fa-check"></i><b>2.3</b> Epoch III - 1700 - 1799: New Graphical Forms</a></li>
+<li class="chapter" data-level="2.4" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-iv---1800---1850-beginnings-of-modern-graphics"><i class="fa fa-check"></i><b>2.4</b> Epoch IV - 1800 - 1850: Beginnings of Modern Graphics</a></li>
+<li class="chapter" data-level="2.5" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-v---1850---1900-the-golden-age-of-statistical-graphics"><i class="fa fa-check"></i><b>2.5</b> Epoch V - 1850 - 1900: The Golden Age of Statistical Graphics</a></li>
+<li class="chapter" data-level="2.6" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-vi-1900-1950-the-modern-dark-ages"><i class="fa fa-check"></i><b>2.6</b> Epoch VI: 1900-1950: The Modern Dark Ages</a></li>
+<li class="chapter" data-level="2.7" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-vii---1950---1975-the-re-birth-of-data-visualization"><i class="fa fa-check"></i><b>2.7</b> Epoch VII - 1950 - 1975: The Re-birth of Data Visualization</a></li>
+<li class="chapter" data-level="2.8" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-viii---1975---today-high-definition-and-dynamic-visualization"><i class="fa fa-check"></i><b>2.8</b> Epoch VIII - 1975 - Today: High Definition and Dynamic Visualization</a></li>
+<li class="chapter" data-level="2.9" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#todays-data-visualization-tools"><i class="fa fa-check"></i><b>2.9</b> Today’s Data Visualization Tools</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="think-data-ink.html"><a href="think-data-ink.html"><i class="fa fa-check"></i><b>3</b> Think Data Ink</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="think-data-ink.html"><a href="think-data-ink.html#data-ink"><i class="fa fa-check"></i><b>3.1</b> Data Ink</a></li>
+<li class="chapter" data-level="3.2" data-path="think-data-ink.html"><a href="think-data-ink.html#tables"><i class="fa fa-check"></i><b>3.2</b> Tables</a></li>
+<li class="chapter" data-level="3.3" data-path="think-data-ink.html"><a href="think-data-ink.html#graphics"><i class="fa fa-check"></i><b>3.3</b> Graphics</a></li>
+<li class="chapter" data-level="3.4" data-path="think-data-ink.html"><a href="think-data-ink.html#exercises"><i class="fa fa-check"></i><b>3.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html"><i class="fa fa-check"></i><b>4</b> Planning Your Visualization</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#when-a-visualization-hits-our-eyes"><i class="fa fa-check"></i><b>4.1</b> When a Visualization Hits our Eyes</a></li>
+<li class="chapter" data-level="4.2" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#two-questions-you-should-ask"><i class="fa fa-check"></i><b>4.2</b> Two Questions You Should Ask</a></li>
+<li class="chapter" data-level="4.3" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#planning"><i class="fa fa-check"></i><b>4.3</b> Planning</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#preparation"><i class="fa fa-check"></i><b>4.3.1</b> Preparation</a></li>
+<li class="chapter" data-level="4.3.2" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#talk-and-listen"><i class="fa fa-check"></i><b>4.3.2</b> Talk and Listen</a></li>
+<li class="chapter" data-level="4.3.3" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#sketch"><i class="fa fa-check"></i><b>4.3.3</b> Sketch</a></li>
+<li class="chapter" data-level="4.3.4" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#prototype"><i class="fa fa-check"></i><b>4.3.4</b> Prototype</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="types-of-graphs.html"><a href="types-of-graphs.html"><i class="fa fa-check"></i><b>5</b> Types of Graphs</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="types-of-graphs.html"><a href="types-of-graphs.html#simple-text"><i class="fa fa-check"></i><b>5.1</b> Simple Text</a></li>
+<li class="chapter" data-level="5.2" data-path="types-of-graphs.html"><a href="types-of-graphs.html#tables-1"><i class="fa fa-check"></i><b>5.2</b> Tables</a></li>
+<li class="chapter" data-level="5.3" data-path="types-of-graphs.html"><a href="types-of-graphs.html#heatmap"><i class="fa fa-check"></i><b>5.3</b> Heatmap</a></li>
+<li class="chapter" data-level="5.4" data-path="types-of-graphs.html"><a href="types-of-graphs.html#scatterplot"><i class="fa fa-check"></i><b>5.4</b> Scatterplot</a></li>
+<li class="chapter" data-level="5.5" data-path="types-of-graphs.html"><a href="types-of-graphs.html#line-graph"><i class="fa fa-check"></i><b>5.5</b> Line Graph</a></li>
+<li class="chapter" data-level="5.6" data-path="types-of-graphs.html"><a href="types-of-graphs.html#slopegraph"><i class="fa fa-check"></i><b>5.6</b> Slopegraph</a></li>
+<li class="chapter" data-level="5.7" data-path="types-of-graphs.html"><a href="types-of-graphs.html#vertical-and-horizontal-bar-graph"><i class="fa fa-check"></i><b>5.7</b> Vertical and Horizontal Bar Graph</a></li>
+<li class="chapter" data-level="5.8" data-path="types-of-graphs.html"><a href="types-of-graphs.html#stacked-bar-graph"><i class="fa fa-check"></i><b>5.8</b> Stacked Bar Graph</a></li>
+<li class="chapter" data-level="5.9" data-path="types-of-graphs.html"><a href="types-of-graphs.html#waterfall-graph"><i class="fa fa-check"></i><b>5.9</b> Waterfall Graph</a></li>
+<li class="chapter" data-level="5.10" data-path="types-of-graphs.html"><a href="types-of-graphs.html#square-area-graph"><i class="fa fa-check"></i><b>5.10</b> Square Area Graph</a></li>
+<li class="chapter" data-level="5.11" data-path="types-of-graphs.html"><a href="types-of-graphs.html#avoid-these-when-possible"><i class="fa fa-check"></i><b>5.11</b> Avoid These When Possible</a>
+<ul>
+<li class="chapter" data-level="5.11.1" data-path="types-of-graphs.html"><a href="types-of-graphs.html#pie-charts"><i class="fa fa-check"></i><b>5.11.1</b> Pie Charts</a></li>
+<li class="chapter" data-level="5.11.2" data-path="types-of-graphs.html"><a href="types-of-graphs.html#donut-chart"><i class="fa fa-check"></i><b>5.11.2</b> Donut Chart</a></li>
+<li class="chapter" data-level="5.11.3" data-path="types-of-graphs.html"><a href="types-of-graphs.html#d-charts"><i class="fa fa-check"></i><b>5.11.3</b> 3D Charts</a></li>
+<li class="chapter" data-level="5.11.4" data-path="types-of-graphs.html"><a href="types-of-graphs.html#secondary-axis"><i class="fa fa-check"></i><b>5.11.4</b> Secondary Axis</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="data-visualization-design.html"><a href="data-visualization-design.html"><i class="fa fa-check"></i><b>6</b> Data Visualization Design</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="data-visualization-design.html"><a href="data-visualization-design.html#connecting-with-visuals"><i class="fa fa-check"></i><b>6.1</b> Connecting with Visuals</a></li>
+<li class="chapter" data-level="6.2" data-path="data-visualization-design.html"><a href="data-visualization-design.html#what-is-a-good-visualization"><i class="fa fa-check"></i><b>6.2</b> What is a Good Visualization?</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="data-visualization-design.html"><a href="data-visualization-design.html#colour"><i class="fa fa-check"></i><b>6.2.1</b> Colour</a></li>
+<li class="chapter" data-level="6.2.2" data-path="data-visualization-design.html"><a href="data-visualization-design.html#form"><i class="fa fa-check"></i><b>6.2.2</b> Form</a></li>
+<li class="chapter" data-level="6.2.3" data-path="data-visualization-design.html"><a href="data-visualization-design.html#spacial-position"><i class="fa fa-check"></i><b>6.2.3</b> Spacial Position</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="data-visualization-design.html"><a href="data-visualization-design.html#gestalt-principles-of-visual-perception"><i class="fa fa-check"></i><b>6.3</b> Gestalt Principles of Visual Perception</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="data-visualization-design.html"><a href="data-visualization-design.html#gestalt-principles"><i class="fa fa-check"></i><b>6.3.1</b> Gestalt principles</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="data-visualization-design.html"><a href="data-visualization-design.html#readability"><i class="fa fa-check"></i><b>6.4</b> Readability</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html"><i class="fa fa-check"></i><b>7</b> Making Your Chart More Persuasive</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#clearly-articulating-your-point"><i class="fa fa-check"></i><b>7.1</b> Clearly Articulating Your Point</a></li>
+<li class="chapter" data-level="7.2" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#three-tips"><i class="fa fa-check"></i><b>7.2</b> Three Tips</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#hone-the-main-idea"><i class="fa fa-check"></i><b>7.2.1</b> Hone the Main Idea</a></li>
+<li class="chapter" data-level="7.2.2" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#make-it-stand-out"><i class="fa fa-check"></i><b>7.2.2</b> Make it Stand Out</a></li>
+<li class="chapter" data-level="7.2.3" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#adjust-what-is-around-it"><i class="fa fa-check"></i><b>7.2.3</b> Adjust What is Around It</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Telling Stories with Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="types-of-graphs" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Types of Graphs<a href="types-of-graphs.html#types-of-graphs" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Understanding what type of graph to use is incredibly important when you are designing a visualization. In this chapter, we will go over some of the basic chart types and what the best practices are for each.</p>
+<div id="simple-text" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Simple Text<a href="types-of-graphs.html#simple-text" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When you are trying to communicate a number or two, consider just stating the number. Make it prominent with few words to help it. When using a table or chart in instances with few numbers, the message tends to fall flat.</p>
+<blockquote>
+<p>Example: Consider the following data. The data came from a report from Pew Research Center. The idea was that few children had stay-at-home moms in 2012.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>In this example, we have too much text. There is lots of wasted space and only really two numbers. In addition, if the message is that 20% is small, that does not come across as the right bar seems to be almost half of the height of the chart. (Of course, we know that 20% is less than half of 41% and that 41% is less than 50% to begin with, but is this the best way to drive your point home?)</p>
+<p>A better way is below.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Another note, avoid a graphic that says that there are fewer than 50% of stay-at-home mothers in 2012 compared to 1970 as without the reference to the 41%, some of the context is lost.</p>
+</blockquote>
+</div>
+<div id="tables-1" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Tables<a href="types-of-graphs.html#tables-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Avoid using tables in presentations. As the audience attempts to read the table, the focus switches from you to the table. In reports, however, tables are often the way to go. When reading reports, the audience has much more time to digest the message and they can do so at their own pace without worrying about the typed message being lost.</p>
+<p>Borders should be used only when their inclusion adds to the legibility of your table. If you must have them, consider grey borders. A border separating the column labels from the data is allowed. However, try to use white space to separate rows and columns where possible.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example: The first table below is a standard “Microsoft Excel” looking table. Consider how we might clean it up.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong8.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>When arranging data, consider what your columns and row labels should be. Consider using groupings and repeat column/ row headers at the beginning of each group. This keeps the structure consistent from group to group.</p>
+<p>When formatting text, all text should be oriented horizontally and in a sensible left to right order. Never order your data at random (alphabetically is very close to random in many cases). Align numbers to the right and ensure that the same number of decimal places are kept for each number. Non-numerical values should be left aligned (with the possible exception of centering non-numeric items with the same number of characters). Select a font that is legible and maintain the same font throughout. Using bold typeface or colour is useful if you want to highlight groups.</p>
+<p>Make columns containing group summaries visually distinct from the detail columns. Consider putting summaries at the top of a group rather than at the bottom.</p>
+<p>Including a chart in a table if space is available. It often increases the message.</p>
+<blockquote>
+<p>Example: This example has a bar graph with the numerical data included. The eye is immediately drawn to the graph. Including the graph will highlight the important parts of the data.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong9.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+</div>
+<div id="heatmap" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Heatmap<a href="types-of-graphs.html#heatmap" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A heatmap is a way to enhance a table. Rather than having to scan the table to find high and low values, the colour saturation helps us target key numbers quickly.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole3.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example: Heatmaps can be useful for time series tables. Here we use a heatmap to highlight utilization rates.</p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><img src="Lindsay1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Lindsay Betzendahl (<span class="citation">Rowell, Betzendahl, and Brown (<a href="references.html#ref-Rowell_Betzendahl_Brown_2020" role="doc-biblioref">2020</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+</div>
+<div id="scatterplot" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Scatterplot<a href="types-of-graphs.html#scatterplot" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A scatterplot can be useful to show the relationship between two values (one on the x-axis and one on the y-axis). The area of the data should be roughly 2/3 of the range of the y-axis. Using points does not require us to begin at a baseline. Using bars, we need to begin at a baseline. That said, there is nothing stopping you from beginning from a baseline if it adds to the message.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few3.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Increments on the y-axis should be meaningful. Increments of 3 or 4 are typically bad compared to increments of 2, 5, 10 or 25.</p>
+<p>If there are many data points at the same spot on the graph, consider jittering them so that the number of points is clearer.</p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><img src="Lindsay2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Lindsay Betzendahl (<span class="citation">Rowell, Betzendahl, and Brown (<a href="references.html#ref-Rowell_Betzendahl_Brown_2020" role="doc-biblioref">2020</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Finally, if you are plotting multiple categories of data, consider not using a legend but rather labeling the data.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Scott1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Changing the size of the points can add another layer to the data. Typically, we call these types of graphs bubble plots.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="line-graph" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Line Graph<a href="types-of-graphs.html#line-graph" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A line graph is used to display a trend over time. Unlike bar graphs, a line graph does not need to begin at a baseline. However, beginning the y-axis a few units before the data begins tends to give a nice visual appeal. As always, ensure that your axis increments at the same rate.</p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><img src="Lindsay3.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Lindsay Betzendahl (<span class="citation">Rowell, Betzendahl, and Brown (<a href="references.html#ref-Rowell_Betzendahl_Brown_2020" role="doc-biblioref">2020</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Avoid using lines that are too thick (it hides the detail) or that ar too thin (they are hard to read). As with graphing points, use sensible axis increments and attempt to have your data take roughly 2/3 of the graph range, if possible. The number of lines on a line graph should not exceed four. Avoid the temptation of using dashes or dots to differentiate between the line types. Rather, select colours for each line. If you absolutely need to display more than four categories of data, consider a panel of charts. This avoids the graph looking like spaghetti.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong10.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Avoid legends, where possible. If you label the lines directly, the graph becomes clearer and requires less work by the audience to read.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong11.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="slopegraph" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> Slopegraph<a href="types-of-graphs.html#slopegraph" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Slopegraphs are very useful in special cases. One case is if we want to see change from one time period to another. A second use is to see change from one category to another especially when the categories have different units.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole4.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>If many of the data are overlapping, slopegraphs may not work well. Of course, if we want to draw attention to one or more individual slopes, we can shade them differently than the rest.</p>
+</div>
+<div id="vertical-and-horizontal-bar-graph" class="section level2 hasAnchor" number="5.7">
+<h2><span class="header-section-number">5.7</span> Vertical and Horizontal Bar Graph<a href="types-of-graphs.html#vertical-and-horizontal-bar-graph" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>While many people shy away from bar charts because they are seen as common, in reality they should be used more often because they are so common. Since everyone knows what they are, it takes substantially less effort for people to interpret them leaving them time to hear your message.</p>
+<p>The term “bar chart” is fairly generic and should be interpreted as bars (horizontal) as well as columns (vertical).</p>
+<p>Visually, bar charts are easy for our eyes to interpret. We interpret them based on height. However, for this reason, it is important to begin bar charts at a baseline as otherwise we get a false comparison of the height. There is never a reason not to begin at a zero baseline.</p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><img src="Lindsay4.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Lindsay Betzendahl (<span class="citation">Rowell, Betzendahl, and Brown (<a href="references.html#ref-Rowell_Betzendahl_Brown_2020" role="doc-biblioref">2020</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Make sure the bars are not too narrow or too thick. A good rule of thumb is to have the distance between the bars be half of the width of the bars themselves. You should avoid distracting shades and colours for the bars. It is often good practice to put projections in a different shade to emphasize that they are different than the data. Shading and the use of 3D can also interfere with the audience’s ability to determine the height of the bar.</p>
+<p>If categories on the horizontal axis are long labels, use horizontal bars rather than slanting your text.</p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><img src="Lindsay5.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Lindsay Betzendahl (<span class="citation">Rowell, Betzendahl, and Brown (<a href="references.html#ref-Rowell_Betzendahl_Brown_2020" role="doc-biblioref">2020</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong12.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Avoid bar colours that alternate between light and dark. Rather, order the colours from lightest to darkest. Never change the order of the bars. If you have a legend, make sure the order of the legend is the same as the order of the bars.</p>
+<p>When selecting the order of the bars, use an order that makes sense. Ranking is normally a good ordering. In order of time is also a good ordering. Conversely, alphabetical is normally not a good ordering.</p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><img src="Lindsay6.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Lindsay Betzendahl (<span class="citation">Rowell, Betzendahl, and Brown (<a href="references.html#ref-Rowell_Betzendahl_Brown_2020" role="doc-biblioref">2020</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Use direct labeling on your bars to avoid grid lines. However, if you have many bars, a thin line every 4 or 5 bars is acceptable. When graphing negative values, graph them below the x-axis (in the case of vertical bars) or to the left of the vertical axis (in the case of horizontal bars).</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong13.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Finally, if you need to compare multiple categories in your visual, avoid putting your charts side-by-side. It is much better to use smaller charts and several of them.</p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><img src="Lindsay7.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Lindsay Betzendahl (<span class="citation">Rowell, Betzendahl, and Brown (<a href="references.html#ref-Rowell_Betzendahl_Brown_2020" role="doc-biblioref">2020</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="stacked-bar-graph" class="section level2 hasAnchor" number="5.8">
+<h2><span class="header-section-number">5.8</span> Stacked Bar Graph<a href="types-of-graphs.html#stacked-bar-graph" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Stacked bar and column charts are saved for special cases. Most of the time, side-by-side or multiple bar charts would be a better option to a stacked chart. There are two rules for stacked bar charts. First, never use more than 3 categories and second, make sure that the data for the first segment of the bar chart is similar in size. Violating either of these rules makes comparisons after the first level very difficult.</p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><img src="Lindsay8.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Lindsay Betzendahl (<span class="citation">Rowell, Betzendahl, and Brown (<a href="references.html#ref-Rowell_Betzendahl_Brown_2020" role="doc-biblioref">2020</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="waterfall-graph" class="section level2 hasAnchor" number="5.9">
+<h2><span class="header-section-number">5.9</span> Waterfall Graph<a href="types-of-graphs.html#waterfall-graph" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A waterfall chart is similar to a bar graph except it pulls pieces of the stack apart to show increases/ decreases incrementally. In the example below, we show how the headcount of a team evolved over the year 2014. We began with an initial headcount, we added in some new hires and we had some employees transfer in. Those are all represented as positive increases to the headcount. We then had some employees transfer out and some employees exit. Those are shown as negative values on the chart. That leaves us with a final headcount at the end of the year. A waterfall chart is a nice way to show changes when the change comes as a result of both positive and negative changes.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole5.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Remember, all of the rules that apply to bar/ column charts also apply here.</p>
+</div>
+<div id="square-area-graph" class="section level2 hasAnchor" number="5.10">
+<h2><span class="header-section-number">5.10</span> Square Area Graph<a href="types-of-graphs.html#square-area-graph" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Most people find deciphering areas very difficult. For that reason, we generally avoid charts that rely on area as the tool of comparison. Pie charts, as you will read below, are among the most difficult to interpret and should be avoided.</p>
+<p>The one exception to this rule is the square area chart. If you have to visualize numbers with vastly different areas, you might consider square area charts.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole6.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Do not mess too much with the icons. Squares work well (best?) because they are divisible in a sensible way. For example, I know what 25% of a square icon looks like, but I might not know what 25% of a car icon looks like since it is asymmetric. (Also, do not cut icons like people, buildings or airplanes in half - it’s disturbing and might elicit a negative reaction from your audience). Furthermore, if you are going to use icons that are different from squares (perhaps your icon is symmetric like a dot or your data is all in whole numbers), do not change the icon within the graphic. It tends to be more distracting than it is helpful. If your icon is going to represent more than 1 unit, make sure you do not use awkward units like 7 or 13. Use multiples of 2, 5, 10, 25, or 100. If you want to draw a distinction between groups, simply change the shade or colour.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong14.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="avoid-these-when-possible" class="section level2 hasAnchor" number="5.11">
+<h2><span class="header-section-number">5.11</span> Avoid These When Possible<a href="types-of-graphs.html#avoid-these-when-possible" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To be fair, the reason we are talking about all of the charts below is that someone thought they were a good idea at some point. However, today they are not used very often. In fact, we hope to give you a number of alternatives when you believe you are forced to use these charts.</p>
+<div id="pie-charts" class="section level3 hasAnchor" number="5.11.1">
+<h3><span class="header-section-number">5.11.1</span> Pie Charts<a href="types-of-graphs.html#pie-charts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Pie charts should only be used in elementary school as a way to teach children how to add fractions. (Moreover, if you ever want to teach my child how to add fractions, stop telling her that she scored 11/10 on her spelling test).</p>
+<p>As we mentioned earlier, pie charts rely on the audience’s ability to decipher area as a measure. Humans are very bad at doing this. The following example will help illustrate this point (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>). Ask yourself which supplier has the largest market share in the graph below.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole7.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>The consensus answer is supplier B. If you had to guess the share, what would you guess? Most people guess between 35% or 40%. In actuality, the market share is much less. Indeed, it is not even the largest piece of the pie.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole8.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>There are a couple of things going on here. First, the graph is tilted and made to look 3D. Because of this, the pieces that are farther away look smaller. However, even when you redraw the graph without the 3D, the challenge of determining the largest piece still remain. When segments are close in size, they cannot easily be interpreted. Why would we simply not use a bar chart?</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole9.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>If you must use a pie chart, never put the small segments at 12 o’clock. Put the largest segment at the top (clockwise) with the next largest at the top (counter-clockwise) and filling in from there.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong15.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Never use more than five slices. If your data has more than five pieces, graph the first four and then have a category labeled “other” (and place this at the end no matter the size). Avoid distracting colours and special effects like pulling slices out. If you want to highlight a particular slice, shade it a different colour.</p>
+<p>A bar is almost always better than a pie. This is especially true when you have categorical data that is ranked. If you have data that is categorized as “very poor”, “poor”, “neutral”, “good”, “very good”, then it is more natural to put these on a line with the most negative on the left and the most positive on the right.</p>
+</div>
+<div id="donut-chart" class="section level3 hasAnchor" number="5.11.2">
+<h3><span class="header-section-number">5.11.2</span> Donut Chart<a href="types-of-graphs.html#donut-chart" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Where pie charts ask the reader to evaluate areas, donut charts ask the reader to evaluate arc lengths.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole10.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Again, if you must use a donut chart, remember all of the rules for pie charts. Also, consider including the total for the donut in the centre (it’s empty for a reason after all). Finally, I will encourage you not to use a pie or donut chart but rather a bar chart.</p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><img src="Lindsay9.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Lindsay Betzendahl (<span class="citation">Rowell, Betzendahl, and Brown (<a href="references.html#ref-Rowell_Betzendahl_Brown_2020" role="doc-biblioref">2020</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="d-charts" class="section level3 hasAnchor" number="5.11.3">
+<h3><span class="header-section-number">5.11.3</span> 3D Charts<a href="types-of-graphs.html#d-charts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Don’t use 3D charts. Just don’t. And certainly not for a single dimension (things get weird if you are graphing three dimensions in 3D, but can get done). 3D graphs add unnecessary chart elements that distract from the intended message. For a bar graph, for example, it is difficult to know if your software is actually graphing the front or back of the graph to the height.</p>
+<p>For example, January and February are both set to the same height. It is not necessarily that obvious by looking at the graph? Would it surprise you to know that each of the bars were set to a whole number height?</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole11.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>There are tonnes of issues with 3D - avoid it always.</p>
+</div>
+<div id="secondary-axis" class="section level3 hasAnchor" number="5.11.4">
+<h3><span class="header-section-number">5.11.4</span> Secondary Axis<a href="types-of-graphs.html#secondary-axis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A secondary axis can be useful to show a relationship between two items with different scales. However, they should be generally avoided. In the graph below, you can see that there was an increase in the salesforce that coincided with an increase in revenue in Q4. The revenue generated by the company dipped in Q1 and Q2 despite a sustained salesforce through 2014.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole12.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Rather than a secondary axis, here are two alternatives. Both of these give the same information, but avoid the secondary axis.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Cole13.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Cole Knaflic (<span class="citation">Knaflic (<a href="references.html#ref-Knaflic_2015" role="doc-biblioref">2015</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="planning-your-visualization.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-visualization-design.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/05-types_of_graphs.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

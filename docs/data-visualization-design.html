@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Data Visualization Design | Telling Stories with Data</title>
+  <meta name="description" content="Chapter 6 Data Visualization Design | Telling Stories with Data" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Data Visualization Design | Telling Stories with Data" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/CoverArt.png" />
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Data Visualization Design | Telling Stories with Data" />
+  
+  
+  <meta name="twitter:image" content="/CoverArt.png" />
+
+<meta name="author" content="Joe Hobart" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="types-of-graphs.html"/>
+<link rel="next" href="making-your-chart-more-persuasive.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Visualization</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-read-this-book"><i class="fa fa-check"></i>Why read this book</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#growth-in-data"><i class="fa fa-check"></i><b>1.1</b> Growth in Data</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#the-data-story"><i class="fa fa-check"></i><b>1.2</b> The Data Story</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#why-data-visualization"><i class="fa fa-check"></i><b>1.3</b> Why Data Visualization?</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#planning-the-data-story"><i class="fa fa-check"></i><b>1.4</b> Planning the Data Story</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#enriching-the-story"><i class="fa fa-check"></i><b>1.5</b> Enriching The Story</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="introduction.html"><a href="introduction.html#use-of-units"><i class="fa fa-check"></i><b>1.5.1</b> Use of Units</a></li>
+<li class="chapter" data-level="1.5.2" data-path="introduction.html"><a href="introduction.html#use-familiar-comparisons"><i class="fa fa-check"></i><b>1.5.2</b> Use Familiar Comparisons</a></li>
+<li class="chapter" data-level="1.5.3" data-path="introduction.html"><a href="introduction.html#use-everyday-terms"><i class="fa fa-check"></i><b>1.5.3</b> Use Everyday Terms</a></li>
+<li class="chapter" data-level="1.5.4" data-path="introduction.html"><a href="introduction.html#use-the-moral-or-emotional-approach"><i class="fa fa-check"></i><b>1.5.4</b> Use the Moral or Emotional Approach</a></li>
+<li class="chapter" data-level="1.5.5" data-path="introduction.html"><a href="introduction.html#use-a-personal-approach"><i class="fa fa-check"></i><b>1.5.5</b> Use a Personal Approach</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="introduction.html"><a href="introduction.html#best-practices"><i class="fa fa-check"></i><b>1.6</b> Best Practices</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="introduction.html"><a href="introduction.html#select-your-audience"><i class="fa fa-check"></i><b>1.6.1</b> Select Your Audience</a></li>
+<li class="chapter" data-level="1.6.2" data-path="introduction.html"><a href="introduction.html#know-your-purpose"><i class="fa fa-check"></i><b>1.6.2</b> Know Your Purpose</a></li>
+<li class="chapter" data-level="1.6.3" data-path="introduction.html"><a href="introduction.html#select-the-right-visual"><i class="fa fa-check"></i><b>1.6.3</b> Select the Right Visual</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html"><i class="fa fa-check"></i><b>2</b> A Brief History of Data Visualization</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-i---pre-17th-century-early-maps-and-diagrams"><i class="fa fa-check"></i><b>2.1</b> Epoch I - Pre-17th Century: Early Maps and Diagrams</a></li>
+<li class="chapter" data-level="2.2" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-ii---1600---1699-measurement-and-theory"><i class="fa fa-check"></i><b>2.2</b> Epoch II - 1600 - 1699: Measurement and Theory</a></li>
+<li class="chapter" data-level="2.3" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-iii---1700---1799-new-graphical-forms"><i class="fa fa-check"></i><b>2.3</b> Epoch III - 1700 - 1799: New Graphical Forms</a></li>
+<li class="chapter" data-level="2.4" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-iv---1800---1850-beginnings-of-modern-graphics"><i class="fa fa-check"></i><b>2.4</b> Epoch IV - 1800 - 1850: Beginnings of Modern Graphics</a></li>
+<li class="chapter" data-level="2.5" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-v---1850---1900-the-golden-age-of-statistical-graphics"><i class="fa fa-check"></i><b>2.5</b> Epoch V - 1850 - 1900: The Golden Age of Statistical Graphics</a></li>
+<li class="chapter" data-level="2.6" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-vi-1900-1950-the-modern-dark-ages"><i class="fa fa-check"></i><b>2.6</b> Epoch VI: 1900-1950: The Modern Dark Ages</a></li>
+<li class="chapter" data-level="2.7" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-vii---1950---1975-the-re-birth-of-data-visualization"><i class="fa fa-check"></i><b>2.7</b> Epoch VII - 1950 - 1975: The Re-birth of Data Visualization</a></li>
+<li class="chapter" data-level="2.8" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-viii---1975---today-high-definition-and-dynamic-visualization"><i class="fa fa-check"></i><b>2.8</b> Epoch VIII - 1975 - Today: High Definition and Dynamic Visualization</a></li>
+<li class="chapter" data-level="2.9" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#todays-data-visualization-tools"><i class="fa fa-check"></i><b>2.9</b> Today’s Data Visualization Tools</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="think-data-ink.html"><a href="think-data-ink.html"><i class="fa fa-check"></i><b>3</b> Think Data Ink</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="think-data-ink.html"><a href="think-data-ink.html#data-ink"><i class="fa fa-check"></i><b>3.1</b> Data Ink</a></li>
+<li class="chapter" data-level="3.2" data-path="think-data-ink.html"><a href="think-data-ink.html#tables"><i class="fa fa-check"></i><b>3.2</b> Tables</a></li>
+<li class="chapter" data-level="3.3" data-path="think-data-ink.html"><a href="think-data-ink.html#graphics"><i class="fa fa-check"></i><b>3.3</b> Graphics</a></li>
+<li class="chapter" data-level="3.4" data-path="think-data-ink.html"><a href="think-data-ink.html#exercises"><i class="fa fa-check"></i><b>3.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html"><i class="fa fa-check"></i><b>4</b> Planning Your Visualization</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#when-a-visualization-hits-our-eyes"><i class="fa fa-check"></i><b>4.1</b> When a Visualization Hits our Eyes</a></li>
+<li class="chapter" data-level="4.2" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#two-questions-you-should-ask"><i class="fa fa-check"></i><b>4.2</b> Two Questions You Should Ask</a></li>
+<li class="chapter" data-level="4.3" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#planning"><i class="fa fa-check"></i><b>4.3</b> Planning</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#preparation"><i class="fa fa-check"></i><b>4.3.1</b> Preparation</a></li>
+<li class="chapter" data-level="4.3.2" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#talk-and-listen"><i class="fa fa-check"></i><b>4.3.2</b> Talk and Listen</a></li>
+<li class="chapter" data-level="4.3.3" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#sketch"><i class="fa fa-check"></i><b>4.3.3</b> Sketch</a></li>
+<li class="chapter" data-level="4.3.4" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#prototype"><i class="fa fa-check"></i><b>4.3.4</b> Prototype</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="types-of-graphs.html"><a href="types-of-graphs.html"><i class="fa fa-check"></i><b>5</b> Types of Graphs</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="types-of-graphs.html"><a href="types-of-graphs.html#simple-text"><i class="fa fa-check"></i><b>5.1</b> Simple Text</a></li>
+<li class="chapter" data-level="5.2" data-path="types-of-graphs.html"><a href="types-of-graphs.html#tables-1"><i class="fa fa-check"></i><b>5.2</b> Tables</a></li>
+<li class="chapter" data-level="5.3" data-path="types-of-graphs.html"><a href="types-of-graphs.html#heatmap"><i class="fa fa-check"></i><b>5.3</b> Heatmap</a></li>
+<li class="chapter" data-level="5.4" data-path="types-of-graphs.html"><a href="types-of-graphs.html#scatterplot"><i class="fa fa-check"></i><b>5.4</b> Scatterplot</a></li>
+<li class="chapter" data-level="5.5" data-path="types-of-graphs.html"><a href="types-of-graphs.html#line-graph"><i class="fa fa-check"></i><b>5.5</b> Line Graph</a></li>
+<li class="chapter" data-level="5.6" data-path="types-of-graphs.html"><a href="types-of-graphs.html#slopegraph"><i class="fa fa-check"></i><b>5.6</b> Slopegraph</a></li>
+<li class="chapter" data-level="5.7" data-path="types-of-graphs.html"><a href="types-of-graphs.html#vertical-and-horizontal-bar-graph"><i class="fa fa-check"></i><b>5.7</b> Vertical and Horizontal Bar Graph</a></li>
+<li class="chapter" data-level="5.8" data-path="types-of-graphs.html"><a href="types-of-graphs.html#stacked-bar-graph"><i class="fa fa-check"></i><b>5.8</b> Stacked Bar Graph</a></li>
+<li class="chapter" data-level="5.9" data-path="types-of-graphs.html"><a href="types-of-graphs.html#waterfall-graph"><i class="fa fa-check"></i><b>5.9</b> Waterfall Graph</a></li>
+<li class="chapter" data-level="5.10" data-path="types-of-graphs.html"><a href="types-of-graphs.html#square-area-graph"><i class="fa fa-check"></i><b>5.10</b> Square Area Graph</a></li>
+<li class="chapter" data-level="5.11" data-path="types-of-graphs.html"><a href="types-of-graphs.html#avoid-these-when-possible"><i class="fa fa-check"></i><b>5.11</b> Avoid These When Possible</a>
+<ul>
+<li class="chapter" data-level="5.11.1" data-path="types-of-graphs.html"><a href="types-of-graphs.html#pie-charts"><i class="fa fa-check"></i><b>5.11.1</b> Pie Charts</a></li>
+<li class="chapter" data-level="5.11.2" data-path="types-of-graphs.html"><a href="types-of-graphs.html#donut-chart"><i class="fa fa-check"></i><b>5.11.2</b> Donut Chart</a></li>
+<li class="chapter" data-level="5.11.3" data-path="types-of-graphs.html"><a href="types-of-graphs.html#d-charts"><i class="fa fa-check"></i><b>5.11.3</b> 3D Charts</a></li>
+<li class="chapter" data-level="5.11.4" data-path="types-of-graphs.html"><a href="types-of-graphs.html#secondary-axis"><i class="fa fa-check"></i><b>5.11.4</b> Secondary Axis</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="data-visualization-design.html"><a href="data-visualization-design.html"><i class="fa fa-check"></i><b>6</b> Data Visualization Design</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="data-visualization-design.html"><a href="data-visualization-design.html#connecting-with-visuals"><i class="fa fa-check"></i><b>6.1</b> Connecting with Visuals</a></li>
+<li class="chapter" data-level="6.2" data-path="data-visualization-design.html"><a href="data-visualization-design.html#what-is-a-good-visualization"><i class="fa fa-check"></i><b>6.2</b> What is a Good Visualization?</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="data-visualization-design.html"><a href="data-visualization-design.html#colour"><i class="fa fa-check"></i><b>6.2.1</b> Colour</a></li>
+<li class="chapter" data-level="6.2.2" data-path="data-visualization-design.html"><a href="data-visualization-design.html#form"><i class="fa fa-check"></i><b>6.2.2</b> Form</a></li>
+<li class="chapter" data-level="6.2.3" data-path="data-visualization-design.html"><a href="data-visualization-design.html#spacial-position"><i class="fa fa-check"></i><b>6.2.3</b> Spacial Position</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="data-visualization-design.html"><a href="data-visualization-design.html#gestalt-principles-of-visual-perception"><i class="fa fa-check"></i><b>6.3</b> Gestalt Principles of Visual Perception</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="data-visualization-design.html"><a href="data-visualization-design.html#gestalt-principles"><i class="fa fa-check"></i><b>6.3.1</b> Gestalt principles</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="data-visualization-design.html"><a href="data-visualization-design.html#readability"><i class="fa fa-check"></i><b>6.4</b> Readability</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html"><i class="fa fa-check"></i><b>7</b> Making Your Chart More Persuasive</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#clearly-articulating-your-point"><i class="fa fa-check"></i><b>7.1</b> Clearly Articulating Your Point</a></li>
+<li class="chapter" data-level="7.2" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#three-tips"><i class="fa fa-check"></i><b>7.2</b> Three Tips</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#hone-the-main-idea"><i class="fa fa-check"></i><b>7.2.1</b> Hone the Main Idea</a></li>
+<li class="chapter" data-level="7.2.2" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#make-it-stand-out"><i class="fa fa-check"></i><b>7.2.2</b> Make it Stand Out</a></li>
+<li class="chapter" data-level="7.2.3" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#adjust-what-is-around-it"><i class="fa fa-check"></i><b>7.2.3</b> Adjust What is Around It</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Telling Stories with Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-visualization-design" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Data Visualization Design<a href="data-visualization-design.html#data-visualization-design" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="connecting-with-visuals" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Connecting with Visuals<a href="data-visualization-design.html#connecting-with-visuals" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>It is important that we understand how people connect with our visuals if we want to be the most effective in communicating our message. By understanding that, and understanding what is going on inside of their minds, we can use pre-attentive attributes to connect with our audience faster. While it is our eyes that see the visualization, it is our minds that perceive them, and so as someone who creates the visualization, you need to have an idea about how the mind of your audience works.</p>
+<p>When the prefrontal cortex is engaged, it can be overwhelming to us. So much so that we can miss even the simplest things. As an example, consider “The Door Study” conducted by Daniel Simons and Daniel Levin (<span class="citation">Simons and Levin (<a href="references.html#ref-SimonsLevin" role="doc-biblioref">1998</a>)</span>). In this study, a person (the unknowing participant) is approached in a park by a second person (experimenter A) with a map. Experimenter A asks the participant for directions. As he asks for directions, two men holding a door pass between them and experimenter A is swapped out with a third person (experimenter B). The participant does not realize that experimenter A has been swapped for experimenter B in roughly 50% of the cases since their prefrontal cortex was engaged in using the map.</p>
+<p>A second example was done by Moran Cerf. In this study, researchers bring you to the lab and play a game in which they show you two cards with two pictures and they say, “Who do you find more attractive? The guy on the left or the guy on the right?”</p>
+<p>You’ll say perhaps, “The guy on the left is more attractive.” They say, “Fantastic. Here’s the card with this picture of the guy that you just chose. Hold the card in your hand and explain to us in one sentence why you picked this guy.” So you hold it in your hand and you say, “Yeah, I like this guy because he’s smiling.” You keep doing the experiment for about an hour.</p>
+<p>During the one hour you see dozens of pairs of pictures. Each of them means nothing to you because you don’t know who they are, but each of them is a choice that you make and explain. The interesting part of the experiment is that every now and then, the researcher will hand you the wrong card. What the researchers found were two things: 1. people never noticed that they got the card they didn’t choose. 2. participants held the cards in their hand and then they go on and explain why this is really their choice. Participants make a choice, the researcher changed it and the participant explained it.</p>
+<p>The moral of these two experiments is that if an audience does not fully understand the story that they are being told, their minds will make up something to fill in the gaps. If our data is too confusing to our audience, in some cases, they will make up a narative to help fill in the gaps.</p>
+<p>In a perfect world, we would communicate data without involving the prefrontal cortex. We want to hit our audience with a message that strikes the lower brain (the emotional part of their cognative understanding). We are wired to detect differences in shapes, colours, and size. We refer to these as pre-attentive attributes. While it seems easy enough to use these techniques, why do we continue to create bad visuals? It is probably because we do not truly understand the rules.</p>
+<p>Our objective should always be to keep the prefrontal cortex as still and quiet as possible. We do not really want our audience to think too much. That way, if our message is easy to understand and interpret, we will not divert attention away from our message.</p>
+</div>
+<div id="what-is-a-good-visualization" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> What is a Good Visualization?<a href="data-visualization-design.html#what-is-a-good-visualization" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Let us begin by defining what one might consider a good visualization. Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) suggests the following three elements are important for a good visualization:</p>
+<ul>
+<li>Clear meaning,</li>
+<li>Sophisticated use of contrast,</li>
+<li>Refined execution.</li>
+</ul>
+<p>By clear meaning, we mean that the visual communicates the intended insight. Sophisticated use of contrast means that we draw the audience’s attention to the elements that we want them to see and keeps them away from distracting ones. Refined execution puts polish on the visual and helps keep the audience focused on the important parts of the visual.</p>
+<p>Three preattentive attributes that we are going to discuss are colour, form and spacial position.</p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><img src="PreattentiveAttributes.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Lindsay Betzendahl (<span class="citation">Rowell, Betzendahl, and Brown (<a href="references.html#ref-Rowell_Betzendahl_Brown_2020" role="doc-biblioref">2020</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<div id="colour" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Colour<a href="data-visualization-design.html#colour" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are three main attributes of colour: hue, saturation and value (or lightness). Hue refers to different colours (for example, the primary colours).</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="WongColour.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Saturation refers to the intensity of the colours. More saturated colours appear darker than colours of the same hue with less saturation. The value of a colour is how light or dark the colour is.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few5.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few6.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>One thing to remember that items that are similar in colour are perceived as being similar in nature. So, keep in mind colour gradients when selecting your colours. If you have sequential data (like good/ better/ best or population scales), a saturated colour scheme might be best for you. A diverging colour palette (consisting of two distinct colours and a neutral mid-colour) works well when your data has a midpoint. Qualitative colour schemes are used when we have qualitative data that has no association. Do not use too many colours here.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="SequentialDivergingQualitative.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Betzendahl (<span class="citation">Rowell, Betzendahl, and Brown (<a href="references.html#ref-Rowell_Betzendahl_Brown_2020" role="doc-biblioref">2020</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example: Use colours that make sense for comparassons.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong5.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits -Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<blockquote>
+<p>Example: Graduated shades help focus attention.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong6.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<blockquote>
+<p>Example: Shade scales should be in an appropriate order.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong7.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>Also, keep in mind that about 10% of the population has some form of colour blindness. Where possible, remove legends and replace them with text on the graph. Converting your graphic (temporarily) to grayscale can help you check if your graphic will be readable to those with vision issues.</p>
+</div>
+<div id="form" class="section level3 hasAnchor" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Form<a href="data-visualization-design.html#form" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Form is another pre-attentive attribute that helps us focus our reader’s attention.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few4.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Of course, bar graphs take advantage of length, either horizontally or vertically. The audience can tell the difference between a line and a shorter one and they can make judgements about the relitive distance between them (this is the reason why bar graphs must begin at 0).</p>
+<p>Width is another common attribute of form. Here, we’re talking about the change in length of a bar in the secondary direction. Changing the width of a bar can help draw the audience’s eye to the piece of data on the chart that is the most important.</p>
+<p>A change of shape is a simple way to distinguish one or two data points from the rest of the group. The same can be said for size. However, be careful that your graph is not using a change in shape or size as an attribute of the data. For example, you should not mark different groups with a different shape on a scatterplot and then use a different shape to try to draw the reader’s attention to a specific data point. Rather, differentiate groups with colour and use a change in shape to point out specific data points.</p>
+<p>It is important to consider these attributes as not adding additional information to the graph, but rather, they draw the reader’s eye to the correct place.</p>
+</div>
+<div id="spacial-position" class="section level3 hasAnchor" number="6.2.3">
+<h3><span class="header-section-number">6.2.3</span> Spacial Position<a href="data-visualization-design.html#spacial-position" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>It is natural to perceive objects that are close together as belonging to a group. Of course, that principle applies directly to tables. Readers can easily scan across and down as these are natural groupings in a table. Additionally, we can help our audience to group by making subtle changes in the arrangement of the data.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few7.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>The squares in the diagram above are slightly closer together horizontally which gives us the cue to scan horizontally while the squares on the right are slightly closer vertically which pushes us to scan vertically. Thus, the position of each square relative to each other (or the width in between each square) helps focus our attention in the intended way. Consider these techniques next time you create a table.</p>
+</div>
+</div>
+<div id="gestalt-principles-of-visual-perception" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Gestalt Principles of Visual Perception<a href="data-visualization-design.html#gestalt-principles-of-visual-perception" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In 1912, psychologists began studying what is know known as Gestalt psychology. Gestalt is a German term meaning shape, form or pattern. This branch of psychology emphasizes the importance of perception and the organization of sensory information in to meaningful wholes or groups.</p>
+<p>Gestalt principles and pre-attentive attributes work together in the process of visual perception. Pre-attentive attributes are basic visual features that the human brain processes automatically and unconsciously. Gestalt principles, describe how these pre-attentive attributes are organized into meaningful patterns and structures.</p>
+<p>The Gestalt principles provide a framework for how pre-attentive attributes are organized and perceived as meaningful patterns. By grouping similar elements together, organizing them based on proximity or closure, and filling in missing information to complete patterns, the Gestalt principles help the brain to make sense of complex visual information.</p>
+<div id="gestalt-principles" class="section level3 hasAnchor" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Gestalt principles<a href="data-visualization-design.html#gestalt-principles" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>The Principle of Proximity</strong>
+The Principle of Proximity suggests that visual elements that are close to each other tend to be perceived as related and belonging together. When visual elements are close together, the brain perceives them as being related, even if there are no other visual cues to suggest this.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few10.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Principle of Similarity</strong>
+The Principle of Similarity is a perceptual organization principle that suggests that objects that share similar visual characteristics tend to be perceived as a group or pattern. In other words, elements that look alike are grouped together in the mind of the viewer.</p>
+<p>This principle operates on the idea that the human brain tends to organize sensory input into distinct groups, with elements that share common characteristics being grouped together. These characteristics can include similar shape, size, color, texture, or orientation.</p>
+<p>Here, we have shaded columns differently drawing the reader’s attention down each column.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few9.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Principle of Enclosure</strong>
+The Principle of Enclosure is a visual design principle that refers to the use of boundaries or shapes to enclose or group related elements together. It suggests that elements that are visually enclosed within a boundary or shape tend to be perceived as a single unit or group.</p>
+<p>This principle works on the idea that the human brain is wired to perceive objects that are contained within a boundary as a single entity. By using boundaries or shapes to enclose related elements, designers can create a visual hierarchy and make it easier for viewers to understand the relationships between different elements.</p>
+<p>In the image below, both sets of circles are identical. The grouping makes them seem different.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few8.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Principle of Closure</strong></p>
+<p>The Principle of Closure is a perceptual organization principle that suggests that the human brain tends to perceive incomplete or fragmented information as complete and whole. This means that the brain will fill in the missing gaps and perceive a complete image, even if some parts of it are missing or not visible.</p>
+<p>The principle of closure works on the idea that the human brain seeks to make sense of the world around us by grouping visual elements together and creating a cohesive picture. When there are gaps or missing information in a visual image, the brain automatically fills in these gaps to create a complete image.</p>
+<p>It is natural to look at these figures and see a rectangle and an oval even though they are neither shape. Use this principle in your graphics to reduce your non-data ink.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few11.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Principle of Continuity</strong></p>
+<p>The Principle of Continuity is a perceptual organization principle that suggests that the human brain tends to perceive visual elements that are arranged in a continuous or flowing manner as related and belonging together. This principle suggests that the eye will naturally follow a smooth and continuous path, even if the elements change or vary along that path.</p>
+<p>This principle relies on the idea that the human brain seeks to organize sensory information into coherent and meaningful patterns. When visual elements are arranged in a continuous and flowing manner, the brain perceives them as a unified whole, even if there are breaks or variations in the elements.</p>
+<p>The image on the left is a rectangle and wavy line. Our brain naturally assumes that if we decouple the two images, we would end up with the middle image even though the image on the right is just as likely.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few12.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Principle of Connection</strong>
+The Principle of Connection is a visual design principle that suggests that visual elements that are visually connected or linked together tend to be perceived as related and belonging together. This principle operates on the idea that the human brain organizes visual information into patterns and relationships based on visual connections between elements.</p>
+<p>Visual connections can take many forms, such as lines, arrows, or other visual cues that suggest a relationship or connection between elements. By creating visual connections between elements, designers can guide the viewer’s eye through a design and emphasize important relationships between different elements.</p>
+<p>Most people connect the dots vertically due to the lines that join them even though the 4 dots are equally spaced horizontally and vertically.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few13.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Additionally, the graphs below have the same arrangement of dots. However, the one on the right seems to tell a much different story than the one on the left because of it is connected. Looking at the two graphs, the audience gets the impression that points on the right graph should be grouped together or that the “next point” comes from the “previous point” while there is no such similar sense from the left graph.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few14.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>The Gestalt principles of visual perception can help you refine your visualizations (tables and graphs). Remember them, the story you want to tell, and the place you want to focus the audience attention, when you are constructing your visualizations.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Few15.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Stephen Few (<span class="citation">Few (<a href="references.html#ref-Few_2012" role="doc-biblioref">2012</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="readability" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Readability<a href="data-visualization-design.html#readability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There are some basic rules that will help improve the legibility of our visuals. As always, we want to make it as simple as possible for our audience to understand the message. Time taken to try to understand the visual takes away from our time to deliver the message.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="EasyToRead.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Some of these are basic, but are worth remembering:</p>
+<ul>
+<li>Make sure the typeface is not too small or squished.</li>
+<li>Typeface should be simple with either bold or italics used to emphasize. Do not use both. Also avoid stylized typefaces.</li>
+<li>Writing in all caps is difficult to read. Use proper uppercase and lowercase letters.</li>
+<li>Do not print white typeface over a black background.</li>
+<li>Where it makes sense, do not rotate the typeface.</li>
+<li>Label the graph directly where applicable.</li>
+</ul>
+<blockquote>
+<p>Example: Remember to check your typography.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<blockquote>
+<p>Example: Remember to check your font.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<blockquote>
+<p>Example: Do not write in white over black.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong3.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<blockquote>
+<p>Example: Bold text should be used sparingly.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong4.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<blockquote>
+<p>Example: Legends and labels that appear at a distance can be difficult to quickly read.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong16.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Where possible, remove legends and use labels directly on the graphic. They are both easier to read and also tend to give you back room on your graphic.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Wong17.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Donna Wong (<span class="citation">Wong (<a href="references.html#ref-Wong_2010" role="doc-biblioref">2010</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="types-of-graphs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="making-your-chart-more-persuasive.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/06-viz_design.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

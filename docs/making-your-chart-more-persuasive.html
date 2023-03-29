@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Telling Stories with Data</title>
-  <meta name="description" content="Telling Stories with Data" />
+  <title>Chapter 7 Making Your Chart More Persuasive | Telling Stories with Data</title>
+  <meta name="description" content="Chapter 7 Making Your Chart More Persuasive | Telling Stories with Data" />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Telling Stories with Data" />
+  <meta property="og:title" content="Chapter 7 Making Your Chart More Persuasive | Telling Stories with Data" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/CoverArt.png" />
   
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Telling Stories with Data" />
+  <meta name="twitter:title" content="Chapter 7 Making Your Chart More Persuasive | Telling Stories with Data" />
   
   
   <meta name="twitter:image" content="/CoverArt.png" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="introduction.html"/>
+<link rel="prev" href="data-visualization-design.html"/>
+<link rel="next" href="references.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -276,34 +276,275 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Telling Stories with Data</h1>
-<p class="author"><em>Joe Hobart</em></p>
-</div>
-<div id="preface" class="section level1 unnumbered hasAnchor">
-<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>I began thinking about data visualization when I became a department chair. I had access to a lot of data and had a boss who, for the most part, would not consider herself brilliant at mathematics or statistics. (I still have a number of bosses like that). I needed a way to help her understand what was going on in my department. Sometimes the issues were as small as projected enrollments and why my projections were correct. Other times the issues were far more complex like trying to explain the course path that a potential student might take. Of course, the latter situation does not even involve numbers (other than perhaps course numbers). However, in both situations, I found that creating a graphic would help her understand the issue with very little need for advanced mathematics or statistics.</p>
-<p>As my career moved along, I began consulting for a health authority. I had the opportunity to see others use graphics and tables and very often, those graphics and tables were complex and confusing. What people tended to forget when they made a graphic or a table was that they were the experts at working with that particular data set and they expected us plebs to understand the data exactly as they did.</p>
-<p>To me, there are two problems with that. The first is that we don’t understand the data at the same level as the author because we don’t work with it on a daily basis. Much of the work I did was for Capital Planning. While some of the people involved in capital planning decisions were actual people working in a hospital, many were people who had never stepped foot in the hospital (myself included in several cases). Those people can’t be expected to be intimately familiar with the inner workings of the hospital while doctors and nurses can’t be reasonably expected to understand processes involved in funding capital projects like the purchases of new equipment and the construction of new buildings. Both groups of people bring a different perspective to the discussion and as the person working with the data, I bring yet another perspective. A successful visual in this instance needs to be relatable to everyone working on the project.</p>
-<p>The second problem is obvious. If your audience knows as much about the data as you do, why are you presenting the data to them?</p>
-<p>Over the years, I have collected a number of best practices and stories about data visualization and I strive to teach you them in this book. I hope you enjoy and can take some ideas from it.</p>
-<div id="why-read-this-book" class="section level2 unnumbered hasAnchor">
-<h2>Why read this book<a href="index.html#why-read-this-book" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We aspire to teach you techniques to tell stories with data in this textbook. Of course, all the techniques in the world will not take the place of common sense or an intimate knowledge of the subject matter and data; however, if you know how to tell the story of your data properly, you will be better able to communicate the meaning of the data to your audience.</p>
-<p>Throughout this text, we will make reference to the following visual provided to us by David McCandless (<span class="citation">McCandless (<a href="references.html#ref-mccandless2012information" role="doc-biblioref">2012</a>)</span>). McCandless argues that there are keys to creating a good visualization (we will consider what is meant by the term “good” later on). The visual shows us that simply having data isn’t enough - we must be able to be able to create an artistic graphic from the data and pair it with a story with a particular goal in mind. Only then will we have a successful data visualization.</p>
+<div id="making-your-chart-more-persuasive" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Making Your Chart More Persuasive<a href="making-your-chart-more-persuasive.html#making-your-chart-more-persuasive" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="clearly-articulating-your-point" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Clearly Articulating Your Point<a href="making-your-chart-more-persuasive.html#clearly-articulating-your-point" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Of course, it is incredibly important to know your audience before you begin making a visualization. With your audience in mind, consider what you are trying to tell them. Is the presentation simply an informative presentation? Are you trying to persuade someone? Perhaps you have to impress someone with your visualization. The point is that both the audience and purpose matters.</p>
+<blockquote>
+<p>Consider a non-profit group trying to fight suburban poverty. One of the things the group is going to need to discuss is the increase in people in poverty living in the suburbs versus living in the city. Below is a chart that shows how people in poverty have moved outside of the city into the suburbs.</p>
 <table>
 <thead>
 <tr class="header">
-<th align="center"><img src="WhatMakesGoodViz.png" /></th>
+<th align="center"><img src="Berinato1.png" /></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><b>Image Credits - David McCandless (<span class="citation">McCandless (<a href="references.html#ref-mccandless2012information" role="doc-biblioref">2012</a>)</span>)</b></td>
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
 </tr>
 </tbody>
 </table>
+<p>What does this graphic say? Somewhere between 2000 and 2010, the population shifted from being primarily in cities to primarily in the suburbs. There is nothing wrong with it.</p>
+<p>A better version is included below.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>The new version shows immediately the surge in poor people living in the suburbs since 2000. The fact that we use the word “surge” to describe the second graph rather than the adjective “shift” or “increase”, speaks to the increased power of persuasiveness in the second visualization.</p>
+</blockquote>
+<p>The goal, when you are creating a graphic for persuasive purposes, is to create a graphic that leads to action. It isn’t simply enough that the chart is “true”; it needs to suggest a way forward.</p>
+<p>The science of influence is a branch of psychology that plays a significant role in success. Three strategies that we use to influence behaviour or thinking: economic, social and environmental.</p>
+<p>Economic strategies are carrot and stick types of strategies. There are benefits to doing one thing and negative consequences to doing another. Social strategies are often driven by outside influences. we should be doing things one way because everyone else is doing it this way. Environmental strategies include environmental factors like having relaxing music in hospitals and doctor’s offices. There are many examples of these types of strategies. Changing the physical environment even slightly can have a huge impact on persuasion.</p>
+<p>Persuasion in visualization works in a similar way. Steve J. Martin writes: “Whilst we’d like to think that our decisions are the result of effortful cognition, the reality is somewhat different. Much of our behaviour is driven by unconscious cues present in our
+environment.” (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>).</p>
+<p>Even descriptions can be jazzed up in order to persuade your audience. My house is 5 bedrooms, 4 bathrooms and nearly 4000 square feet with a small yard. Conversely, my house can be described as a very large open-concept three story home, suitable for a large family, situated on a low-maintenance lot with golf course views out the back porch. The point here is that one of these is descriptive while the other is persuasive.</p>
+<p>If you have a visualization and you have an opinion on how it should be interpreted, jazz it up so that it is interpreted the way you intended. Use unconscious cues (Gestalt principles) like colour, contrast, space, words, what you show and what you leave out, to heighten the effect.</p>
+<p>Here’s another example. The graph below is fine (though, it should probably be horizontal rather than vertical). But, if you want to persuade people that beer is expensive at baseball games, this likely won’t do it without a significant explaination from you.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato3.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>The image below is far more persuasive. It very quickly demonstrates how expensive beer is at baseball games. Admittidely, it is slightly over the top, but it does drive the point home.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato4.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="three-tips" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Three Tips<a href="making-your-chart-more-persuasive.html#three-tips" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<blockquote>
+<p>Example: Which graph convinces you that there is an issue with the west coast sales team?</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato5.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>While the graph on the left is more detailed, the main message is lost in the sea of details. The graph on the right shows a much clearer story of the west coast sales team having problems. Remember, details are not the key to getting your message across. Making your message impossibly obvious is the key.</p>
+</blockquote>
+<p>Scott Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) lays out three tips to persuade your audience.</p>
+<ol style="list-style-type: decimal">
+<li>Hone the main idea,</li>
+<li>Make it stand out,</li>
+<li>Adjust what’s around it.</li>
+</ol>
+<div id="hone-the-main-idea" class="section level3 hasAnchor" number="7.2.1">
+<h3><span class="header-section-number">7.2.1</span> Hone the Main Idea<a href="making-your-chart-more-persuasive.html#hone-the-main-idea" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Rather than approaching your data by asking “what am I trying to show”, it is often times better to say “I need to convince them that…”. Consider the urban poverty example. Rather than saying “I want to compare suburban and urban poverty”, you would be better served by saying “I need to convince people that suburban poverty is a rapidly growing problem.</p>
+<blockquote>
+<p>Example: Rather than approaching your visualization with the statement:</p>
+<p>“I am trying to show how increasing hours spent on work isn’t increasing productivity”.</p>
+<p>You may be better served approaching your visualization with the idea:</p>
+<p>“I need to convince them that all this extra work we do is backfiring. It’s hurting the company’s productivity rather than helping”.</p>
+</blockquote>
+<p>One thing to notice when you approach your visualization by trying to convince your audience is that the language changes and often is more emotional. Your focus has changed from visualizing an idea to persuading someone that the idea is good. You have gone from “I want you to know something” to “I need you to believe something”. From here, there is an automatic link between statistical terminology (increasing, declining, under-served, etc.) and words that elicit feelings (hurting, helping, hungry for).</p>
+</div>
+<div id="make-it-stand-out" class="section level3 hasAnchor" number="7.2.2">
+<h3><span class="header-section-number">7.2.2</span> Make it Stand Out<a href="making-your-chart-more-persuasive.html#make-it-stand-out" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Here is where all the preattentive attributes and Gestalt principles come into play.</p>
+<blockquote>
+<p>Example: Look at how we change our poverty graph to come up with a final persuasive visual.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato6.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Why do we not like the first 5 iterations?
+1. The overlay of semitransparent colors creates a third color that dominates the chart and draws attention to the filled area, not the lines.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>This clearly highlights suburban poverty more, but why is one shaded and one not? The shaded area is still distracting.</p></li>
+<li><p>Darker and lighter hues of the same color suggest two variables in a group, not a comparison. The idea is to contrast, not complement.</p></li>
+<li><p>Black on white provides the most contrast, but black and blue don’t contrast so much that the black line pops.</p></li>
+<li><p>Better! But the blue is still fighting for attention. The goal is to draw attention to the orange line.</p></li>
+<li><p>Final color choice.</p></li>
+</ol>
+</blockquote>
+<p>Other things to consider are the inclusion of demarcations, pointers and labels. Here’s an example where demarcations help editorialize the story.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato7.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example: The following chart is meant to emphasize the growing issue with student loans.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato8.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>While it is factually correct and uses many correct visualization techniques, it suffers from the issue that the green line is the first thing we tend to see. So, the solution is to emphasize the point of the graph.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato9.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>Data visualization software does an exceptionally poor job at anticipating what visual cues we might want to inject into the visualization. That should be expected, though. Software renders data; but, good visualizations are all about presenting ideas. So when you make a graph, take a few minutes and try to intervene and make use of techniques that bring your ideas to the forefront.</p>
+</div>
+<div id="adjust-what-is-around-it" class="section level3 hasAnchor" number="7.2.3">
+<h3><span class="header-section-number">7.2.3</span> Adjust What is Around It<a href="making-your-chart-more-persuasive.html#adjust-what-is-around-it" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Remember, the point of the visualization is to highlight your message. So, changing what is around the data is a great way to help craft your message. Here are some hints:</p>
+<ul>
+<li>Remove reference points,</li>
+<li>Add reference points,</li>
+<li>Shift reference points.</li>
+</ul>
+<blockquote>
+<p>Example: This chart is meant to persuade us that there is an age divide in what people want from products.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato10.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>If this graph does persuade you that there is an age divide, and I’m not 100% sure it does, did you come to that conclusion quickly?</p>
+<p>By removing the reference points (yellow and green bars), the story is much clearer. A new title also drives home the point we are trying to make.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato11.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>This is a situation in which removing the unnecessary data helps bring the message into focus.</p>
+</blockquote>
+<p>Intuitively, it might seem logical that removing data will always bring your story into focus. After all, it removes visual distractions so your reader can focus only on the important data. However, sometimes adding data can serve to add context.</p>
+<p>The graph below would seem to indicate that vinyl records are making a comeback.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato12.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>The reality is that what appears to be a trend, is only a blip. The addition of the reference point shows how small this increase really is. It adds perspective to the story.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato13.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Another way to think about this story is to shift the reference entirely. While a resurgence might be taking place, it is minimal compared to music sales overall.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato13.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Another example of changing the reference is the beer at ballgames example. A small beer is a different size depending on which ballpark you go to. So, we’re really looking at a cost per ounce. People do not talk about the cost of an ounce of beer - but they do talk about the cost of a case of beer. So, comparing it to that reference adds context to the story and allows us to compare to something that is well known.</p>
+<p>Remember, while you do not want to distort the data, persuasion is fine. There is no such thing as a 100% objective graph because our brains are not 100% objective.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Berinato13.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Consider what is happening in the graph on the left. There is an increase rising to a plateau, followed by an interval of decrease of roughly the same amount of time. In the graph on the right, there is a sharp increase and the decrease is substantially more bumpy. The stories are very different. Except that they aren’t. They are the same graph with one adjusted for the computer (the left) and the other adjusted for a smartphone (right). So, is one more objective than the other? No, the size rescaled (correctly) to adjust for the medium. Here we have the same data with a very different experience for the audience.</p>
 
+</div>
 </div>
 </div>
             </section>
@@ -311,8 +552,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-
-<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-visualization-design.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -343,7 +584,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/07-presenting.Rmd",
 "text": "Edit"
 },
 "history": {

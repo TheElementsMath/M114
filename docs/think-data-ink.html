@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Telling Stories with Data</title>
-  <meta name="description" content="Telling Stories with Data" />
+  <title>Chapter 3 Think Data Ink | Telling Stories with Data</title>
+  <meta name="description" content="Chapter 3 Think Data Ink | Telling Stories with Data" />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Telling Stories with Data" />
+  <meta property="og:title" content="Chapter 3 Think Data Ink | Telling Stories with Data" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/CoverArt.png" />
   
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Telling Stories with Data" />
+  <meta name="twitter:title" content="Chapter 3 Think Data Ink | Telling Stories with Data" />
   
   
   <meta name="twitter:image" content="/CoverArt.png" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="introduction.html"/>
+<link rel="prev" href="a-brief-history-of-data-visualization.html"/>
+<link rel="next" href="planning-your-visualization.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -276,33 +276,195 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Telling Stories with Data</h1>
-<p class="author"><em>Joe Hobart</em></p>
+<div id="think-data-ink" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Think Data Ink<a href="think-data-ink.html#think-data-ink" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="data-ink" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Data Ink<a href="think-data-ink.html#data-ink" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Data ink is the amount of ink, in a printed table or graph, used to display the data. Non-data ink is the amount of ink in a printed table or graph that does not contribute to displaying the data. Edward Tufte’s guiding principle is that when you display data, you want the highest possible <strong>data-ink ratio</strong>.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Definition:</td>
+<td>The data-ink ratio is the amount of ink used to display data as a ratio or percentage of the ink used in the graphic overall.</td>
+</tr>
+</tbody>
+</table>
+<p>Mathematically, we can think of the data-ink ratio as</p>
+<p><span class="math inline">\(\begin{align*} \text{Data-Ink Ratio} &amp;= \dfrac{\text{Amount of ink used to display the data}}{\text{Total amount of ink used in the graphic}}\\ \\ &amp;= 1 - \text{the proportion of the graphic that can be erased}. \end{align*}\)</span></p>
+<p>Tufte argues that the closer this ratio is to 1 (or 100%), the better the graphic is and clearly, this can be achieved by removing unnecessary parts of the graph or table.</p>
+<p>One should be careful, however. The data-ink ratio is somewhat fictitious and very difficult to actually calculate. Rather, it serves as a guide for how to create graphs and tables. It is a state of mind rather than a number that is to be calculated. We want graphics that display data and have very little else included.</p>
+<p>To that end, Tufte proposed five guiding principles related to data-ink (<span class="citation">Tufte (<a href="references.html#ref-Tufte_2001" role="doc-biblioref">2001</a>)</span>:</p>
+<ul>
+<li>Above all else, show data.</li>
+<li>Maximize the data-ink ratio.</li>
+<li>Erase non-data-ink.</li>
+<li>Erase redundant data-ink.</li>
+<li>Revise and edit.</li>
+</ul>
 </div>
-<div id="preface" class="section level1 unnumbered hasAnchor">
-<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>I began thinking about data visualization when I became a department chair. I had access to a lot of data and had a boss who, for the most part, would not consider herself brilliant at mathematics or statistics. (I still have a number of bosses like that). I needed a way to help her understand what was going on in my department. Sometimes the issues were as small as projected enrollments and why my projections were correct. Other times the issues were far more complex like trying to explain the course path that a potential student might take. Of course, the latter situation does not even involve numbers (other than perhaps course numbers). However, in both situations, I found that creating a graphic would help her understand the issue with very little need for advanced mathematics or statistics.</p>
-<p>As my career moved along, I began consulting for a health authority. I had the opportunity to see others use graphics and tables and very often, those graphics and tables were complex and confusing. What people tended to forget when they made a graphic or a table was that they were the experts at working with that particular data set and they expected us plebs to understand the data exactly as they did.</p>
-<p>To me, there are two problems with that. The first is that we don’t understand the data at the same level as the author because we don’t work with it on a daily basis. Much of the work I did was for Capital Planning. While some of the people involved in capital planning decisions were actual people working in a hospital, many were people who had never stepped foot in the hospital (myself included in several cases). Those people can’t be expected to be intimately familiar with the inner workings of the hospital while doctors and nurses can’t be reasonably expected to understand processes involved in funding capital projects like the purchases of new equipment and the construction of new buildings. Both groups of people bring a different perspective to the discussion and as the person working with the data, I bring yet another perspective. A successful visual in this instance needs to be relatable to everyone working on the project.</p>
-<p>The second problem is obvious. If your audience knows as much about the data as you do, why are you presenting the data to them?</p>
-<p>Over the years, I have collected a number of best practices and stories about data visualization and I strive to teach you them in this book. I hope you enjoy and can take some ideas from it.</p>
-<div id="why-read-this-book" class="section level2 unnumbered hasAnchor">
-<h2>Why read this book<a href="index.html#why-read-this-book" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We aspire to teach you techniques to tell stories with data in this textbook. Of course, all the techniques in the world will not take the place of common sense or an intimate knowledge of the subject matter and data; however, if you know how to tell the story of your data properly, you will be better able to communicate the meaning of the data to your audience.</p>
-<p>Throughout this text, we will make reference to the following visual provided to us by David McCandless (<span class="citation">McCandless (<a href="references.html#ref-mccandless2012information" role="doc-biblioref">2012</a>)</span>). McCandless argues that there are keys to creating a good visualization (we will consider what is meant by the term “good” later on). The visual shows us that simply having data isn’t enough - we must be able to be able to create an artistic graphic from the data and pair it with a story with a particular goal in mind. Only then will we have a successful data visualization.</p>
+<div id="tables" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Tables<a href="think-data-ink.html#tables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The ideas from Tufte apply equally to tables and graphs. Tables list records and consist of rows and columns. Tables can show a lot of information in a structured way but may overwhelm people especially when the goal is to flush out trends. To that end, apply Tufte’s principles to tables.</p>
+<ul>
+<li>Avoid extra gridlines. Increase the data-ink ratio by removing any lines that do not add to the overall readability of the table.</li>
+<li>Right align numbers to show differences in magnitudes. This is a simple way to have a quasi stem and leaf plot embed in your table.</li>
+<li>Left align words in a column. This simply keeps words separate from numbers.</li>
+<li>Align column headers with the data. That is, right align column headers for numbers and left align column headers for words.</li>
+<li>Round your numbers to a place that makes sense. Accountants need more significant digits than managers typically.</li>
+<li>Consider cross-tabulation rather than clean data. While long data is very useful for analysis, wide data is often easier to us to tell a story.</li>
+<li>Keep aesthetics of the rows and columns consistent. If you have different widths, fonts, typefaces or colour, the reader is drawn to those rows or columns. Adding different aesthetics should be done only when you wish to draw people’s attention to those attributes.</li>
+<li>Often 0’s can be removed if the 0 represents an NA. They can be replaced by a hyphen.</li>
+<li>Sort the table in a sensible way. Alphabetical order is ALMOST NEVER the best way to sort a table. Sorting by a total will increase the ease of quick comparisons.</li>
+</ul>
+<blockquote>
+<p>Example: The table below is courtasy of SimplexCT and is available <a href="https://simplexct.com/data-ink-ratio-tables">here</a>.</p>
 <table>
 <thead>
 <tr class="header">
-<th align="center"><img src="WhatMakesGoodViz.png" /></th>
+<th align="center"><img src="Table1.png" /></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><b>Image Credits - David McCandless (<span class="citation">McCandless (<a href="references.html#ref-mccandless2012information" role="doc-biblioref">2012</a>)</span>)</b></td>
+<td align="center"><b> Image Credits - Case Problems in Finance, 10th edition </b></td>
 </tr>
 </tbody>
 </table>
+<p>This table shows all of the data required to investigate short-term credit provided to a multinational company by various banks. However, it is busy and difficult to pull any coherent story from. We can clean this up using Tufte’s principles:</p>
+<ul>
+<li>Create consistent row height and column widths.</li>
+<li>Right align all numbers so the reader can quickly see differences in size.</li>
+<li>Right align column labels for columns of numerical data.</li>
+<li>Remove background colours and unnecessary gridlines.</li>
+<li>Remove bold and italics typeface.</li>
+<li>Remove redundant labels. This includes changing 0.0 to -.</li>
+<li>Increase the font size of the data and reduce the font size of the labels.</li>
+<li>Sort the rows of the data by grand total in decreasing order. Sort the columns of the data by Total for each country.</li>
+<li>We moved the row total to the top. We also moved the Grand Total column next to the row label. This tells the story of which banks we have the most credit with and how that credit is broken down.</li>
+<li>Add breaks and a tint every 5 rows to enhance readability.</li>
+</ul>
+<p>The final table is below.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Table2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Case Problems in Finance, 10th edition </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>The previous example demonstrates that even a fairly normal looking table can be improved by a few small changes. Indeed, most of what we changed in the previous example were put there intentionally by the table designer. Don’t waste time adding unnecessary design elements to a graph; rather, keep it minimalist and help your audience to understand the data rather than admire your creativity.</p>
+<blockquote>
+<p>Example: The table below has a low data-ink ratio. Fix the table so that it has a higher data-ink ratio and is easier to read.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Table3.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> </b></td>
+</tr>
+</tbody>
+</table>
+<p>To fix this table, we can do the following:</p>
+<ul>
+<li>Remove the gridlines.</li>
+<li>Group the subjects into class types and group classes of the same type together.</li>
+<li>Group STEM classes separate from English and History</li>
+<li>Order columns by student GPA</li>
+<li>Groupings add natural breaks between subjects, so there is no need to add shading.</li>
+<li>Calculate student GPA at the bottom. Highlight this total with a different colour or a horizontal line.</li>
+</ul>
+<p>Depending on the story, you may wish to include other features. If we are telling a story about which students had the highest GPA, we may wish to move the Student Average row to the top. We may also chose to highlight (with bold face) the student who did the best in each class or the class that a particular student did the best in. We may require subtotal averages for each subject area or the average GPA in each subject area. All of these features depend on what story we want to tell the reader.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Table4.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> </b></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+</div>
+<div id="graphics" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Graphics<a href="think-data-ink.html#graphics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We have seen how the data-ink ratio, and Tufte’s other principles, can be used to create effective tables. We now turn our attention to applying these principles to graphs. Below is a graph that does not closely follow Tufte’s principles.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="DataInk1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Tim Bray (<span class="citation">Becker (<a href="references.html#ref-Synthesis" role="doc-biblioref">n.d.</a>)</span>)</b></td>
+</tr>
+</tbody>
+</table>
+<p>The graph above is full of what we call “chart junk”. There is background colour, there are too many grid lines, and the extra additions distract from the message of the chart. Removing the extra gridlines and background colour make the chart much more focused on the data. Adding whitespace where the horizontal lines would have been allows the reader to quickly identify the rough height of each bar.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="DataInk2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Tim Bray (<span class="citation">Becker (<a href="references.html#ref-Synthesis" role="doc-biblioref">n.d.</a>)</span>)</b></td>
+</tr>
+</tbody>
+</table>
+<p>All told, this histogram removes the distractions and lets the reader focus on the data and the story. Remember, the harder your audience needs to work to understand the chart, the less they are paying attention to what you’re saying.</p>
+<blockquote>
+<p>Example: The point of the following graphic is to convey which sports stadium is the loudest. Which stadium is the loudest and by how much (a lot or a little)?</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Stadiums.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Playfair Data (<span class="citation">Sleeper (<a href="references.html#ref-DataInkTableau" role="doc-biblioref">2019</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>The takeaway to most casual observers is that Arrowhead Stadium in Kansas City is the loudest of the five by a fairly wide margin (look at the stadium pictures - it is a wide margin, clearly).</p>
+<p>Below is the same graphic, transformed with the principles of Tufte. It shows a much different story.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Stadiums2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Playfair Data (<span class="citation">Sleeper (<a href="references.html#ref-DataInkTableau" role="doc-biblioref">2019</a>)</span>)</b></td>
+</tr>
+</tbody>
+</table>
+<p>Arrowhead Stadium is still the loudest. However, the difference between Arrowhead Stadium (the loudest) and TurkTelekom Satdium (the 5th loudest) is fairly negligable. The extraneous bells and whistles in the first graphic distort the message which should be that there is not much difference between the five loudest stadiums in the world (&lt; 10% difference).</p>
+</blockquote>
+</div>
+<div id="exercises" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Exercises<a href="think-data-ink.html#exercises" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>Show that the 4 datasets that comprise the Anscombe’s Quartet data have the same mean for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, the same standard deviation for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, and that the correlation between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are the same across the 4 datasets. Plot the 4 data sets to show that the pictures are different. The datasets can be found <a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">here</a>.</p></li>
+<li><p>Duplicate the analysis in the previous question using the DatasauRus data set found <a href="https://www.autodesk.com/research/publications/same-stats-different-graphs">here</a>.</p></li>
+<li><p>Recreate the table in the “Student Grades” example to tell the story of “Which classes are the easiest”.</p></li>
+<li><p>Recreate the table in the “Student Grades” example to tell the story of “Which classes are students scoring over 80% in”.</p></li>
+<li><p>Recreate the table in the “Student Grades” example to tell the story of “Which students are in academic trouble”.</p></li>
+</ol>
 
 </div>
 </div>
@@ -311,8 +473,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-
-<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="a-brief-history-of-data-visualization.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="planning-your-visualization.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -343,7 +505,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-data_ink.Rmd",
 "text": "Edit"
 },
 "history": {

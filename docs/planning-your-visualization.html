@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Planning Your Visualization | Telling Stories with Data</title>
+  <meta name="description" content="Chapter 4 Planning Your Visualization | Telling Stories with Data" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Planning Your Visualization | Telling Stories with Data" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/CoverArt.png" />
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Planning Your Visualization | Telling Stories with Data" />
+  
+  
+  <meta name="twitter:image" content="/CoverArt.png" />
+
+<meta name="author" content="Joe Hobart" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="think-data-ink.html"/>
+<link rel="next" href="types-of-graphs.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Visualization</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-read-this-book"><i class="fa fa-check"></i>Why read this book</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#growth-in-data"><i class="fa fa-check"></i><b>1.1</b> Growth in Data</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#the-data-story"><i class="fa fa-check"></i><b>1.2</b> The Data Story</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#why-data-visualization"><i class="fa fa-check"></i><b>1.3</b> Why Data Visualization?</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#planning-the-data-story"><i class="fa fa-check"></i><b>1.4</b> Planning the Data Story</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#enriching-the-story"><i class="fa fa-check"></i><b>1.5</b> Enriching The Story</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="introduction.html"><a href="introduction.html#use-of-units"><i class="fa fa-check"></i><b>1.5.1</b> Use of Units</a></li>
+<li class="chapter" data-level="1.5.2" data-path="introduction.html"><a href="introduction.html#use-familiar-comparisons"><i class="fa fa-check"></i><b>1.5.2</b> Use Familiar Comparisons</a></li>
+<li class="chapter" data-level="1.5.3" data-path="introduction.html"><a href="introduction.html#use-everyday-terms"><i class="fa fa-check"></i><b>1.5.3</b> Use Everyday Terms</a></li>
+<li class="chapter" data-level="1.5.4" data-path="introduction.html"><a href="introduction.html#use-the-moral-or-emotional-approach"><i class="fa fa-check"></i><b>1.5.4</b> Use the Moral or Emotional Approach</a></li>
+<li class="chapter" data-level="1.5.5" data-path="introduction.html"><a href="introduction.html#use-a-personal-approach"><i class="fa fa-check"></i><b>1.5.5</b> Use a Personal Approach</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="introduction.html"><a href="introduction.html#best-practices"><i class="fa fa-check"></i><b>1.6</b> Best Practices</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="introduction.html"><a href="introduction.html#select-your-audience"><i class="fa fa-check"></i><b>1.6.1</b> Select Your Audience</a></li>
+<li class="chapter" data-level="1.6.2" data-path="introduction.html"><a href="introduction.html#know-your-purpose"><i class="fa fa-check"></i><b>1.6.2</b> Know Your Purpose</a></li>
+<li class="chapter" data-level="1.6.3" data-path="introduction.html"><a href="introduction.html#select-the-right-visual"><i class="fa fa-check"></i><b>1.6.3</b> Select the Right Visual</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html"><i class="fa fa-check"></i><b>2</b> A Brief History of Data Visualization</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-i---pre-17th-century-early-maps-and-diagrams"><i class="fa fa-check"></i><b>2.1</b> Epoch I - Pre-17th Century: Early Maps and Diagrams</a></li>
+<li class="chapter" data-level="2.2" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-ii---1600---1699-measurement-and-theory"><i class="fa fa-check"></i><b>2.2</b> Epoch II - 1600 - 1699: Measurement and Theory</a></li>
+<li class="chapter" data-level="2.3" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-iii---1700---1799-new-graphical-forms"><i class="fa fa-check"></i><b>2.3</b> Epoch III - 1700 - 1799: New Graphical Forms</a></li>
+<li class="chapter" data-level="2.4" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-iv---1800---1850-beginnings-of-modern-graphics"><i class="fa fa-check"></i><b>2.4</b> Epoch IV - 1800 - 1850: Beginnings of Modern Graphics</a></li>
+<li class="chapter" data-level="2.5" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-v---1850---1900-the-golden-age-of-statistical-graphics"><i class="fa fa-check"></i><b>2.5</b> Epoch V - 1850 - 1900: The Golden Age of Statistical Graphics</a></li>
+<li class="chapter" data-level="2.6" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-vi-1900-1950-the-modern-dark-ages"><i class="fa fa-check"></i><b>2.6</b> Epoch VI: 1900-1950: The Modern Dark Ages</a></li>
+<li class="chapter" data-level="2.7" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-vii---1950---1975-the-re-birth-of-data-visualization"><i class="fa fa-check"></i><b>2.7</b> Epoch VII - 1950 - 1975: The Re-birth of Data Visualization</a></li>
+<li class="chapter" data-level="2.8" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#epoch-viii---1975---today-high-definition-and-dynamic-visualization"><i class="fa fa-check"></i><b>2.8</b> Epoch VIII - 1975 - Today: High Definition and Dynamic Visualization</a></li>
+<li class="chapter" data-level="2.9" data-path="a-brief-history-of-data-visualization.html"><a href="a-brief-history-of-data-visualization.html#todays-data-visualization-tools"><i class="fa fa-check"></i><b>2.9</b> Today’s Data Visualization Tools</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="think-data-ink.html"><a href="think-data-ink.html"><i class="fa fa-check"></i><b>3</b> Think Data Ink</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="think-data-ink.html"><a href="think-data-ink.html#data-ink"><i class="fa fa-check"></i><b>3.1</b> Data Ink</a></li>
+<li class="chapter" data-level="3.2" data-path="think-data-ink.html"><a href="think-data-ink.html#tables"><i class="fa fa-check"></i><b>3.2</b> Tables</a></li>
+<li class="chapter" data-level="3.3" data-path="think-data-ink.html"><a href="think-data-ink.html#graphics"><i class="fa fa-check"></i><b>3.3</b> Graphics</a></li>
+<li class="chapter" data-level="3.4" data-path="think-data-ink.html"><a href="think-data-ink.html#exercises"><i class="fa fa-check"></i><b>3.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html"><i class="fa fa-check"></i><b>4</b> Planning Your Visualization</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#when-a-visualization-hits-our-eyes"><i class="fa fa-check"></i><b>4.1</b> When a Visualization Hits our Eyes</a></li>
+<li class="chapter" data-level="4.2" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#two-questions-you-should-ask"><i class="fa fa-check"></i><b>4.2</b> Two Questions You Should Ask</a></li>
+<li class="chapter" data-level="4.3" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#planning"><i class="fa fa-check"></i><b>4.3</b> Planning</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#preparation"><i class="fa fa-check"></i><b>4.3.1</b> Preparation</a></li>
+<li class="chapter" data-level="4.3.2" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#talk-and-listen"><i class="fa fa-check"></i><b>4.3.2</b> Talk and Listen</a></li>
+<li class="chapter" data-level="4.3.3" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#sketch"><i class="fa fa-check"></i><b>4.3.3</b> Sketch</a></li>
+<li class="chapter" data-level="4.3.4" data-path="planning-your-visualization.html"><a href="planning-your-visualization.html#prototype"><i class="fa fa-check"></i><b>4.3.4</b> Prototype</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="types-of-graphs.html"><a href="types-of-graphs.html"><i class="fa fa-check"></i><b>5</b> Types of Graphs</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="types-of-graphs.html"><a href="types-of-graphs.html#simple-text"><i class="fa fa-check"></i><b>5.1</b> Simple Text</a></li>
+<li class="chapter" data-level="5.2" data-path="types-of-graphs.html"><a href="types-of-graphs.html#tables-1"><i class="fa fa-check"></i><b>5.2</b> Tables</a></li>
+<li class="chapter" data-level="5.3" data-path="types-of-graphs.html"><a href="types-of-graphs.html#heatmap"><i class="fa fa-check"></i><b>5.3</b> Heatmap</a></li>
+<li class="chapter" data-level="5.4" data-path="types-of-graphs.html"><a href="types-of-graphs.html#scatterplot"><i class="fa fa-check"></i><b>5.4</b> Scatterplot</a></li>
+<li class="chapter" data-level="5.5" data-path="types-of-graphs.html"><a href="types-of-graphs.html#line-graph"><i class="fa fa-check"></i><b>5.5</b> Line Graph</a></li>
+<li class="chapter" data-level="5.6" data-path="types-of-graphs.html"><a href="types-of-graphs.html#slopegraph"><i class="fa fa-check"></i><b>5.6</b> Slopegraph</a></li>
+<li class="chapter" data-level="5.7" data-path="types-of-graphs.html"><a href="types-of-graphs.html#vertical-and-horizontal-bar-graph"><i class="fa fa-check"></i><b>5.7</b> Vertical and Horizontal Bar Graph</a></li>
+<li class="chapter" data-level="5.8" data-path="types-of-graphs.html"><a href="types-of-graphs.html#stacked-bar-graph"><i class="fa fa-check"></i><b>5.8</b> Stacked Bar Graph</a></li>
+<li class="chapter" data-level="5.9" data-path="types-of-graphs.html"><a href="types-of-graphs.html#waterfall-graph"><i class="fa fa-check"></i><b>5.9</b> Waterfall Graph</a></li>
+<li class="chapter" data-level="5.10" data-path="types-of-graphs.html"><a href="types-of-graphs.html#square-area-graph"><i class="fa fa-check"></i><b>5.10</b> Square Area Graph</a></li>
+<li class="chapter" data-level="5.11" data-path="types-of-graphs.html"><a href="types-of-graphs.html#avoid-these-when-possible"><i class="fa fa-check"></i><b>5.11</b> Avoid These When Possible</a>
+<ul>
+<li class="chapter" data-level="5.11.1" data-path="types-of-graphs.html"><a href="types-of-graphs.html#pie-charts"><i class="fa fa-check"></i><b>5.11.1</b> Pie Charts</a></li>
+<li class="chapter" data-level="5.11.2" data-path="types-of-graphs.html"><a href="types-of-graphs.html#donut-chart"><i class="fa fa-check"></i><b>5.11.2</b> Donut Chart</a></li>
+<li class="chapter" data-level="5.11.3" data-path="types-of-graphs.html"><a href="types-of-graphs.html#d-charts"><i class="fa fa-check"></i><b>5.11.3</b> 3D Charts</a></li>
+<li class="chapter" data-level="5.11.4" data-path="types-of-graphs.html"><a href="types-of-graphs.html#secondary-axis"><i class="fa fa-check"></i><b>5.11.4</b> Secondary Axis</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="data-visualization-design.html"><a href="data-visualization-design.html"><i class="fa fa-check"></i><b>6</b> Data Visualization Design</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="data-visualization-design.html"><a href="data-visualization-design.html#connecting-with-visuals"><i class="fa fa-check"></i><b>6.1</b> Connecting with Visuals</a></li>
+<li class="chapter" data-level="6.2" data-path="data-visualization-design.html"><a href="data-visualization-design.html#what-is-a-good-visualization"><i class="fa fa-check"></i><b>6.2</b> What is a Good Visualization?</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="data-visualization-design.html"><a href="data-visualization-design.html#colour"><i class="fa fa-check"></i><b>6.2.1</b> Colour</a></li>
+<li class="chapter" data-level="6.2.2" data-path="data-visualization-design.html"><a href="data-visualization-design.html#form"><i class="fa fa-check"></i><b>6.2.2</b> Form</a></li>
+<li class="chapter" data-level="6.2.3" data-path="data-visualization-design.html"><a href="data-visualization-design.html#spacial-position"><i class="fa fa-check"></i><b>6.2.3</b> Spacial Position</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="data-visualization-design.html"><a href="data-visualization-design.html#gestalt-principles-of-visual-perception"><i class="fa fa-check"></i><b>6.3</b> Gestalt Principles of Visual Perception</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="data-visualization-design.html"><a href="data-visualization-design.html#gestalt-principles"><i class="fa fa-check"></i><b>6.3.1</b> Gestalt principles</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="data-visualization-design.html"><a href="data-visualization-design.html#readability"><i class="fa fa-check"></i><b>6.4</b> Readability</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html"><i class="fa fa-check"></i><b>7</b> Making Your Chart More Persuasive</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#clearly-articulating-your-point"><i class="fa fa-check"></i><b>7.1</b> Clearly Articulating Your Point</a></li>
+<li class="chapter" data-level="7.2" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#three-tips"><i class="fa fa-check"></i><b>7.2</b> Three Tips</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#hone-the-main-idea"><i class="fa fa-check"></i><b>7.2.1</b> Hone the Main Idea</a></li>
+<li class="chapter" data-level="7.2.2" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#make-it-stand-out"><i class="fa fa-check"></i><b>7.2.2</b> Make it Stand Out</a></li>
+<li class="chapter" data-level="7.2.3" data-path="making-your-chart-more-persuasive.html"><a href="making-your-chart-more-persuasive.html#adjust-what-is-around-it"><i class="fa fa-check"></i><b>7.2.3</b> Adjust What is Around It</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Telling Stories with Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="planning-your-visualization" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Planning Your Visualization<a href="planning-your-visualization.html#planning-your-visualization" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Once we have data, the next task is to select the appropriate graphic. Obviously, using visualizations will capture some patterns that are not easily seen through tabular data.</p>
+<p>A fantastic reference for this is a book by Scott Berinato titled “Good Charts” (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>).</p>
+<div id="when-a-visualization-hits-our-eyes" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> When a Visualization Hits our Eyes<a href="planning-your-visualization.html#when-a-visualization-hits-our-eyes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>)introduces five ideas we should all be familiar with when it comes to visualization. The first is that, in contrast to reading and writing, visualizations do not work left to right and top to bottom. That is, we do not take in visual data the same way we take in written data.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Ideas1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Rather, in a visualization, readers explore the data based on other factors. Factors like size, shape, colour, etc. influence where our eyes are initially drawn. The title, for example, may not be the first or even second part of the chart that we see. We also pace differently when we read a visualization as compared to a book. We do not spend the same amount of time on each part of the graphic as opposed to spending a similar amount of time on each sentence. Our eyes go where they are drawn and we spend as much time as we wish. This would also imply that those more accustomed to reading visualizations will take in visual information differently than those with little experience.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Ideas1b.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>The next idea Berinato introduces is the idea of catching the reader’s eye with the most important part of the visualization. Berinato points out that “[w]e see first what stands out” (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>). Our eyes, by their very nature, are drawn to change. Changes can come in a variety of forms including colour, peaks, valleys, outliers etc. The best charts are so simple that we understand them without knowing anything about their context.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Ideas2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>This chart contains an intersection. This likely was the first thing your eye was drawn toward. You (likely) may have not even bothered initially to see the year of the intersection. More likely, you saw the crossover, checked the chart labels, read the title and concluded that more people currently live in urban areas compared to rural areas.</p>
+<p>Berinato gives the following example. What do you see first?</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Ideas2b.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>For most people, the peak, the blue line and the horizontal outage line are the first things that they see. So, if the idea you are trying to convey has to do with those things, this is likely a successful graph. If the idea was to convey that customer service has been in decline and the decline has little or nothing to do with the outage, this graph probably does not tell the correct story.</p>
+<p>If you are trying to tell the story of declining customer service, the data related to the outage is irrelevant and only complicates the diagram. Moreover, if the decline is largely unrelated to the service outage, perhaps adding a line that shows when service is restored would help tell the story that the outage was not the issue. Showing that the decline continues to occur after the service is restored speaks to unhappy customers even after everything is back to normal. Finally, the new title makes the idea clear.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Ideas2c.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>The third point that Berinato brings forward is that it is impossible to see a large number of things simultaneously. In this first diagram, we see a very nice graph indicating the increase in performance from the entire team. Their ratings all seem to increase.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Ideas3.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>However, it is impossible to see individual employees within the mess. Rather, the second graph shows the overall trend of the group as well as a few particular employees. The use of shade here allows us to easily see a few key individuals.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Ideas3b.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>The fourth idea made by Berinato is that it is natural for us to seek meaning and connections. When thinking back to the original graph about declining customer service, how many of us initially tried to make a connection between the blue line and the shaded peak. It turns out that there was none. But, that was the first thing many of us tried. The point is that it is most people’s natural inclination to do so.</p>
+<p>Of course, there are some advantages of having this attribute. We process visual information far more effectively than we do written information. For example, if your apartment building is on fire, written instructions are far less appropriate than a quick map. The map below is far simpler than a written description of the plan. Consider what the written directions would be to get out of the building and how many of them you would need for each room compared to a diagram.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Ideas4.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Making sure that we don’t accidentally create unintended associations in the information is vital. Consider the graph below.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Ideas4b.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Here, the use of colour might accidentally cause people to associate orange dots with top performers even though the use of that colour was done so without meaning. Team A clearly out performs Team B and every aspect of the graph should point to that fact.</p>
+<p>The final point made by Berinato is that people tend to rely on conventions and not on metaphors. We rely on having seen previous graphs to give us insight as to what is happening in the graph we’re currently looking at. The graph below is the customer service graph with the axis swapped.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Ideas5.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>What you might notice is that it takes significantly longer to determine what is happening. We expect a numerical axis to be vertical and a categorical or time series axis to be horizontal. The point here is that it takes a lot of effort to determine what the graph says. Having the client spend time trying to decipher the graph takes time away from then listening to you present it. Conventions come from expectation and our brain uses experiences and expectations as cognitive shortcuts so that we don’t need to process everything.</p>
+<p>Similarly, we would have the same reaction if someone showed us a map of the world where north was down and south was up. While there is no “right side up” when it comes to an object floating in space. Other conventions are that red is “hot” or “active” while blue is “cold” or “inactive”. Light shades are considered empty while darker ones are full.</p>
+<p>Here is a little subtler example. If we dig in, what initially appears to be a well constructed pie chart is actually quite problematic. We are forcing people to work harder than they need to in order to understand the data.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Ideas5c.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>We make the following connections without considering them:</p>
+<ul>
+<li>Like colours mean like items - blue things should go together.</li>
+<li>Colour saturation indicates higher and lower values - light colours should have less value than dark ones.</li>
+<li>Categories should go from one extreme to the other - make the order of the key sensible.</li>
+</ul>
+<p>It is an interesting exercise to remake this graph using correct conventions. By looking at the chart as it is, consider if you can answer the following question quickly: what group makes up the majority - Interested or not interested? Compare it to the graph below.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="Ideas5d.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>By not following convention, you risk your audience not trusting your ability. The chart will not be judged negatively - you will.</p>
+</div>
+<div id="two-questions-you-should-ask" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Two Questions You Should Ask<a href="planning-your-visualization.html#two-questions-you-should-ask" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When you begin the process of constructing a visualization, two questions are important to ask (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>):</p>
+<ol style="list-style-type: decimal">
+<li>Is the information data-driven or conceptual?</li>
+<li>Is this an exploratory analysis or am I declaring something?</li>
+</ol>
+<p>We begin with the first question. If your information is conceptual, you likely want to focus on ideas with a goal of teaching. Conceptual visualizations can be things like Org-charts, cycle diagrams, blue prints, road maps, or concept map type visuals. These visuals tend to give a message or create a direction for future work rather than having anything to do with data.</p>
+<p>If your visual is data driven, you are likely to rely on statistical techniques with a goal of informing your audience. While these visuals can sometimes be conceptual, they are always rooted in some sort of measured value. Typical statistical graphs are great examples of data driven visualizations.</p>
+<p>The second question asks if the visual meant for exploratory analysis or is it declarative. If it is exploratory, the focus is likely on prototyping. It will be an iterative process where you will find yourself adding and subtracting from the visual. It is often a process of discovery, too.</p>
+<p>Declarative visualizations are often seen as the final product of an analysis. They are often what managers aim for when they ask for an analysis. They focus on documenting the analysis with a goal of affirmation or persuasion.</p>
+<p>It is important to note that oftentimes exploratory graphs end up as declarative graphs by the end, through the process of refinement.</p>
+<p>We combine the two questions in a 2 x 2 grid as we so often do.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="2Questions1.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Daniel Mullins (<span class="citation">International and Mullins (<a href="references.html#ref-International_Mullins_2017" role="doc-biblioref">2017</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>If your chart is declarative and conceptual, it is referred to as idea illustration. These types of visuals illustrate process and framework. They should be clear and simple in nature and are often metaphorical (ie, think of visuals with funnels). Often used for presentations and teaching, they focus on simplifying concepts.</p>
+<p>A visual that is conceptual and exploratory is referred to idea generation. It is a little like brainstorming. We come up with ideas and see if they stick. Information here tends to be complex and so requires creative, often metaphorical, visualization features. These types of visuals are often seen in brainstorming sessions with a goal of discovery, simplification or learning. Think of these diagrams like “napkin drawings” or “whiteboard drawings”.</p>
+<p>Visualizations that are data driven and exploratory are those made in an EDA. These are often the most complicated type of visual. We do not know what the story is yet, but we want to use data visualizations to find out. It is important to flush out patterns and generate hypothesis in this quadrant. Normally, we will look for patterns, of which there are five:</p>
+<ol style="list-style-type: decimal">
+<li>Change</li>
+<li>Clustering</li>
+<li>Relativity</li>
+<li>Ranking</li>
+<li>Correlation</li>
+</ol>
+<p>Each of these reveal a story and each of them have a variety of visualizations associated with them. For example, a line graph is a nice way to illustrate change over time. Relativity might be best viewed with a bar chart. The moral here is that once we know what we’re looking at, we can pick the appropriate chart to augment the story.</p>
+<p>A declarative and data-driven visualization occurs when we know what the story is and we want to communicate the story. This is what we do regularly and so it is referred to as everyday dataviz. Normally, the data here is fairly simple and is shown using conventional charts. These visualizations are best when they are clear and simple and are presented with a goal of affirming or setting context. Remember, presenting this type of visual will often require a story.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="2Questions2.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>Remember, each of these visualization types is important. You are likely to use everyday viz and visual discover about 70% of the time, with idea illustration and generation the remaining 30%. As new software emerges, these numbers will likely change.</p>
+<p>Taking a few minutes and asking yourself the two questions will often save you significant time as you create your visual. This truly is a case where using a dash of prevention at the beginning will save you from having to take a cup of remedy in the end.</p>
+</div>
+<div id="planning" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Planning<a href="planning-your-visualization.html#planning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Planning is essential when putting together client ready visualizations. The level of polish and detail is much higher for a final visualization than it is for a visual that we would make for an EDA. Remember, the client will not judge the graph - they will judge you. So, it’s important that you ratchet up the level of effort for final visualizations.</p>
+<p>Consider a typical hour used to create a strong visual. That hour can roughly be divided into 4 regions: prep, talk and listen, sketch and prototype (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>).</p>
+<div id="preparation" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Preparation<a href="planning-your-visualization.html#preparation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>During the prep phase, perhaps the first 5 minutes or so of your hour, you should put the data aside. While it is important to understand the data, having the data drive the visual is very limiting. Oftentimes, you end up converting a table into a table in visual form. Here is an example from Berinato where an e-commerce business sketches a quick graph of sales over the course of the day.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="ECommerce1.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>While not a bad first pass, this is a simple conversion of data from a table to a graph. Since the business operates in the Eastern timezone, all of the data is normalized to Eastern time. That is, the time here is not given in the timezone of the purchaser as it is in the graph below.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="ECommerce2.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Scott Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>This graphic is much more useful as it shows that the majority of the transactions for the company occur between 8AM and 10PM local time. The message given by the graph is much different in the second than in the first (and I would argue, much more informative).</p>
+<p>So, before you begin, write down some basic things:</p>
+<ul>
+<li>Who is this visual for?</li>
+<li>What will you call it?</li>
+<li>Why do you need it?</li>
+<li>Where will you present it?</li>
+<li>Which of the four types of charts are you creating?</li>
+</ul>
+</div>
+<div id="talk-and-listen" class="section level3 hasAnchor" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Talk and Listen<a href="planning-your-visualization.html#talk-and-listen" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Of all the things you can do to improve your chart, talking and listening is probably the most important. This phase might take 15 minutes of your hour. Find a friend or coworker and discuss the chart with them. Tell them why you made the decisions you made. Discuss if this will work for the intended audience. This will force you to organize yourself and your thoughts.</p>
+<p>Though these conversations are awkward at first, they get easier. Tell them what you are working on, what you are trying to show and why the story is important. The next part is important - listen to what they say and what questions they ask. Likely, these are the same questions that your final audience will have. Remember, you are close to the data. Make sure that the message of your visual is obvious to someone who isn’t close to the data.</p>
+</div>
+<div id="sketch" class="section level3 hasAnchor" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> Sketch<a href="planning-your-visualization.html#sketch" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The next 20 minutes should be spent constructing a sketch by hand. There are many handy charts aimed at assisting in selecting the correct visualization. This one, by Andrew Albela, is a great example.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="ChartChoser.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Andrew Albela (<span class="citation">Arpi (<a href="references.html#ref-Arpi_2021" role="doc-biblioref">2021</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>While it may be missing some graphs (and includes pie charts), it is a great place to begin. This type of guide might help us move away from always using bar and line graphs for everything. Be careful, however, as new types of charts are being designed all the time. Do not let yourself be pigeonholed into always using the same type of chart simply based on a recommendation. Take some time to research new graphs and put them in your tool box. A good exercise is to take the chart types that Albela suggests in his diagram and try to see which ones might work for each of the 4 quadrants of visualization types (declarative/ exploratory vs conceptual/ data-driven).</p>
+<p>Once you have selected your visualization type, sketch it by hand. You should always try two different chart types. Suppose you want to compare income with the price of Apple products. You may initially begin with a sketch like this.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="AppleIncome1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>This chart would be perfectly fine. However, if you try a second type of visualization, you might actually stumble across something better. Consider a mini-treemap.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><img src="AppleIncome2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><b> Image Credits - Berinato (<span class="citation">Berinato (<a href="references.html#ref-Berinato_2016" role="doc-biblioref">2016</a>)</span>) </b></td>
+</tr>
+</tbody>
+</table>
+<p>This shows much clearer the ratio of income that would be spent on the product. Ultimately, your second, third, fourth, etc. sketch may not be better than the original. However, sketching various charts will definitely help clarify your thoughts and your message when you construct your final visual.</p>
+<p>We will discuss different types of visualizations in the next chapter.</p>
+</div>
+<div id="prototype" class="section level3 hasAnchor" number="4.3.4">
+<h3><span class="header-section-number">4.3.4</span> Prototype<a href="planning-your-visualization.html#prototype" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The final 20 minutes of our hour is spent prototyping. You know you’re ready for this stage because your sketch matches what you are trying to say very closely, you’re putting in actual data rather than just “faking it” and you generally are running out of ideas.</p>
+<p>The prototype stage is iterative. You create, you refine, you create some more, etc. You should experiment with colour, size, shape, etc. There is lots of software out there that can help at this step. Don’t be afraid to experiment to find what works best for your situation.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="think-data-ink.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="types-of-graphs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04-planning.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
