@@ -132,17 +132,17 @@ Stream 2: Payments of \$900 due in 30 days, \$800 due in 75 days, and \$1000 due
 ##  4.8  Changing Interest Rates {-}
 
 *  An investment of \$10,000 earns 5% simple interest for the first 60 days, 6% simple interest for the next 180 days and 8% for the remainder of the year.  How much interest was earned over the year?
-    *  \$650.68     [Click here for full solution]()
+    *  \$652.05     [Click here for full solution](https://youtu.be/9-1022J21d0)
 <p>&nbsp;</p>
 
 
 *  \$15,000 is invested March 1 and earns 3.75% simple interest.  The rate changes to 6% simple interest on Sept 15 and 5.25% simple interest for the remainder of the year.  How much interest was earned over the year?
-    *  \$697.05     [Click here for full solution]()
+    *  \$538.46     [Click here for full solution](https://youtu.be/3KGICz-VJT0)
 <p>&nbsp;</p>
 
 
 *  \$5000 is invested January 1 at 3% simple interest.  The interest rate rises 1% per month.  How much is in the account after 1 year?
-    *  \$5165.45     [Click here for full solution]()
+    *  \$5425    [Click here for full solution](https://youtu.be/_fz7TmbnogE)
 <p>&nbsp;</p>
 
 
