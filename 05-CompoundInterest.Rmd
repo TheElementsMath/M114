@@ -53,7 +53,7 @@ was $17,438.19, what was the original investment?
 
 
 
-*  An initial investment of \$1900 investment is worth \$2400 after two years and nine months. What quarterly compounded nominal rate of return did the investment earn?
+*  An initial investment of \$1900 is worth \$2400 after two years and nine months. What quarterly compounded nominal rate of return did the investment earn?
     * 8.59% per year compounded quarterly.  [Click here for full solution]()
 <p>&nbsp;</p>
 
@@ -122,7 +122,7 @@ as large as the second, in 1.5 years. What should the last two payments be if mo
 <p>&nbsp;</p>
 
 
-*  \$5000 is invested January 1 at 3% compounded annually.  The interest rate rises 1% per month.  How much is in the account after 1 year?
+*  \$5000 is invested January 1 at 3% compounded annually.  The interest rate rises 1% per year.  How much is in the account after 5 years?
     * $5441.69  [Click here for full solution]()
 <p>&nbsp;</p>
 
