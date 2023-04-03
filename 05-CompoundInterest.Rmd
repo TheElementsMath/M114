@@ -54,13 +54,13 @@ was $17,438.19, what was the original investment?
 
 
 *  An initial investment of \$1900 is worth \$2400 after two years and nine months. What quarterly compounded nominal rate of return did the investment earn?
-    * 8.59% per year compounded quarterly.  [Click here for full solution]()
+    * 8.59% per year compounded quarterly.  [Click here for full solution](https://youtu.be/ursDj7Csxvc)
 <p>&nbsp;</p>
 
 
 *  The maturity value of a \$10,000 four-year compound interest GIC was \$11,647.82. What
 quarterly compounded rate of interest did it earn?
-    *  3.83% per year compounded quarterly.  [Click here for full solution]()
+    *  3.83% per year compounded quarterly.  [Click here for full solution](https://youtu.be/YHEUee-vdHQ)
 <p>&nbsp;</p>
 
 
@@ -70,29 +70,29 @@ quarterly compounded rate of interest did it earn?
 
 
 *  A number of years ago, your client invested \$16,000 at a rate of return of 9% compounded annually. If the investment is currently worth \$20,968.25, for how long has she held the investment?  (Do not round your answer).
-    *  3.138 years  [Click here for full solution]()
+    *  3.138 years  [Click here for full solution](https://youtu.be/-IpQf5cbgKQ)
 <p>&nbsp;</p>
 
 
 *  If money is worth 8% compounded quarterly, how long before a scheduled payment of \$6000 will \$5000 be an equivalent payment? 
-    *  2.5 years  [Click here for full solution]()
+    *  2.3 years  [Click here for full solution](https://youtu.be/0d3xIOGSDVo)
 <p>&nbsp;</p>
 
 
 ##  5.4  Equivalent Payments and Payment Streams {-}
 
 *  A payment stream consists of \$1950 due today and \$3500 due in 18 months.  These payments will be replaced by an economically equivalent stream comprised of an undetermined payment due in 10 months and a payment of \$3000 due in 24 months. Calculate the unknown replacement payment if money is worth 8% compounded monthly.
-    *  \$2887.90  [Click here for full solution]()
+    *  \$2669.26  [Click here for full solution](https://youtu.be/s7hgkpi41dA)
 <p>&nbsp;</p>
 
 
 *  Payments of \$1850 due two years ago and \$1550 due six months ago have not been made.  The proposed alternative is two equal payments, three months and nine months from now, that will put the payee in an equivalent economic position allowing that money can earn 4.3% compounded quarterly. What is the amount of each of these payments?
-    *  $1838.15  [Click here for full solution]()
+    *  $1838.15  [Click here for full solution](https://youtu.be/CfhIoqV-ujM)
 <p>&nbsp;</p>
 
 
 *  The scheduled payment stream consists of \$6000 due today and \$12,000 due in five years.  It is proposed to replace this stream by an economically equivalent stream comprised of three equal payments due one, three, and five years from now. Determine the size of each payment if money is worth 4% compounded annually.
-    *  \$8572.18  [Click here for full solution]()
+    *  \$5935.77  [Click here for full solution](https://youtu.be/2y_5Qe8dVVI)
 <p>&nbsp;</p>
 
 
@@ -100,12 +100,12 @@ quarterly compounded rate of interest did it earn?
 payment of \$4000 today, a second payment in nine months, and a third payment, three times
 as large as the second, in 1.5 years. What should the last two payments be if money is worth
 6.4% compounded quarterly?
-    *  First payment = \$3772.70, second payment = \$11,318.10.  [Click here for full solution]()
+    *  First payment = \$3696.67, second payment = \$11,090.01.  [Click here for full solution](https://youtu.be/a9x41uJoY7o)
 <p>&nbsp;</p>
 
 
 *  Three years ago, Ayia loaned \$2500 to John. The principal with interest at 8% compounded semiannually is to be repaid four years from the date of the loan. Eighteen months ago, John borrowed another \$1500 for 2.5 years at 7% compounded semiannually.  John is now proposing to settle both debts with two equal payments to be made one and three years from now. What should the payments be if money now earns 6% compounded quarterly?
-    *  \$2756.22  [Click here for full solution]()
+    *  \$2756.22  [Click here for full solution](https://youtu.be/IzJnWXet3mA)
 <p>&nbsp;</p>
 
 
@@ -113,17 +113,17 @@ as large as the second, in 1.5 years. What should the last two payments be if mo
 ##  5.6  Changing Interest Rates {-}
 
 *  An investment of \$10,000 earns 5% compounded monthly for the first 3 months, 6% compounded quarterly for the next 6 months and 8% compounded monthly for another 3 months.  How much interest was earned over the year?
-    *  \$641.59  [Click here for full solution]()
+    *  \$641.59  [Click here for full solution](https://youtu.be/EKpI9sCayx8)
 <p>&nbsp;</p>
 
 
 *  \$15,000 is invested early March and earns 3.75% compounded monthly.  The rate changes to 6% compounded monthly in May and changes to 5.25% compounded monthly in September for the remainder of the calendar year.  How much interest was earned over the lifetime of the investment?
-    *  \$669.29  [Click here for full solution]()
+    *  \$669.29  [Click here for full solution](https://youtu.be/RnW9MEwPFqI)
 <p>&nbsp;</p>
 
 
 *  \$5000 is invested January 1 at 3% compounded annually.  The interest rate rises 1% per year.  How much is in the account after 5 years?
-    * $5441.69  [Click here for full solution]()
+    * $6378.51  [Click here for full solution](https://youtu.be/VGcw9sEnDg8)
 <p>&nbsp;</p>
 
 
