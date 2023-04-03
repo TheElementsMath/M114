@@ -131,27 +131,27 @@ as large as the second, in 1.5 years. What should the last two payments be if mo
 ##  5.7  Continuously Compounded Interest {-}
 
 *  Jimmy invests \$2,500 in an account earning continuously compounded interest. After 13 years, the account balance reaches \$9,000. What is the interest rate of the account?
-    *  9.85% compouned continuously  [Click here for full solution]()
+    *  9.85% compouned continuously  [Click here for full solution](https://youtu.be/5PenhnhKqSc)
 <p>&nbsp;</p>
 
 
 *  Fred invests a lump sum of money in an account at a rate of 5% that is compounded continuously. After 7 years, the account balance reaches $7500. How much was initially invested?
-    *  \$5285.16  [Click here for full solution]()
+    *  \$5285.16  [Click here for full solution](https://youtu.be/UrnyLk6kv8Y)
 <p>&nbsp;</p>
 
 
 *  Ken invests a lump sum of money in a bond fund with a fixed annual interest rate of 6% that is compounded continuously. After 15 years, the balance reaches $25,000. How much was initially invested?
-    *  \$10,164.24  [Click here for full solution]()
+    *  \$10,164.24  [Click here for full solution](https://youtu.be/09P4D7jEikM)
 <p>&nbsp;</p>
 
 
 *  You deposit $2500 is deposited in a bank paying an annual interest rate of 3.1%, compounded continuously. Find the balance after 3 years.
-    *  \$2743.65  [Click here for full solution]()
+    *  \$2743.65  [Click here for full solution](https://youtu.be/MHGBWPbERjg)
 <p>&nbsp;</p>
 
 
 *  If you invest $20,000 at an annual interest rate of 3% compounded continuously, calculate the final amount you will have in the account after 20 years.
-    *  \$36,442.38  [Click here for full solution]()
+    *  \$36,442.38  [Click here for full solution](https://youtu.be/X64AIRSXHz8)
 <p>&nbsp;</p>
 
 
