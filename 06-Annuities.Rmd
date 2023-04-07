@@ -10,28 +10,28 @@
     b. 8% compounded quarterly?
     c. 8% compounded monthly?
 
-    *   8.16% compounded annually, 8.33% compounded annually and 8.34% compounded annually  [Click here for full solution]()
+    *   8.16% compounded annually, 8.24% compounded annually and 8.3% compounded annually  [Click here for full solution](https://youtu.be/iwRJ9krWYKU)
 <p>&nbsp;</p>
 
 
 *  Which of the following nominal interest rates has the highest effective rate: 11% compounded annually, 10.9% compounded semiannually, 10.8% compounded quarterly, or 10.7% compounded monthly?
-    *  10.7% compounded monthly   [Click here for full solution]()     
+    *  10.8% compounded quarterly   [Click here for full solution](https://youtu.be/JPjfHkmCcCU)     
 <p>&nbsp;</p>
 
 
 *  What semiannually compounded rate is equivalent to 8.5% compounded quarterly?
-    *   8.59% compounded semiannually  [Click here for full solution]()
+    *   8.59% compounded semiannually  [Click here for full solution](https://youtu.be/h81emqhwjZQ)
 <p>&nbsp;</p>
 
 
-*  A bank offers a rate of 3.0% compounded semiannually a GIC. What monthly
+*  A bank offers a rate of 3.0% compounded semiannually on a GIC. What monthly
 compounded rate should the bank offer to make people indifferent between the alternatives?
-    *   2.98% compounded monthly  [Click here for full solution]()
+    *   2.98% compounded monthly  [Click here for full solution](https://youtu.be/zMISF_LwHnc)
 <p>&nbsp;</p>
 
 
 *  After completing your tax return, you discover that you owe income tax. You can either pay the late payment penalty at 4% compounded daily for one year or borrow the money you need to pay your taxes. Below what semiannually compounded rate will the loan cost you less in interest than the penalty?
-    *  4.04% compounded monthly   [Click here for full solution]()
+    *  4.04% compounded semiannually   [Click here for full solution](https://youtu.be/TCnVAc3DeP8)
 <p>&nbsp;</p>
 
 
@@ -39,7 +39,7 @@ compounded rate should the bank offer to make people indifferent between the alt
 
 *  A bank pays 2.5% compounded semiannually on a GIC. For you to prefer an annually compounded GIC of the same maturity, what value must its nominal
 interest rate exceed?
-    *   2.516% compounded annually  [Click here for full solution]()
+    *   2.516% compounded annually  [Click here for full solution](https://youtu.be/mEqZoWbjC1Q)
 <p>&nbsp;</p>
 
 
@@ -58,7 +58,7 @@ interest rate exceed?
 
 
 
-*  Clint has made contributions of \$2500 to his RRSP at the end of every six months for the past 10 years. The plan has earned 9.25% compounded semiannually. He has just moved the funds to another plan that earns 8.5% compounded quarterly. He will now contribute \$1500 at the end of every three months. What total amount will Herb have in the plan seven years
+*  Clint has made contributions of \$2500 to his RRSP at the end of every six months for the past 10 years. The plan has earned 9.25% compounded semiannually. He has just moved the funds to another plan that earns 8.5% compounded quarterly. He will now contribute \$1500 at the end of every three months. What total amount will Clint have in the plan seven years
 from now?
     *  $240,894.88    [Click here for full solution]()
 <p>&nbsp;</p>
