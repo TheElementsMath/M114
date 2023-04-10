@@ -105,7 +105,7 @@ from now?
 
 
 *  For how long has Kevin been making end-of-quarter contributions of \$1300 to his RRSP if the RRSP has earned 4.35% compounded quarterly and is currently worth \$85,000?
-    *   N = 114, Term = 28.5 years  [Click here for full solution]()
+    *   N = 50, and term = 12.5 years  [Click here for full solution](https://youtu.be/08e70cVxDas)
 <p>&nbsp;</p>
 
 
@@ -114,27 +114,27 @@ from now?
 ##  6.4  Ordinary General Annuities {-}
 
 *  An annuity consists of end-of-month payments of $250 continuing for 6.5 years. Based on a nominal rate of 8% compounded quarterly, calculate the annuity’s: a. Present value. b. Future value.
-    *   PV = \$15,190.94, FV = \$25,420.79  [Click here for full solution]()
+    *   PV = \$15,190.94, FV = \$25,420.79  [Click here for full solution](https://youtu.be/2qN_v-u8uL8)
 <p>&nbsp;</p>
 
 
 *  An annuity consists of semiannual payments of $1500 for a term of 8.5 years. Using a nominal rate of 7% compounded quarterly, calculate the ordinary annuity’s: a. Present value. b. Future value.
-    *  PV = \$18,931.14, FV = \$34,146.55   [Click here for full solution]()
+    *  PV = \$18,931.14, FV = \$34,146.55   [Click here for full solution](https://youtu.be/X0DQ5J4SrY8)
 <p>&nbsp;</p>
 
 
 *  Kelli is trying to decide if she should make regular month-end \$200 deposits to her TFSA or deposit \$650 at the end of every three months instead. How much larger is the option with the higher future value after 20 years if both investments earn 4.25% compounded annually?
-    *  $650 payments (by about \$5,000)   [Click here for full solution]()
+    *  $650 payments (by about \$5949.50)   [Click here for full solution](https://youtu.be/ldkUwunlYEc)
 <p>&nbsp;</p>
 
 
 *  Year-end contributions of $1200 will be made to a TFSA for 25 years. What will be the future value of the account if it earns 7% compounded monthly for the first 10 years and 8% compounded semiannually thereafter?
-    *  $90,183.45   [Click here for full solution]()
+    *  $87,351   [Click here for full solution](https://youtu.be/HXB9VUpZyIM)
 <p>&nbsp;</p>
 
 
 *  Fiona has just made her ninth annual \$2000 contribution to her RRSP. She now plans to make semiannual contributions of \$2000. The first contribution will be made six months from now. How much will she have in her RRSP 15 years from now if the plan has earned and will continue to earn 8% compounded quarterly?
-    *  \$195,703.17   [Click here for full solution]()
+    *  \$195,703.19   [Click here for full solution](https://youtu.be/nQWOwaJQih8)
 <p>&nbsp;</p>
 
 
