@@ -143,29 +143,29 @@ from now?
 ##  6.5  Using the TI BAII plus Calculator for Annuities {-}
 
 *  You open a bank account by making an initial deposit of \$5000.  You then add to the account by making month-end payments of \$250.  If the account earns at a rate of 4.5% compounded weekly, determine the future value of the account after five years.
-    *  $23,050.16   [Click here for full solution]()
+    *  $23,050.16   [Click here for full solution](https://youtu.be/O9X6uQyPL8U)
 <p>&nbsp;</p>
 
 
 
 *  An investment pays you \$350 at the end of every quarter for three years, plus a lump-sum payment of \$4500 at the end of the last period.  If the current interest rate is 1.75% compounded monthly, determine the fair market value today of the investment.
-    *  $8352.80   [Click here for full solution]()
+    *  $8352.80   [Click here for full solution](https://youtu.be/ejORr8WzAVk)
 <p>&nbsp;</p>
 
 
 *  Greg sold his car to Jenny for \$3000 down and monthly payments of \$350 for 3.5 years, including interest at 6.5% compounded monthly. What was the selling price of the car?
-    *  $16,116.17   [Click here for full solution]()
+    *  $16,116.17   [Click here for full solution](https://youtu.be/8zxaJ9-AYxo)
 <p>&nbsp;</p>
 
 
 
 *  Your client plans to invest $3000 at the end of each year. The rate of return on the investment is 8.5% compounded annually. What will be the value of the investment at the end of the 10 years?
-    *  $509,955.29   [Click here for full solution]()
+    *  $44,505.30   [Click here for full solution](https://youtu.be/zo_jPyKb7I0)
 <p>&nbsp;</p>
 
 
 *  Julia’s monthly payments of $525 will pay off her mortgage loan in 8 years and 5 months. The interest rate on her mortgage is 5.6% compounded monthly. What is the current balance on the loan?
-    *   $42,203.90  [Click here for full solution]()
+    *   $42,203.90  [Click here for full solution](https://youtu.be/MAm3mP0g9eY)
 <p>&nbsp;</p>
 
 
@@ -173,6 +173,6 @@ from now?
 
 *  Janet intends to save for holidays by contributing $400 at the end
 of each month to an investment plan. At the end of every three years, she will withdraw $12,000 for a trip abroad. If the plan earns 6% compounded monthly, what will be the plan’s balance after seven years?
-    *  $16,599.60   [Click here for full solution]()
+    *  $13,643.57   [Click here for full solution](https://youtu.be/SRhrIZ8qccU)
 <p>&nbsp;</p>
 
